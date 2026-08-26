@@ -1,7 +1,5 @@
-# Data
-data/raw/
-data/processed/
-data/splits/
+# Context & Internal Docs
+context/
 
 # Models & Large Checkpoints
 outputs/models/*.h5
