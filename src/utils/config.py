@@ -31,6 +31,9 @@ class Config:
     OOV_TOKEN: str = "<OOV>"
     PAD_TOKEN: str = "<PAD>"
 
+    # Database
+    DATABASE_URL: str = "postgresql://postgres:postgres@localhost:5434/indotoxic"
+
     # Embedding
     EMBEDDING_DIM: int = 128
     USE_PRETRAINED: bool = False
