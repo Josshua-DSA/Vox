@@ -2,7 +2,7 @@
 SQLAlchemy ORM models for IndoToxic dataset and future scraping pipelines.
 """
 
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Optional, Dict, Any
 from sqlalchemy import (
     Column,
@@ -33,7 +33,7 @@ class RawScrape(Base):
     source_post_id = Column(String(255), unique=True, nullable=True, index=True)
     raw_payload = Column(JSONB, nullable=False)
     status = Column(String(20), default="PENDING", nullable=False, index=True)
-    scraped_at = Column(DateTime(timezone=True), default=datetime.utcnow, nullable=False)
+    scraped_at = Column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc), nullable=False)
 
     # Relasi ke data teks terstruktur
     dataset_entries = relationship("DatasetText", back_populates="raw_scrape", cascade="all, delete-orphan")
@@ -58,7 +58,7 @@ class DatasetText(Base):
     topic = Column(String(100), nullable=True, index=True)
     label = Column(SmallInteger, nullable=False, index=True)
     split = Column(String(20), default="unassigned", nullable=False, index=True)
-    created_at = Column(DateTime(timezone=True), default=datetime.utcnow, nullable=False)
+    created_at = Column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc), nullable=False)
 
     # Relasi balik ke sumber mentah scraping
     raw_scrape = relationship("RawScrape", back_populates="dataset_entries")
