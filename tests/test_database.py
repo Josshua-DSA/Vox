@@ -1,18 +1,8 @@
-"""
-Unit test untuk modul database PostgreSQL IndoToxic.
-"""
+"""Unit test untuk modul database PostgreSQL IndoToxic."""
 
 import uuid
-import pytest
 import pandas as pd
-from src.database.connection import init_db
 from src.database.repository import DatasetRepository, ScraperRepository
-
-
-@pytest.fixture(scope="module", autouse=True)
-def setup_database():
-    """Pastikan skema database terinisialisasi."""
-    init_db()
 
 
 def test_dataset_repository_counts():
@@ -34,7 +24,7 @@ def test_dataset_repository_get_by_split():
     df_train = DatasetRepository.get_by_split("train")
     assert isinstance(df_train, pd.DataFrame)
     assert len(df_train) == 19911
-    assert set(["text_id", "text_clean", "topic", "label", "split"]).issubset(df_train.columns)
+    assert {"text_id", "text_clean", "topic", "label", "split"}.issubset(df_train.columns)
 
     df_test = DatasetRepository.get_by_split("test")
     assert len(df_test) == 4267
