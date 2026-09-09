@@ -32,13 +32,20 @@ Proyek ini bertujuan untuk mendeteksi ujaran kebencian (*hate speech*) dan teks 
 ```text
 .
 ├── main.py                        # Master CLI launcher (Pipeline Trainer & Evaluator)
+├── pyproject.toml                 # Project metadata, pytest & ruff config
+├── Makefile                       # One-command dev workflow (make test, make lint, dll)
 ├── docker-compose.yml             # Service container PostgreSQL
 ├── .env.example                   # Template konfigurasi environment & database URL
-├── requirements.txt               # Daftar dependensi Python
+├── .gitattributes                 # Git LFS tracking rules untuk data/raw/
+├── requirements.txt               # Daftar dependensi Python (legacy, lihat pyproject.toml)
+├── CONTRIBUTING.md                # Panduan kontribusi, setup, branch & PR workflow
 ├── README.md                      # Dokumentasi teknis proyek
 │
+├── .github/workflows/
+│   └── ci.yml                     # GitHub Actions: Ruff lint + pytest on PR
+│
 ├── data/
-│   ├── raw/                       # Dataset mentah (indotoxic2024 CSV & JSONL)
+│   ├── raw/                       # Dataset mentah — Git LFS tracked (CSV & JSONL)
 │   ├── processed/                 # Dataset hasil cleaning
 │   └── splits/                    # train.csv, val.csv, test.csv (Stratified 70/15/15)
 │
@@ -65,7 +72,7 @@ Proyek ini bertujuan untuk mendeteksi ujaran kebencian (*hate speech*) dan teks 
 │   └── 04_cnn_experiment.ipynb
 │
 ├── outputs/                       # Artefak hasil eksekusi (Models, Tokenizer, Metrics, Plots)
-├── tests/                         # Unit tests untuk validasi modul backend & database
+├── tests/                         # Unit tests + conftest.py (shared fixtures)
 └── research/                      # Katalog literatur & paper acuan (research/PAPERS.md)
 ```
 
@@ -75,52 +82,43 @@ Proyek ini bertujuan untuk mendeteksi ujaran kebencian (*hate speech*) dan teks 
 
 ### 1. Setup Virtual Environment
 ```bash
-# Buat virtual environment
+# Quick setup (recommended)
+make setup
+
+# Atau manual:
 python3 -m venv .venv
-
-# Aktifkan virtual environment
-# Linux / macOS:
-source .venv/bin/activate
-# Windows:
-# .venv\Scripts\activate
-
-# Instal dependensi
-pip install -r requirements.txt
+source .venv/bin/activate       # Linux/macOS
+pip install -e ".[dev]"
 ```
 
 ### 2. Setup Database PostgreSQL
 Pastikan Docker dan docker-compose terpasang, lalu jalankan container database:
 ```bash
-# Salin template env jika perlu penyesuaian kredensial
 cp .env.example .env
-
-# Jalankan service PostgreSQL container (Port 5434)
-docker-compose up -d
-
-# Migrasi data CSV lokal ke database PostgreSQL
-python3 scripts/migrate_csv_to_postgres.py
+make db-up                      # atau: docker-compose up -d
+make migrate                    # atau: python scripts/migrate_csv_to_postgres.py
 ```
 
 ### 3. Menjalankan Pipeline via CLI
-Eksekusi pipeline lengkap atau tahapan tertentu menggunakan `main.py`:
 ```bash
-# Menjalankan seluruh pipeline (preprocessing -> build model -> eval)
-python3 main.py --stage all
+make run                        # atau: python main.py --stage all
 
-# Menjalankan tahapan tertentu
-python3 main.py --stage preprocess
-python3 main.py --stage train
-python3 main.py --stage eval
+# Tahapan tertentu:
+python main.py --stage preprocess
+python main.py --stage train
+python main.py --stage eval
 ```
 
 ### 4. Menjalankan Prototype Streamlit UI
 ```bash
-streamlit run app/streamlit_app.py
+make run-app                    # atau: streamlit run app/streamlit_app.py
 ```
 
-### 5. Menjalankan Unit Tests
+### 5. Linting & Testing
 ```bash
-PYTHONPATH=. pytest tests/
+make lint                       # Ruff lint check
+make format                     # Ruff auto-format
+make test                       # Pytest (9 tests)
 ```
 
 ---
