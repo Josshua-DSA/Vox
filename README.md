@@ -6,17 +6,24 @@
 
 ---
 
+Group Contribution:
+1. Joshua Remedial Syeba           : Infrastruktur, Database & Arsitektur CNN
+2. Siti Cholilah                   : CI/CD
+3. Much. Hafidz Indrajid           : Frontend and API Integration
+4. Muhammad Zidan Akmal Nurrochman : Backend and API build up
+
 ## 📌 Deskripsi Proyek
 
-Proyek ini bertujuan untuk mendeteksi ujaran kebencian (*hate speech*) dan teks toksik berbahasa Indonesia pada media sosial menggunakan pendekatan **Convolutional Neural Network (CNN) for Text** berbasis arsitektur multi-kernel Yoon Kim (2014). Sistem dirancang secara modular, berorientasi objek (OOP), reprodusibel, dan dilengkapi dengan modul *explainability* (feature saliency) serta antarmuka visual berbasis Streamlit.
+Proyek ini bertujuan untuk mendeteksi ujaran kebencian (*hate speech*) dan teks toksik berbahasa Indonesia pada media sosial menggunakan pendekatan **Convolutional Neural Network (CNN) for Text** berbasis arsitektur multi-kernel Yoon Kim (2014). Sistem dirancang secara modular, berorientasi objek (OOP), reprodusibel, terintegrasi dengan database PostgreSQL untuk data pipeline & auto-scraping, serta dilengkapi dengan modul *explainability* (feature saliency) dan antarmuka visual berbasis Streamlit.
 
 ### Fitur Utama
 1. **End-to-End NLP Pipeline**: Preprocessing teks (regex cleaning, tokenisasi, sequence padding) terstandarisasi.
-2. **Multi-Kernel Conv1D Architecture**: Ekstraksi representasi n-gram lokal paralel (kernel sizes: 3, 4, 5) dengan GlobalMaxPooling.
-3. **Imbalance Mitigation**: Penanganan ketidakseimbangan kelas menggunakan *Class Weighting*, *Focal Loss*, dan *Oversampling*.
-4. **Comprehensive Evaluation**: Pengukuran performa menyeluruh (Macro-F1, Precision, Recall, Confusion Matrix) dan Error Analysis mendalam (False Positive & False Negative).
-5. **Model Explainability**: Visualisasi atribusi kata (*word saliency / integrated gradients proxy*) untuk transparansi prediksi.
-6. **Interactive Prototype**: Web UI interaktif berbasis Streamlit.
+2. **Hybrid Database Layer (PostgreSQL)**: Penyimpanan dataset terstruktur (28.445 baris) + tabel raw dump JSONB fleksibel untuk kebutuhan auto-scraping multi-platform.
+3. **Multi-Kernel Conv1D Architecture**: Ekstraksi representasi n-gram lokal paralel (kernel sizes: 3, 4, 5) dengan GlobalMaxPooling.
+4. **Imbalance Mitigation**: Penanganan ketidakseimbangan kelas menggunakan *Class Weighting*, *Focal Loss*, dan *Oversampling*.
+5. **Comprehensive Evaluation**: Pengukuran performa menyeluruh (Macro-F1, Precision, Recall, Confusion Matrix) dan Error Analysis mendalam (False Positive & False Negative).
+6. **Model Explainability**: Visualisasi atribusi kata (*word saliency / integrated gradients proxy*) untuk transparansi prediksi.
+7. **Interactive Prototype**: Web UI interaktif berbasis Streamlit.
 
 ---
 
@@ -25,6 +32,8 @@ Proyek ini bertujuan untuk mendeteksi ujaran kebencian (*hate speech*) dan teks 
 ```text
 .
 ├── main.py                        # Master CLI launcher (Pipeline Trainer & Evaluator)
+├── docker-compose.yml             # Service container PostgreSQL
+├── .env.example                   # Template konfigurasi environment & database URL
 ├── requirements.txt               # Daftar dependensi Python
 ├── README.md                      # Dokumentasi teknis proyek
 │
@@ -34,12 +43,16 @@ Proyek ini bertujuan untuk mendeteksi ujaran kebencian (*hate speech*) dan teks 
 │   └── splits/                    # train.csv, val.csv, test.csv (Stratified 70/15/15)
 │
 ├── src/
+│   ├── database/                  # Modul PostgreSQL (models, connection, repository)
 │   ├── preprocessing/             # TextCleaner, TextTokenizer, SequencePadder, DataSplitter
 │   ├── models/                    # BaseModel (ABC), CNNTextClassifier, EmbeddingLoader
 │   ├── training/                  # ModelTrainer, ImbalanceHandler
 │   ├── evaluation/                # MetricCalculator, ConfusionMatrixPlotter, ErrorAnalyzer
 │   ├── explainability/            # SaliencyMapper (Token attribution)
-│   └── utils/                     # Config (Hyperparams), Logger, Seed (SEED=42)
+│   └── utils/                     # Config (Hyperparams & DB URL), Logger, Seed (SEED=42)
+│
+├── scripts/                       # Skrip otomatisasi (migrasi CSV ke PostgreSQL)
+│   └── migrate_csv_to_postgres.py
 │
 ├── app/                           # Prototype Web Streamlit
 │   ├── streamlit_app.py           # Entry point aplikasi
@@ -48,14 +61,11 @@ Proyek ini bertujuan untuk mendeteksi ujaran kebencian (*hate speech*) dan teks 
 ├── notebooks/                     # Jupyter Notebooks untuk riset & eksperimen terisolasi
 │   ├── 01_eda.ipynb
 │   ├── 02_preprocessing.ipynb
-│   ├── 03_baseline_tfidf.ipynb
-│   ├── 04_cnn_baseline.ipynb
-│   ├── 05_cnn_imbalance_exp.ipynb
-│   ├── 06_cnn_tuning_ablation.ipynb
-│   └── 07_error_analysis.ipynb
+│   ├── 03_baseline.ipynb
+│   └── 04_cnn_experiment.ipynb
 │
 ├── outputs/                       # Artefak hasil eksekusi (Models, Tokenizer, Metrics, Plots)
-├── tests/                         # Unit tests untuk validasi modul backend
+├── tests/                         # Unit tests untuk validasi modul backend & database
 └── research/                      # Katalog literatur & paper acuan (research/PAPERS.md)
 ```
 
@@ -78,7 +88,20 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 2. Menjalankan Pipeline via CLI
+### 2. Setup Database PostgreSQL
+Pastikan Docker dan docker-compose terpasang, lalu jalankan container database:
+```bash
+# Salin template env jika perlu penyesuaian kredensial
+cp .env.example .env
+
+# Jalankan service PostgreSQL container (Port 5434)
+docker-compose up -d
+
+# Migrasi data CSV lokal ke database PostgreSQL
+python3 scripts/migrate_csv_to_postgres.py
+```
+
+### 3. Menjalankan Pipeline via CLI
 Eksekusi pipeline lengkap atau tahapan tertentu menggunakan `main.py`:
 ```bash
 # Menjalankan seluruh pipeline (preprocessing -> build model -> eval)
@@ -90,14 +113,14 @@ python3 main.py --stage train
 python3 main.py --stage eval
 ```
 
-### 3. Menjalankan Prototype Streamlit UI
+### 4. Menjalankan Prototype Streamlit UI
 ```bash
 streamlit run app/streamlit_app.py
 ```
 
-### 4. Menjalankan Unit Tests
+### 5. Menjalankan Unit Tests
 ```bash
-python3 -m unittest discover tests
+PYTHONPATH=. pytest tests/
 ```
 
 ---
