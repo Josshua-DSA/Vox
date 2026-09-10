@@ -1,5 +1,4 @@
 from dataclasses import dataclass, field
-from typing import List
 
 
 @dataclass
@@ -31,6 +30,11 @@ class Config:
     OOV_TOKEN: str = "<OOV>"
     PAD_TOKEN: str = "<PAD>"
 
+    # Preprocessing Resources (leksikon normalisasi & stopword)
+    SLANG_DICT_PATH: str = "data/resources/slang_dict.json"
+    EMOJI_MAP_PATH: str = "data/resources/emoji_map.json"
+    STOPWORDS_PATH: str = "data/resources/stopwords_id.txt"
+
     # Database
     DATABASE_URL: str = "postgresql://postgres:postgres@localhost:5434/indotoxic"
 
@@ -40,7 +44,7 @@ class Config:
     PRETRAINED_PATH: str = ""
 
     # CNN Architecture (Yoon Kim Multi-kernel)
-    FILTER_SIZES: List[int] = field(default_factory=lambda: [3, 4, 5])
+    FILTER_SIZES: list[int] = field(default_factory=lambda: [3, 4, 5])
     NUM_FILTERS: int = 128
     DROPOUT_RATE: float = 0.5
     DENSE_UNITS: int = 128
