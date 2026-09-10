@@ -2,14 +2,18 @@
 Shared test fixtures for IndoToxic test suite.
 """
 
-import pytest
 import numpy as np
-from src.preprocessing.cleaner import TextCleaner
-from src.preprocessing.tokenizer import TextTokenizer
-from src.preprocessing.padder import SequencePadder
-from src.evaluation.metrics import MetricCalculator
-from src.database.connection import init_db
+import pytest
+from sqlalchemy import delete
 
+from src.database.connection import engine, init_db
+from src.database.models import RawScrape
+from src.evaluation.metrics import MetricCalculator
+from src.preprocessing.cleaner import TextCleaner
+from src.preprocessing.normalizer import SlangNormalizer
+from src.preprocessing.padder import SequencePadder
+from src.preprocessing.stopword_filter import StopwordFilter
+from src.preprocessing.tokenizer import TextTokenizer
 
 # ─── Database ───────────────────────────────────────────────
 
@@ -19,12 +23,38 @@ def db_init():
     init_db()
 
 
+TEST_SOURCES = ("twitter_test", "forum_test", "youtube_test")
+
+
+@pytest.fixture(autouse=True)
+def clean_test_scrapes():
+    """Hapus baris test raw_scrapes sebelum & sesudah tiap test (hermetic)."""
+    stmt = delete(RawScrape).where(RawScrape.source.in_(TEST_SOURCES))
+    with engine.begin() as conn:
+        conn.execute(stmt)
+    yield
+    with engine.begin() as conn:
+        conn.execute(stmt)
+
+
 # ─── Preprocessing ──────────────────────────────────────────
 
 @pytest.fixture
 def cleaner():
     """Instance TextCleaner."""
     return TextCleaner()
+
+
+@pytest.fixture(scope="session")
+def normalizer():
+    """Instance SlangNormalizer (shared, read-only)."""
+    return SlangNormalizer()
+
+
+@pytest.fixture
+def stopword_filter():
+    """Instance StopwordFilter."""
+    return StopwordFilter()
 
 
 @pytest.fixture
