@@ -1,5 +1,7 @@
-from typing import Any, Dict, Optional
+from typing import Any
+
 import numpy as np
+
 from src.models.base_model import BaseModel
 from src.training.imbalance import ImbalanceHandler
 from src.utils.logger import Logger
@@ -17,7 +19,7 @@ class ModelTrainer:
     def __init__(
         self,
         model: BaseModel,
-        imbalance_handler: Optional[ImbalanceHandler] = None,
+        imbalance_handler: ImbalanceHandler | None = None,
     ) -> None:
         """Inisialisasi ModelTrainer."""
         self.model = model
@@ -32,7 +34,7 @@ class ModelTrainer:
         y_train: np.ndarray,
         X_val: np.ndarray,
         y_val: np.ndarray,
-    ) -> Dict[str, Any]:
+    ) -> dict[str, Any]:
         """
         Menjalankan training pipeline lengkap.
 

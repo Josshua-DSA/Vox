@@ -3,18 +3,8 @@ SQLAlchemy ORM models for IndoToxic dataset and future scraping pipelines.
 """
 
 from datetime import datetime, timezone
-from typing import Optional, Dict, Any
-from sqlalchemy import (
-    Column,
-    Integer,
-    SmallInteger,
-    String,
-    Text,
-    DateTime,
-    ForeignKey,
-    Index,
-    CheckConstraint
-)
+
+from sqlalchemy import CheckConstraint, Column, DateTime, ForeignKey, Index, Integer, SmallInteger, String, Text
 from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy.orm import declarative_base, relationship
 

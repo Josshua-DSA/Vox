@@ -1,6 +1,8 @@
 import os
-from typing import Any, Dict, Optional
+from typing import Any
+
 import numpy as np
+
 from src.models.base_model import BaseModel
 
 
@@ -19,7 +21,7 @@ class CNNTextClassifier(BaseModel):
         super().__init__(config)
 
     def build_model(
-        self, embedding_matrix: Optional[np.ndarray] = None
+        self, embedding_matrix: np.ndarray | None = None
     ) -> Any:
         """
         Membangun topologi arsitektur CNN Multi-kernel Conv1D.
@@ -31,7 +33,6 @@ class CNNTextClassifier(BaseModel):
             Any: Objek model neural network terkompilasi.
         """
         try:
-            import tensorflow as tf
             from tensorflow.keras import layers, models, optimizers
 
             inputs = layers.Input(
@@ -104,8 +105,8 @@ class CNNTextClassifier(BaseModel):
         y_train: np.ndarray,
         X_val: np.ndarray,
         y_val: np.ndarray,
-        class_weight: Optional[Dict[int, float]] = None,
-    ) -> Dict[str, Any]:
+        class_weight: dict[int, float] | None = None,
+    ) -> dict[str, Any]:
         """
         Menjalankan loop training dengan validasi dan class weighting.
 

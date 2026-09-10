@@ -1,7 +1,9 @@
 """Unit test untuk modul database PostgreSQL IndoToxic."""
 
 import uuid
+
 import pandas as pd
+
 from src.database.repository import DatasetRepository, ScraperRepository
 
 

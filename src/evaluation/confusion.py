@@ -1,5 +1,5 @@
 import os
-from typing import List, Optional
+
 import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
@@ -12,7 +12,7 @@ class ConfusionMatrixPlotter:
     """
 
     def __init__(
-        self, class_names: Optional[List[str]] = None
+        self, class_names: list[str] | None = None
     ) -> None:
         """Inisialisasi nama kelas target."""
         self.class_names = (

@@ -1,6 +1,7 @@
 import json
 import os
-from typing import Any, Dict
+from typing import Any
+
 import numpy as np
 from sklearn.metrics import (
     accuracy_score,
@@ -19,7 +20,7 @@ class MetricCalculator:
 
     def compute_all(
         self, y_true: np.ndarray, y_pred: np.ndarray
-    ) -> Dict[str, Any]:
+    ) -> dict[str, Any]:
         """
         Menghitung seluruh metrik evaluasi klasifikasi biner.
 
@@ -64,7 +65,7 @@ class MetricCalculator:
             "confusion_matrix": cm,
         }
 
-    def save_metrics(self, metrics: Dict[str, Any], path: str) -> None:
+    def save_metrics(self, metrics: dict[str, Any], path: str) -> None:
         """
         Menyimpan hasil perhitungan metrik ke format file JSON.
 

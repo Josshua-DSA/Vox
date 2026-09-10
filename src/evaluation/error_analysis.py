@@ -1,6 +1,7 @@
 import json
 import os
-from typing import Any, Dict, List
+from typing import Any
+
 import pandas as pd
 
 
@@ -18,7 +19,7 @@ class ErrorAnalyzer:
         pred_label_col: str,
         prob_col: str,
         top_n: int = 10,
-    ) -> Dict[str, Any]:
+    ) -> dict[str, Any]:
         """
         Mengekstraksi kasus False Positive (FP) dan False Negative (FN).
 
@@ -56,7 +57,7 @@ class ErrorAnalyzer:
             "top_false_negatives": fn_samples,
         }
 
-    def save_analysis(self, analysis_result: Dict[str, Any], path: str) -> None:
+    def save_analysis(self, analysis_result: dict[str, Any], path: str) -> None:
         """
         Menyimpan hasil analisis error ke file JSON.
 

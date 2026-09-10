@@ -1,5 +1,4 @@
-from typing import Any, Dict, List, Tuple
-import numpy as np
+from typing import Any
 
 
 class SaliencyMapper:
@@ -23,7 +22,7 @@ class SaliencyMapper:
 
     def compute_word_saliency(
         self, text: str
-    ) -> List[Tuple[str, float]]:
+    ) -> list[tuple[str, float]]:
         """
         Menghitung bobot pentingnya masing-masing kata dalam satu kalimat input.
 
@@ -42,7 +41,7 @@ class SaliencyMapper:
         base_padded = self.padder.pad(base_seq)
         base_prob = float(self.model.predict_proba(base_padded)[0, 0])
 
-        saliency_scores: List[Tuple[str, float]] = []
+        saliency_scores: list[tuple[str, float]] = []
         for i in range(len(words)):
             # Leave-one-out importance proxy
             sub_words = words[:i] + words[i + 1 :]
