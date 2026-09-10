@@ -1,4 +1,4 @@
-from typing import List
+
 import numpy as np
 
 
@@ -26,7 +26,7 @@ class SequencePadder:
         self.truncating = truncating
         self.pad_value = pad_value
 
-    def pad(self, sequences: List[List[int]]) -> np.ndarray:
+    def pad(self, sequences: list[list[int]]) -> np.ndarray:
         """
         Melakukan padding atau truncating pada batch sequences.
 
