@@ -1,5 +1,5 @@
 import os
-from typing import Dict, Tuple
+
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
@@ -32,7 +32,7 @@ class DataSplitter:
 
     def split(
         self, df: pd.DataFrame, stratify_col: str = "label"
-    ) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    ) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
         """
         Membagi DataFrame menjadi train, val, dan test set.
 
@@ -71,7 +71,7 @@ class DataSplitter:
         val_df: pd.DataFrame,
         test_df: pd.DataFrame,
         output_dir: str = "data/splits/",
-    ) -> Dict[str, str]:
+    ) -> dict[str, str]:
         """
         Menyimpan hasil partisi dataset ke format file CSV.
 
