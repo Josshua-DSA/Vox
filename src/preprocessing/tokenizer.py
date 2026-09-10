@@ -1,5 +1,4 @@
 import pickle
-from typing import Dict, List, Optional
 
 
 class TextTokenizer:
@@ -22,18 +21,18 @@ class TextTokenizer:
         self.vocab_size = vocab_size
         self.oov_token = oov_token
         self.pad_token = pad_token
-        self.word_index: Dict[str, int] = {self.pad_token: 0, self.oov_token: 1}
-        self.index_word: Dict[int, str] = {0: self.pad_token, 1: self.oov_token}
+        self.word_index: dict[str, int] = {self.pad_token: 0, self.oov_token: 1}
+        self.index_word: dict[int, str] = {0: self.pad_token, 1: self.oov_token}
         self.is_fitted: bool = False
 
-    def fit(self, texts: List[str]) -> None:
+    def fit(self, texts: list[str]) -> None:
         """
         Membangun kamus vocabulary dari kumpulan teks korpus training.
 
         Args:
             texts (List[str]): List dokumen teks training.
         """
-        word_freq: Dict[str, int] = {}
+        word_freq: dict[str, int] = {}
         for text in texts:
             tokens = text.split()
             for token in tokens:
@@ -52,7 +51,7 @@ class TextTokenizer:
 
         self.is_fitted = True
 
-    def texts_to_sequences(self, texts: List[str]) -> List[List[int]]:
+    def texts_to_sequences(self, texts: list[str]) -> list[list[int]]:
         """
         Mengonversi list teks menjadi list sequence integer token ID.
 
