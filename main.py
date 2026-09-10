@@ -3,19 +3,19 @@ Master CLI Entry Point: Pelatihan, Evaluasi, dan Ekspor Pipeline CNN Hate Speech
 """
 
 import argparse
-import sys
+
+from src.evaluation.confusion import ConfusionMatrixPlotter
+from src.evaluation.metrics import MetricCalculator
+from src.models.cnn_model import CNNTextClassifier
+from src.preprocessing.cleaner import TextCleaner
+from src.preprocessing.normalizer import SlangNormalizer
+from src.preprocessing.splitter import DataSplitter
+from src.preprocessing.stopword_filter import StopwordFilter
+from src.training.imbalance import ImbalanceHandler
+from src.training.trainer import ModelTrainer
 from src.utils.config import Config
 from src.utils.logger import Logger
 from src.utils.seed import set_seed
-from src.preprocessing.cleaner import TextCleaner
-from src.preprocessing.tokenizer import TextTokenizer
-from src.preprocessing.padder import SequencePadder
-from src.preprocessing.splitter import DataSplitter
-from src.models.cnn_model import CNNTextClassifier
-from src.training.trainer import ModelTrainer
-from src.training.imbalance import ImbalanceHandler
-from src.evaluation.metrics import MetricCalculator
-from src.evaluation.confusion import ConfusionMatrixPlotter
 
 
 def run_pipeline(stage: str) -> None:
@@ -33,14 +33,16 @@ def run_pipeline(stage: str) -> None:
 
     if stage in ["preprocess", "all"]:
         logger.info("Step 1: Menjalankan Preprocessing & Stratified Splitting...")
+        normalizer = SlangNormalizer(config=cfg)
         cleaner = TextCleaner()
+        stopword = StopwordFilter(config=cfg)
         splitter = DataSplitter(
             train_ratio=cfg.TRAIN_RATIO,
             val_ratio=cfg.VAL_RATIO,
             test_ratio=cfg.TEST_RATIO,
             seed=cfg.SEED,
         )
-        logger.info("Preprocessing step siap.")
+        logger.info("Preprocessing step siap (normalizer -> cleaner -> stopword).")
 
     if stage in ["train", "all"]:
         logger.info("Step 2: Membangun Arsitektur Yoon Kim Multi-Kernel CNN...")

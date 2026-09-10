@@ -6,17 +6,24 @@
 
 ---
 
+Group Contribution:
+1. Joshua Remedial Syeba           : Infrastruktur, Database & Arsitektur CNN
+2. Siti Cholilah                   : CI/CD
+3. Much. Hafidz Indrajid           : Frontend and API Integration
+4. Muhammad Zidan Akmal Nurrochman : Backend and API build up
+
 ## 📌 Deskripsi Proyek
 
-Proyek ini bertujuan untuk mendeteksi ujaran kebencian (*hate speech*) dan teks toksik berbahasa Indonesia pada media sosial menggunakan pendekatan **Convolutional Neural Network (CNN) for Text** berbasis arsitektur multi-kernel Yoon Kim (2014). Sistem dirancang secara modular, berorientasi objek (OOP), reprodusibel, dan dilengkapi dengan modul *explainability* (feature saliency) serta antarmuka visual berbasis Streamlit.
+Proyek ini bertujuan untuk mendeteksi ujaran kebencian (*hate speech*) dan teks toksik berbahasa Indonesia pada media sosial menggunakan pendekatan **Convolutional Neural Network (CNN) for Text** berbasis arsitektur multi-kernel Yoon Kim (2014). Sistem dirancang secara modular, berorientasi objek (OOP), reprodusibel, terintegrasi dengan database PostgreSQL untuk data pipeline & auto-scraping, serta dilengkapi dengan modul *explainability* (feature saliency) dan antarmuka visual berbasis Streamlit.
 
 ### Fitur Utama
 1. **End-to-End NLP Pipeline**: Preprocessing teks (regex cleaning, tokenisasi, sequence padding) terstandarisasi.
-2. **Multi-Kernel Conv1D Architecture**: Ekstraksi representasi n-gram lokal paralel (kernel sizes: 3, 4, 5) dengan GlobalMaxPooling.
-3. **Imbalance Mitigation**: Penanganan ketidakseimbangan kelas menggunakan *Class Weighting*, *Focal Loss*, dan *Oversampling*.
-4. **Comprehensive Evaluation**: Pengukuran performa menyeluruh (Macro-F1, Precision, Recall, Confusion Matrix) dan Error Analysis mendalam (False Positive & False Negative).
-5. **Model Explainability**: Visualisasi atribusi kata (*word saliency / integrated gradients proxy*) untuk transparansi prediksi.
-6. **Interactive Prototype**: Web UI interaktif berbasis Streamlit.
+2. **Hybrid Database Layer (PostgreSQL)**: Penyimpanan dataset terstruktur (28.445 baris) + tabel raw dump JSONB fleksibel untuk kebutuhan auto-scraping multi-platform.
+3. **Multi-Kernel Conv1D Architecture**: Ekstraksi representasi n-gram lokal paralel (kernel sizes: 3, 4, 5) dengan GlobalMaxPooling.
+4. **Imbalance Mitigation**: Penanganan ketidakseimbangan kelas menggunakan *Class Weighting*, *Focal Loss*, dan *Oversampling*.
+5. **Comprehensive Evaluation**: Pengukuran performa menyeluruh (Macro-F1, Precision, Recall, Confusion Matrix) dan Error Analysis mendalam (False Positive & False Negative).
+6. **Model Explainability**: Visualisasi atribusi kata (*word saliency / integrated gradients proxy*) untuk transparansi prediksi.
+7. **Interactive Prototype**: Web UI interaktif berbasis Streamlit.
 
 ---
 
@@ -25,21 +32,34 @@ Proyek ini bertujuan untuk mendeteksi ujaran kebencian (*hate speech*) dan teks 
 ```text
 .
 ├── main.py                        # Master CLI launcher (Pipeline Trainer & Evaluator)
-├── requirements.txt               # Daftar dependensi Python
+├── pyproject.toml                 # Project metadata, pytest & ruff config
+├── Makefile                       # One-command dev workflow (make test, make lint, dll)
+├── docker-compose.yml             # Service container PostgreSQL
+├── .env.example                   # Template konfigurasi environment & database URL
+├── .gitattributes                 # Git LFS tracking rules untuk data/raw/
+├── requirements.txt               # Daftar dependensi Python (legacy, lihat pyproject.toml)
+├── CONTRIBUTING.md                # Panduan kontribusi, setup, branch & PR workflow
 ├── README.md                      # Dokumentasi teknis proyek
 │
+├── .github/workflows/
+│   └── ci.yml                     # GitHub Actions: Ruff lint + pytest on PR
+│
 ├── data/
-│   ├── raw/                       # Dataset mentah (indotoxic2024 CSV & JSONL)
+│   ├── raw/                       # Dataset mentah — Git LFS tracked (CSV & JSONL)
 │   ├── processed/                 # Dataset hasil cleaning
 │   └── splits/                    # train.csv, val.csv, test.csv (Stratified 70/15/15)
 │
 ├── src/
+│   ├── database/                  # Modul PostgreSQL (models, connection, repository)
 │   ├── preprocessing/             # TextCleaner, TextTokenizer, SequencePadder, DataSplitter
 │   ├── models/                    # BaseModel (ABC), CNNTextClassifier, EmbeddingLoader
 │   ├── training/                  # ModelTrainer, ImbalanceHandler
 │   ├── evaluation/                # MetricCalculator, ConfusionMatrixPlotter, ErrorAnalyzer
 │   ├── explainability/            # SaliencyMapper (Token attribution)
-│   └── utils/                     # Config (Hyperparams), Logger, Seed (SEED=42)
+│   └── utils/                     # Config (Hyperparams & DB URL), Logger, Seed (SEED=42)
+│
+├── scripts/                       # Skrip otomatisasi (migrasi CSV ke PostgreSQL)
+│   └── migrate_csv_to_postgres.py
 │
 ├── app/                           # Prototype Web Streamlit
 │   ├── streamlit_app.py           # Entry point aplikasi
@@ -48,14 +68,11 @@ Proyek ini bertujuan untuk mendeteksi ujaran kebencian (*hate speech*) dan teks 
 ├── notebooks/                     # Jupyter Notebooks untuk riset & eksperimen terisolasi
 │   ├── 01_eda.ipynb
 │   ├── 02_preprocessing.ipynb
-│   ├── 03_baseline_tfidf.ipynb
-│   ├── 04_cnn_baseline.ipynb
-│   ├── 05_cnn_imbalance_exp.ipynb
-│   ├── 06_cnn_tuning_ablation.ipynb
-│   └── 07_error_analysis.ipynb
+│   ├── 03_baseline.ipynb
+│   └── 04_cnn_experiment.ipynb
 │
 ├── outputs/                       # Artefak hasil eksekusi (Models, Tokenizer, Metrics, Plots)
-├── tests/                         # Unit tests untuk validasi modul backend
+├── tests/                         # Unit tests + conftest.py (shared fixtures)
 └── research/                      # Katalog literatur & paper acuan (research/PAPERS.md)
 ```
 
@@ -65,39 +82,43 @@ Proyek ini bertujuan untuk mendeteksi ujaran kebencian (*hate speech*) dan teks 
 
 ### 1. Setup Virtual Environment
 ```bash
-# Buat virtual environment
+# Quick setup (recommended)
+make setup
+
+# Atau manual:
 python3 -m venv .venv
-
-# Aktifkan virtual environment
-# Linux / macOS:
-source .venv/bin/activate
-# Windows:
-# .venv\Scripts\activate
-
-# Instal dependensi
-pip install -r requirements.txt
+source .venv/bin/activate       # Linux/macOS
+pip install -e ".[dev]"
 ```
 
-### 2. Menjalankan Pipeline via CLI
-Eksekusi pipeline lengkap atau tahapan tertentu menggunakan `main.py`:
+### 2. Setup Database PostgreSQL
+Pastikan Docker dan docker-compose terpasang, lalu jalankan container database:
 ```bash
-# Menjalankan seluruh pipeline (preprocessing -> build model -> eval)
-python3 main.py --stage all
-
-# Menjalankan tahapan tertentu
-python3 main.py --stage preprocess
-python3 main.py --stage train
-python3 main.py --stage eval
+cp .env.example .env
+make db-up                      # atau: docker-compose up -d
+make migrate                    # atau: python scripts/migrate_csv_to_postgres.py
 ```
 
-### 3. Menjalankan Prototype Streamlit UI
+### 3. Menjalankan Pipeline via CLI
 ```bash
-streamlit run app/streamlit_app.py
+make run                        # atau: python main.py --stage all
+
+# Tahapan tertentu:
+python main.py --stage preprocess
+python main.py --stage train
+python main.py --stage eval
 ```
 
-### 4. Menjalankan Unit Tests
+### 4. Menjalankan Prototype Streamlit UI
 ```bash
-python3 -m unittest discover tests
+make run-app                    # atau: streamlit run app/streamlit_app.py
+```
+
+### 5. Linting & Testing
+```bash
+make lint                       # Ruff lint check
+make format                     # Ruff auto-format
+make test                       # Pytest (9 tests)
 ```
 
 ---

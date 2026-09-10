@@ -1,5 +1,11 @@
+"""
+Membersihkan teks media sosial berbahasa Indonesia sebelum proses tokenisasi.
+
+Pipeline standar: normalisasi (leet/slang/emoji) -> hapus URL/mention/hashtag
+-> lowercase -> hapus punctuasi -> rapikan spasi.
+"""
+
 import re
-from typing import List
 
 
 class TextCleaner:
@@ -9,7 +15,7 @@ class TextCleaner:
     Attributes:
         remove_urls (bool): Hapus URL dari teks.
         remove_mentions (bool): Hapus @mention pengguna.
-        remove_hashtags (bool): Hapus simbol hashtag (#).
+        remove_hashtags (bool): Hapus hashtag (#tag) secara total.
         remove_punctuation (bool): Hapus tanda baca berlebih.
         lowercase (bool): Normalisasi ke huruf kecil.
     """
@@ -18,7 +24,7 @@ class TextCleaner:
         self,
         remove_urls: bool = True,
         remove_mentions: bool = True,
-        remove_hashtags: bool = False,
+        remove_hashtags: bool = True,
         remove_punctuation: bool = True,
         lowercase: bool = True,
     ) -> None:
@@ -56,7 +62,7 @@ class TextCleaner:
         text = self._remove_extra_spaces(text)
         return text
 
-    def clean_batch(self, texts: List[str]) -> List[str]:
+    def clean_batch(self, texts: list[str]) -> list[str]:
         """
         Menerapkan fungsi clean() pada sekumpulan list teks.
 
@@ -69,13 +75,14 @@ class TextCleaner:
         return [self.clean(t) for t in texts]
 
     def _remove_url(self, text: str) -> str:
-        return re.sub(r"https?://\S+|www\.\S+", "", text)
+        return re.sub(r"https?://\S+|www\.\S+", " ", text)
 
     def _remove_mention(self, text: str) -> str:
-        return re.sub(r"@\w+", "", text)
+        return re.sub(r"@\w+", " ", text)
 
     def _remove_hashtag(self, text: str) -> str:
-        return re.sub(r"#\w+", "", text)
+        """Hapus total tagar (#tag) berikut kontennya sesuai keputusan tim."""
+        return re.sub(r"#\w+", " ", text)
 
     def _remove_punct(self, text: str) -> str:
         return re.sub(r"[^\w\s]", " ", text)

@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
-from typing import Any, Dict, Optional
+from typing import Any
+
 import numpy as np
 
 
@@ -36,8 +37,8 @@ class BaseModel(ABC):
         y_train: np.ndarray,
         X_val: np.ndarray,
         y_val: np.ndarray,
-        class_weight: Optional[Dict[int, float]] = None,
-    ) -> Dict[str, Any]:
+        class_weight: dict[int, float] | None = None,
+    ) -> dict[str, Any]:
         """
         Melatih model dan mengembalikan dictionary history performa epoch.
 

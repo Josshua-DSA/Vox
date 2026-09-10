@@ -1,5 +1,5 @@
 import os
-from typing import Dict
+
 import numpy as np
 
 
@@ -15,7 +15,7 @@ class EmbeddingLoader:
         """Inisialisasi dimensi embedding."""
         self.embedding_dim = embedding_dim
 
-    def load_pretrained_vectors(self, file_path: str) -> Dict[str, np.ndarray]:
+    def load_pretrained_vectors(self, file_path: str) -> dict[str, np.ndarray]:
         """
         Membaca file format teks word vector (.vec / .txt).
 
@@ -25,11 +25,11 @@ class EmbeddingLoader:
         Returns:
             Dict[str, np.ndarray]: Mapping kata ke array embedding.
         """
-        embeddings_index: Dict[str, np.ndarray] = {}
+        embeddings_index: dict[str, np.ndarray] = {}
         if not os.path.exists(file_path):
             return embeddings_index
 
-        with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
+        with open(file_path, encoding="utf-8", errors="ignore") as f:
             for line in f:
                 values = line.rstrip().split(" ")
                 word = values[0]
@@ -43,8 +43,8 @@ class EmbeddingLoader:
 
     def build_embedding_matrix(
         self,
-        word_index: Dict[str, int],
-        embeddings_index: Dict[str, np.ndarray],
+        word_index: dict[str, int],
+        embeddings_index: dict[str, np.ndarray],
         vocab_size: int,
     ) -> np.ndarray:
         """

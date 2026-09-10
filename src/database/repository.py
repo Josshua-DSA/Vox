@@ -2,12 +2,13 @@
 Database Repository layer for IndoToxic dataset and future scraping operations.
 """
 
-from typing import List, Optional, Dict, Any, cast
+from typing import Any, cast
+
 import pandas as pd
-from sqlalchemy import select, func
+from sqlalchemy import func, select
 from sqlalchemy.dialects.postgresql import insert
-from sqlalchemy.orm import Session
-from src.database.connection import get_db_session, engine
+
+from src.database.connection import engine, get_db_session
 from src.database.models import DatasetText, RawScrape
 
 
@@ -17,7 +18,7 @@ class DatasetRepository:
     """
 
     @staticmethod
-    def bulk_upsert_texts(records: List[Dict[str, Any]], batch_size: int = 1000) -> int:
+    def bulk_upsert_texts(records: list[dict[str, Any]], batch_size: int = 1000) -> int:
         """
         Melakukan bulk upsert data teks ke dataset_texts.
         """
@@ -72,7 +73,7 @@ class DatasetRepository:
         return pd.read_sql(query, con=engine)
 
     @staticmethod
-    def get_counts_by_split() -> Dict[str, int]:
+    def get_counts_by_split() -> dict[str, int]:
         """
         Menghitung total baris per split data.
         """
@@ -97,7 +98,7 @@ class ScraperRepository:
     """
 
     @staticmethod
-    def insert_raw_scrape(source: str, raw_payload: Dict[str, Any], source_post_id: Optional[str] = None) -> int:
+    def insert_raw_scrape(source: str, raw_payload: dict[str, Any], source_post_id: str | None = None) -> int:
         """
         Menyimpan satu raw response hasil scraping JSON ke database.
         """
@@ -113,7 +114,7 @@ class ScraperRepository:
             return cast(int, record.id)
 
     @staticmethod
-    def get_pending_scrapes(limit: int = 100) -> List[Dict[str, Any]]:
+    def get_pending_scrapes(limit: int = 100) -> list[dict[str, Any]]:
         """
         Mengambil antrian scraping dengan status PENDING untuk dibersihkan/dianalisis.
         """

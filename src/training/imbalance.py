@@ -1,4 +1,3 @@
-from typing import Any, Dict, Optional
 import numpy as np
 import pandas as pd
 from sklearn.utils.class_weight import compute_class_weight
@@ -17,7 +16,7 @@ class ImbalanceHandler:
         """Inisialisasi strategi penanganan imbalance."""
         self.strategy = strategy
 
-    def get_class_weights(self, y_train: np.ndarray) -> Optional[Dict[int, float]]:
+    def get_class_weights(self, y_train: np.ndarray) -> dict[int, float] | None:
         """
         Menghitung bobot invers frekuensi kelas untuk loss function.
 

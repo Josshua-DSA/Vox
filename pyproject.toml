@@ -1,0 +1,72 @@
+[project]
+name = "indotoxic"
+version = "0.1.0"
+description = "Indonesian Hate Speech & Toxicity Analyzer using CNN Text Classification"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Joshua Remedial Syeba" },
+    { name = "Siti Cholilah" },
+    { name = "Much. Hafidz Indrajid" },
+    { name = "Muhammad Zidan Akmal Nurrochman" },
+]
+dependencies = [
+    "numpy>=1.24.0",
+    "pandas>=2.0.0",
+    "scikit-learn>=1.2.0",
+    "scipy>=1.10.0",
+    "tensorflow>=2.13.0",
+    "matplotlib>=3.7.0",
+    "seaborn>=0.12.0",
+    "streamlit>=1.28.0",
+    "sqlalchemy>=2.0.0",
+    "psycopg2-binary>=2.9.0",
+    "python-dotenv>=1.0.0",
+    "tqdm>=4.65.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "ruff>=0.5.0",
+]
+
+# ─── Tool Config ────────────────────────────────────────────
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-v --tb=short"
+
+[tool.ruff]
+target-version = "py310"
+line-length = 120
+src = ["src", "tests", "scripts"]
+
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle errors
+    "W",    # pycodestyle warnings
+    "F",    # pyflakes
+    "I",    # isort
+    "N",    # pep8-naming
+    "UP",   # pyupgrade
+]
+ignore = [
+    "E501",  # line too long (handled by formatter)
+    "N803",  # arg-name should be lowercase — X_train/X_val adalah konvensi ML
+]
+
+[tool.ruff.lint.per-file-ignores]
+# __init__.py melakukan re-export symbol; F401 (import unused) tidak berlaku
+"__init__.py" = ["F401"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["src"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["src*"]
