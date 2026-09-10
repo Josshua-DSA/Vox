@@ -18,3 +18,14 @@ class TestTextCleaner:
         text = "TEKS INI HARUS MENJADI LOWERCASE!"
         result = cleaner.clean(text)
         assert result == "teks ini harus menjadi lowercase"
+
+    def test_hashtag_removed_entirely(self, cleaner):
+        text = "pakai #IdiotSekali dan #tolol tagar"
+        result = cleaner.clean(text)
+        assert "idiotsekali" not in result
+        assert "tolol" not in result
+        assert "tagar" in result
+
+    def test_non_string_returns_empty(self, cleaner):
+        assert cleaner.clean(None) == ""
+        assert cleaner.clean(123) == ""
