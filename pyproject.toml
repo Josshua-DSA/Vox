@@ -54,7 +54,12 @@ select = [
 ]
 ignore = [
     "E501",  # line too long (handled by formatter)
+    "N803",  # arg-name should be lowercase — X_train/X_val adalah konvensi ML
 ]
+
+[tool.ruff.lint.per-file-ignores]
+# __init__.py melakukan re-export symbol; F401 (import unused) tidak berlaku
+"__init__.py" = ["F401"]
 
 [tool.ruff.lint.isort]
 known-first-party = ["src"]
