@@ -245,6 +245,85 @@ class TextEDA:
         )
         return binary.T.dot(binary).astype(int)
 
+    def sublabel_profile(
+        self, frame: pd.DataFrame, columns: list[str]
+    ) -> pd.DataFrame:
+        """Profile sub-label positives against consensus toxicity."""
+        prepared = self.prepare_frame(frame)
+        rows: list[dict[str, int | float | str]] = []
+        for column in columns:
+            if column not in frame:
+                raise KeyError(f"Missing sub-label column: {column}")
+            positive = frame[column].map(self.consensus_label).astype(int)
+            toxic = prepared[self.label_column].astype(int)
+            rows.append(
+                {
+                    "sublabel": column,
+                    "positive_count": int(positive.sum()),
+                    "positive_rate": float(positive.mean()),
+                    "toxic_positive_count": int(((positive == 1) & (toxic == 1)).sum()),
+                    "toxic_positive_rate": float(((positive == 1) & (toxic == 1)).sum() / max((toxic == 1).sum(), 1)),
+                    "nontoxic_positive_count": int(((positive == 1) & (toxic == 0)).sum()),
+                    "nontoxic_positive_rate": float(((positive == 1) & (toxic == 0)).sum() / max((toxic == 0).sum(), 1)),
+                }
+            )
+        return pd.DataFrame(rows)
+
+    def sublabel_conditioned_rates(
+        self,
+        frame: pd.DataFrame,
+        columns: list[str],
+        group_column: str,
+    ) -> pd.DataFrame:
+        """Report sub-label rates by agreement or topic membership."""
+        if group_column == "agreement_band":
+            groups = self.annotation_profile(frame)["agreement_band"]
+        elif group_column in frame:
+            values = frame[group_column].fillna("UNKNOWN").astype(str)
+            groups = values.map(
+                lambda value: [part.strip() for part in value.split(",") if part.strip()] or ["UNKNOWN"]
+            )
+        else:
+            raise KeyError(f"Missing group column: {group_column}")
+        rows: list[dict[str, int | float | str]] = []
+        for column in columns:
+            positive = frame[column].map(self.consensus_label).astype(int)
+            if group_column == "topic":
+                pairs = [(topic, index) for index, topics in enumerate(groups) for topic in topics]
+            else:
+                pairs = [(group, index) for index, group in enumerate(groups)]
+            for group, indices in pd.DataFrame(pairs, columns=["group", "index"]).groupby("group")["index"]:
+                selected = positive.iloc[indices.tolist()]
+                rows.append(
+                    {
+                        "sublabel": column,
+                        "group_column": group_column,
+                        "group": group,
+                        "count": int(len(selected)),
+                        "positive_count": int(selected.sum()),
+                        "positive_rate": float(selected.mean()) if len(selected) else 0.0,
+                    }
+                )
+        return pd.DataFrame(rows)
+
+    def sublabel_label_mismatch(
+        self, frame: pd.DataFrame, columns: list[str]
+    ) -> pd.DataFrame:
+        """Count sub-label positives missing from or outside consensus toxicity."""
+        prepared = self.prepare_frame(frame)
+        toxic = prepared[self.label_column].astype(int)
+        rows: list[dict[str, int | str]] = []
+        for column in columns:
+            positive = frame[column].map(self.consensus_label).astype(int)
+            rows.append(
+                {
+                    "sublabel": column,
+                    "positive_sublabel_non_toxic": int(((positive == 1) & (toxic == 0)).sum()),
+                    "toxic_without_sublabel": int(((positive == 0) & (toxic == 1)).sum()),
+                }
+            )
+        return pd.DataFrame(rows)
+
     def duplicate_profile(self, frame: pd.DataFrame) -> pd.DataFrame:
         """Profile exact text duplicates and whether their labels conflict."""
         prepared = self.prepare_frame(frame)
@@ -275,6 +354,68 @@ class TextEDA:
         )
         result["uppercase_ratio"] = uppercase / letters.replace(0, pd.NA)
         return result
+
+    def marker_detail_profile(self, frame: pd.DataFrame) -> pd.DataFrame:
+        """Measure punctuation runs, density, case, and symbol markers."""
+        result = self.marker_profile(frame)
+        text = result[self.text_column].fillna("").astype(str)
+        result["question_count"] = text.str.count(r"\?")
+        result["exclamation_count"] = text.str.count("!")
+        result["question_run_max"] = text.map(
+            lambda value: max((len(match.group()) for match in re.finditer(r"\?+", value)), default=0)
+        )
+        result["exclamation_run_max"] = text.map(
+            lambda value: max((len(match.group()) for match in re.finditer(r"!+", value)), default=0)
+        )
+        result["has_question_exclamation"] = text.str.contains(r"\?!", regex=True)
+        result["has_exclamation_question"] = text.str.contains(r"!\?", regex=True)
+        result["punctuation_count"] = text.str.count(r"[!?,.;:]")
+        result["punctuation_density"] = result["punctuation_count"] / text.str.len().replace(0, pd.NA)
+        result["emoji_or_symbol_count"] = text.map(
+            lambda value: sum(not char.isalnum() and not char.isspace() and char not in "!?.,;:" for char in value)
+        )
+        return result
+
+    def marker_conditioned_rates(
+        self, frame: pd.DataFrame, marker: str, group_column: str
+    ) -> pd.DataFrame:
+        """Report marker presence/count rates by label, agreement, or topic."""
+        detailed = self.marker_detail_profile(frame)
+        if marker not in detailed:
+            raise KeyError(f"Missing marker column: {marker}")
+        if group_column == "label":
+            groups: list[list[tuple[str, int]]] = [
+                [(str(label), index) for index, label in enumerate(detailed[self.label_column])]
+            ][0]
+        elif group_column == "agreement_band":
+            bands = self.annotation_profile(frame)["agreement_band"]
+            groups = [(str(band), index) for index, band in enumerate(bands)]
+        elif group_column == "topic":
+            values = frame["topic"].fillna("UNKNOWN").astype(str)
+            groups = [
+                (topic.strip() or "UNKNOWN", index)
+                for index, value in enumerate(values)
+                for topic in value.split(",")
+            ]
+        else:
+            raise KeyError(f"Unsupported group column: {group_column}")
+        rows: list[dict[str, int | float | str]] = []
+        grouped = pd.DataFrame(groups, columns=["group", "index"]).groupby("group")["index"]
+        for group, indices in grouped:
+            selected = detailed.iloc[indices.tolist()]
+            marker_values = selected[marker]
+            marker_count = int(marker_values.sum()) if marker_values.dtype == bool else int((marker_values > 0).sum())
+            rows.append(
+                {
+                    "marker": marker,
+                    "group_column": group_column,
+                    "group": group,
+                    "count": int(len(selected)),
+                    "marker_count": marker_count,
+                    "marker_rate": marker_count / len(selected) if len(selected) else 0.0,
+                }
+            )
+        return pd.DataFrame(rows)
 
     def variant_comparison(
         self,
@@ -311,6 +452,7 @@ class TextEDA:
         frame: pd.DataFrame,
         group_columns: list[str],
         variants: dict[str, Callable[[str], str]],
+        combine: bool = False,
     ) -> pd.DataFrame:
         """Compare text variants independently inside requested subgroups."""
         if not group_columns:
@@ -326,10 +468,22 @@ class TextEDA:
 
         rows: list[dict[str, int | float | str]] = []
         transformations = {"raw": lambda text: text, **variants}
-        for group_column in group_columns:
-            groups = prepared[group_column].fillna("UNKNOWN").astype(str)
-            for group_value in sorted(groups.unique()):
-                subset = prepared.loc[groups == group_value, self.text_column]
+        grouping_sets = [group_columns]
+        if not combine:
+            grouping_sets = [[column] for column in group_columns]
+        for selected_columns in grouping_sets:
+            group_frame = prepared[selected_columns].fillna("UNKNOWN").astype(str)
+            grouping_key = (
+                selected_columns[0]
+                if len(selected_columns) == 1
+                else selected_columns
+            )
+            grouped = group_frame.groupby(grouping_key, dropna=False).groups
+            group_name = "__".join(selected_columns)
+            for group_values, indices in grouped.items():
+                if not isinstance(group_values, tuple):
+                    group_values = (group_values,)
+                subset = prepared.loc[indices, self.text_column]
                 raw = subset.fillna("").astype(str).tolist()
                 raw_tokens = [token for text in raw for token in self.tokens(text)]
                 raw_vocabulary = set(raw_tokens)
@@ -339,22 +493,127 @@ class TextEDA:
                     vocabulary = set(tokens)
                     rows.append(
                         {
-                            "group_column": group_column,
-                            "group": group_value,
+                            "group_column": group_name,
+                            "group": "|".join(map(str, group_values)),
                             "variant": variant,
                             "document_count": len(transformed),
                             "token_count": len(tokens),
                             "vocabulary_size": len(vocabulary),
                             "token_retention": len(tokens) / len(raw_tokens)
-                            if raw_tokens
-                            else 0.0,
+                            if raw_tokens else 0.0,
                             "raw_vocabulary_overlap": len(vocabulary & raw_vocabulary)
-                            / len(raw_vocabulary)
-                            if raw_vocabulary
-                            else 0.0,
+                            / len(raw_vocabulary) if raw_vocabulary else 0.0,
                         }
                     )
         return pd.DataFrame(rows)
+
+    def variant_marker_retention(
+        self,
+        frame: pd.DataFrame,
+        variants: dict[str, Callable[[str], str]],
+    ) -> pd.DataFrame:
+        """Compare marker rates before and after each text transformation."""
+        raw = self.marker_profile(frame)
+        raw_rates = raw.mean(numeric_only=True)
+        rows: list[dict[str, int | float | str]] = []
+        transformations = {"raw": lambda text: text, **variants}
+        for name, transform in transformations.items():
+            transformed = frame.copy(deep=True)
+            transformed[self.text_column] = (
+                transformed[self.text_column].fillna("").astype(str).map(transform)
+            )
+            profile = self.marker_profile(transformed)
+            row: dict[str, int | float | str] = {"variant": name}
+            for column in raw.columns:
+                if column in profile and pd.api.types.is_numeric_dtype(profile[column]):
+                    value = profile[column].mean()
+                    baseline = raw_rates.get(column, 0.0)
+                    row[column + "_rate"] = float(value)
+                    row["raw_" + column + "_rate"] = float(baseline)
+                    row[column + "_delta"] = float(value - baseline)
+            rows.append(row)
+        return pd.DataFrame(rows)
+
+    def variant_signal_ablation(
+        self,
+        frame: pd.DataFrame,
+        variants: dict[str, Callable[[str], str]],
+        top_n: int = 20,
+        min_count: int = 1,
+    ) -> pd.DataFrame:
+        """Measure whether each text variant preserves the toxic/non-toxic signal.
+
+        For every variant (plus an identity ``raw`` baseline), the method
+        recomputes document-presence log-odds and compares the top-N
+        discriminating tokens against the raw baseline using Jaccard overlap.
+        Vocabulary size and raw-vocabulary overlap are also reported so a
+        collapse from leet/slang normalization is distinguishable from a loss
+        of signal.
+        """
+        if top_n < 1:
+            raise ValueError("top_n must be at least 1")
+        if min_count < 1:
+            raise ValueError("min_count must be at least 1")
+        if self.text_column not in frame:
+            raise KeyError(f"Missing text column: {self.text_column}")
+
+        transformations = {"raw": lambda text: text, **variants}
+        raw_text = frame[self.text_column].fillna("").astype(str).tolist()
+        raw_vocabulary = {token for text in raw_text for token in self.tokens(text)}
+
+        raw_lexical = self.lexical_log_odds(frame, subset="all", min_count=min_count)
+        raw_toxic_top = self._top_discriminating(raw_lexical, label=1, top_n=top_n)
+        raw_nontoxic_top = self._top_discriminating(raw_lexical, label=0, top_n=top_n)
+
+        rows: list[dict[str, int | float | str]] = []
+        for name, transform in transformations.items():
+            transformed = frame.copy(deep=True)
+            transformed[self.text_column] = transformed[self.text_column].fillna(
+                ""
+            ).astype(str).map(transform)
+            lexical = self.lexical_log_odds(
+                transformed, subset="all", min_count=min_count
+            )
+            vocabulary = {
+                token
+                for text in transformed[self.text_column]
+                for token in self.tokens(text)
+            }
+            rows.append(
+                {
+                    "variant": name,
+                    "vocabulary_size": len(vocabulary),
+                    "raw_vocabulary_overlap": len(vocabulary & raw_vocabulary)
+                    / len(raw_vocabulary)
+                    if raw_vocabulary
+                    else 0.0,
+                    "toxic_top_overlap": self._jaccard(
+                        raw_toxic_top,
+                        self._top_discriminating(lexical, label=1, top_n=top_n),
+                    ),
+                    "nontoxic_top_overlap": self._jaccard(
+                        raw_nontoxic_top,
+                        self._top_discriminating(lexical, label=0, top_n=top_n),
+                    ),
+                }
+            )
+        return pd.DataFrame(rows)
+
+    @staticmethod
+    def _top_discriminating(
+        lexical: pd.DataFrame, label: int, top_n: int
+    ) -> set[str]:
+        """Return top-N tokens for one label ordered by descending log-odds."""
+        subset = lexical.loc[lexical["label"] == label]
+        return set(subset.sort_values("log_odds", ascending=False)["token"].head(top_n))
+
+    @staticmethod
+    def _jaccard(left: set[str], right: set[str]) -> float:
+        """Return Jaccard similarity, treating two empty sets as identical."""
+        union = left | right
+        if not union:
+            return 1.0
+        return len(left & right) / len(union)
 
     def topic_membership_rates(
         self, frame: pd.DataFrame, topic_column: str = "topic"
