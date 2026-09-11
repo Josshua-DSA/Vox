@@ -1,5 +1,6 @@
 # Context & Internal Docs
 context/
+indotoxic.egg-info/
 
 # Models & Large Checkpoints
 outputs/models/*.h5

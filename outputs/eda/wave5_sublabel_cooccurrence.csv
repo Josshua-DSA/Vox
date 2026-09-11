@@ -1,0 +1,6 @@
+,profanity_obscenity,threat_incitement_to_violence,insults,identity_attack,sexually_explicit
+profanity_obscenity,669,28,321,193,47
+threat_incitement_to_violence,28,786,71,74,1
+insults,321,71,1947,550,12
+identity_attack,193,74,550,1756,21
+sexually_explicit,47,1,12,21,122

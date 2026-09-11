@@ -1,0 +1,21 @@
+{
+  "row_count": 28448,
+  "split_counts": {
+    "train": 19871,
+    "val": 4296,
+    "test": 4281
+  },
+  "duplicate_groups": 2118,
+  "duplicate_rows": 4392,
+  "conflicting_duplicate_groups": 343,
+  "cross_split_duplicate_groups": 0,
+  "cross_split_duplicate_rows": 0,
+  "vocabulary_overlap_train_val": 0.22734985570789829,
+  "vocabulary_overlap_train_test": 0.22960968710453836,
+  "vocabulary_overlap_val_test": 0.301965949558515,
+  "label_by_split": {
+    "test": 0.1530016351319785,
+    "train": 0.13718484223239896,
+    "val": 0.14292364990689013
+  }
+}
