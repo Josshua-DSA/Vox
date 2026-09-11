@@ -1,0 +1,16 @@
+split,metric,value
+test,rows,4281.0
+test,label_rate,0.1530016351319785
+test,borderline_rate,0.1434244335435646
+test,unanimous_rate,0.8565755664564354
+test,unique_texts,3926.0
+train,rows,19871.0
+train,label_rate,0.13718484223239896
+train,borderline_rate,0.133410497710231
+train,unanimous_rate,0.866589502289769
+train,unique_texts,18321.0
+val,rows,4296.0
+val,label_rate,0.14292364990689013
+val,borderline_rate,0.13803538175046554
+val,unanimous_rate,0.8619646182495344
+val,unique_texts,3926.0
