@@ -1,0 +1,102 @@
+split,topic,rows,toxic_rate
+test,Ahmadiyah,32,0.1875
+test,"Ahmadiyah, Jewish",1,0.0
+test,Disabilitas,1049,0.12583412774070543
+test,Jewish,1351,0.18800888230940044
+test,"Jewish, Disabilitas",13,0.3076923076923077
+test,"Jewish, Rohingya",23,0.08695652173913043
+test,Kristen,204,0.12745098039215685
+test,"Kristen, Jewish",31,0.1935483870967742
+test,"Kristen, Tionghoa",3,0.3333333333333333
+test,LGBTQ+,128,0.390625
+test,"LGBTQ+, Disabilitas",1,1.0
+test,"LGBTQ+, Jewish",4,0.75
+test,Rohingya,252,0.09126984126984126
+test,Syiah,74,0.36486486486486486
+test,"Syiah, Ahmadiyah",2,0.0
+test,"Syiah, Ahmadiyah, Jewish",2,0.5
+test,"Syiah, Disabilitas",4,1.0
+test,"Syiah, Jewish",22,0.45454545454545453
+test,"Syiah, Jewish, Disabilitas",1,1.0
+test,"Syiah, Kristen",2,0.0
+test,"Syiah, Rohingya",8,0.0
+test,Tionghoa,748,0.08021390374331551
+test,"Tionghoa, Disabilitas",12,0.16666666666666666
+test,"Tionghoa, Jewish",13,0.0
+test,"Tionghoa, Jewish, Rohingya",1,1.0
+test,UNKNOWN,300,0.13666666666666666
+train,Ahmadiyah,70,0.14285714285714285
+train,"Ahmadiyah, Kristen",3,0.3333333333333333
+train,"Ahmadiyah, Kristen, Jewish",1,1.0
+train,"Ahmadiyah, Tionghoa",2,0.0
+train,Disabilitas,4790,0.11649269311064718
+train,Jewish,5961,0.1746351283341721
+train,"Jewish, Disabilitas",68,0.35294117647058826
+train,"Jewish, Rohingya",133,0.13533834586466165
+train,"Jewish, Rohingya, Disabilitas",1,0.0
+train,Kristen,974,0.08829568788501027
+train,"Kristen, Disabilitas",4,0.75
+train,"Kristen, Jewish",103,0.27184466019417475
+train,"Kristen, Jewish, Disabilitas",2,0.5
+train,"Kristen, Jewish, Rohingya",4,0.0
+train,"Kristen, LGBTQ+",8,0.25
+train,"Kristen, LGBTQ+, Disabilitas",1,1.0
+train,"Kristen, LGBTQ+, Jewish, Rohingya",1,0.0
+train,"Kristen, Rohingya",4,0.0
+train,"Kristen, Tionghoa",6,0.16666666666666666
+train,"Kristen, Tionghoa, Jewish",2,0.0
+train,LGBTQ+,628,0.32961783439490444
+train,"LGBTQ+, Disabilitas",8,0.5
+train,"LGBTQ+, Jewish",7,0.5714285714285714
+train,"LGBTQ+, Jewish, Disabilitas",1,1.0
+train,"LGBTQ+, Rohingya",1,0.0
+train,"LGBTQ+, Tionghoa",3,0.0
+train,Rohingya,1008,0.06944444444444445
+train,"Rohingya, Disabilitas",1,0.0
+train,Syiah,377,0.32625994694960214
+train,"Syiah, Ahmadiyah",4,0.5
+train,"Syiah, Disabilitas",7,0.7142857142857143
+train,"Syiah, Jewish",71,0.7464788732394366
+train,"Syiah, Jewish, Rohingya",3,1.0
+train,"Syiah, Kristen",2,0.5
+train,"Syiah, Kristen, Jewish",4,0.5
+train,"Syiah, LGBTQ+",1,1.0
+train,"Syiah, Rohingya",20,0.0
+train,"Syiah, Rohingya, Disabilitas",1,1.0
+train,"Syiah, Tionghoa",1,0.0
+train,"Syiah, Tionghoa, Jewish",1,1.0
+train,Tionghoa,3883,0.06489827453000258
+train,"Tionghoa, Disabilitas",19,0.3157894736842105
+train,"Tionghoa, Jewish",67,0.13432835820895522
+train,"Tionghoa, Jewish, Rohingya",1,0.0
+train,"Tionghoa, Rohingya",8,0.375
+train,UNKNOWN,1606,0.12640099626400997
+val,Ahmadiyah,24,0.20833333333333334
+val,"Ahmadiyah, Kristen",1,0.0
+val,Disabilitas,1083,0.13111726685133887
+val,Jewish,1295,0.1783783783783784
+val,"Jewish, Disabilitas",12,0.5
+val,"Jewish, Rohingya",31,0.1935483870967742
+val,Kristen,203,0.08866995073891626
+val,"Kristen, Jewish",28,0.21428571428571427
+val,"Kristen, Jewish, Rohingya",1,0.0
+val,"Kristen, LGBTQ+",1,0.0
+val,"Kristen, Tionghoa",1,0.0
+val,LGBTQ+,122,0.36065573770491804
+val,"LGBTQ+, Jewish",2,0.5
+val,"LGBTQ+, Rohingya",1,0.0
+val,Rohingya,228,0.07017543859649122
+val,"Rohingya, Disabilitas",1,0.0
+val,Syiah,81,0.2716049382716049
+val,"Syiah, Ahmadiyah",2,0.0
+val,"Syiah, Jewish",14,0.5714285714285714
+val,"Syiah, LGBTQ+, Jewish",1,0.0
+val,"Syiah, Rohingya",2,0.0
+val,"Syiah, Rohingya, Disabilitas",1,1.0
+val,"Syiah, Tionghoa",1,0.0
+val,Tionghoa,784,0.07525510204081633
+val,"Tionghoa, Disabilitas",7,0.5714285714285714
+val,"Tionghoa, Jewish",10,0.2
+val,"Tionghoa, Jewish, Disabilitas",1,0.0
+val,"Tionghoa, Rohingya",1,1.0
+val,UNKNOWN,357,0.11764705882352941
