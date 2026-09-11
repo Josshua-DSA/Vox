@@ -1,0 +1,1709 @@
+group_column,group,variant,document_count,token_count,vocabulary_size,token_retention,raw_vocabulary_overlap
+label__agreement_band__topic,0|borderline|Ahmadiyah,raw,12,3206,1019,1.0,1.0
+label__agreement_band__topic,0|borderline|Ahmadiyah,lowercase,12,3206,1019,1.0,1.0
+label__agreement_band__topic,0|borderline|Ahmadiyah,leet_decode,12,3207,1020,1.0003119151590767,0.9911678115799804
+label__agreement_band__topic,0|borderline|Ahmadiyah,collapse_repetition,12,3206,1019,1.0,0.9980372914622179
+label__agreement_band__topic,0|borderline|Ahmadiyah,expand_emoji,12,3244,1025,1.0118527760449159,1.0
+label__agreement_band__topic,0|borderline|Ahmadiyah,expand_slang,12,3206,1017,1.0,0.9980372914622179
+label__agreement_band__topic,0|borderline|Ahmadiyah,keep_hashtag_content,12,3206,1019,1.0,1.0
+label__agreement_band__topic,0|borderline|Ahmadiyah,remove_hashtag,12,3203,1017,0.9990642545227698,0.9980372914622179
+label__agreement_band__topic,0|borderline|Ahmadiyah,remove_url,12,3081,986,0.9610106051154086,0.9676153091265947
+label__agreement_band__topic,0|borderline|Ahmadiyah,remove_mention,12,3205,1019,0.9996880848409233,1.0
+label__agreement_band__topic,0|borderline|Ahmadiyah,remove_punctuation,12,3206,1019,1.0,1.0
+label__agreement_band__topic,0|borderline|Ahmadiyah,remove_emoji,12,3042,984,0.9488459139114162,0.9627085377821394
+label__agreement_band__topic,0|borderline|Ahmadiyah,full_normalize,12,3245,1021,1.0121646912039926,0.985279685966634
+label__agreement_band__topic,0|borderline|Ahmadiyah,existing_cleaner,12,3077,984,0.9597629444791017,0.9656526005888125
+label__agreement_band__topic,"0|borderline|Ahmadiyah, Kristen",raw,1,79,62,1.0,1.0
+label__agreement_band__topic,"0|borderline|Ahmadiyah, Kristen",lowercase,1,79,62,1.0,1.0
+label__agreement_band__topic,"0|borderline|Ahmadiyah, Kristen",leet_decode,1,79,62,1.0,1.0
+label__agreement_band__topic,"0|borderline|Ahmadiyah, Kristen",collapse_repetition,1,79,62,1.0,1.0
+label__agreement_band__topic,"0|borderline|Ahmadiyah, Kristen",expand_emoji,1,79,62,1.0,1.0
+label__agreement_band__topic,"0|borderline|Ahmadiyah, Kristen",expand_slang,1,79,62,1.0,1.0
+label__agreement_band__topic,"0|borderline|Ahmadiyah, Kristen",keep_hashtag_content,1,79,62,1.0,1.0
+label__agreement_band__topic,"0|borderline|Ahmadiyah, Kristen",remove_hashtag,1,79,62,1.0,1.0
+label__agreement_band__topic,"0|borderline|Ahmadiyah, Kristen",remove_url,1,79,62,1.0,1.0
+label__agreement_band__topic,"0|borderline|Ahmadiyah, Kristen",remove_mention,1,79,62,1.0,1.0
+label__agreement_band__topic,"0|borderline|Ahmadiyah, Kristen",remove_punctuation,1,79,62,1.0,1.0
+label__agreement_band__topic,"0|borderline|Ahmadiyah, Kristen",remove_emoji,1,79,62,1.0,1.0
+label__agreement_band__topic,"0|borderline|Ahmadiyah, Kristen",full_normalize,1,79,62,1.0,1.0
+label__agreement_band__topic,"0|borderline|Ahmadiyah, Kristen",existing_cleaner,1,79,62,1.0,1.0
+label__agreement_band__topic,0|borderline|Disabilitas,raw,400,10489,3695,1.0,1.0
+label__agreement_band__topic,0|borderline|Disabilitas,lowercase,400,10489,3695,1.0,1.0
+label__agreement_band__topic,0|borderline|Disabilitas,leet_decode,400,10489,3693,1.0,0.9856562922868741
+label__agreement_band__topic,0|borderline|Disabilitas,collapse_repetition,400,10489,3687,1.0,0.9878213802435724
+label__agreement_band__topic,0|borderline|Disabilitas,expand_emoji,400,10736,3710,1.0235484793593288,0.9981055480378891
+label__agreement_band__topic,0|borderline|Disabilitas,expand_slang,400,10494,3658,1.0004766898655735,0.9875507442489851
+label__agreement_band__topic,0|borderline|Disabilitas,keep_hashtag_content,400,10489,3695,1.0,1.0
+label__agreement_band__topic,0|borderline|Disabilitas,remove_hashtag,400,10323,3571,0.9841738964629612,0.9664411366711773
+label__agreement_band__topic,0|borderline|Disabilitas,remove_url,400,10467,3684,0.9979025645914767,0.9970230040595399
+label__agreement_band__topic,0|borderline|Disabilitas,remove_mention,400,10440,3665,0.9953284393173801,0.9918809201623816
+label__agreement_band__topic,0|borderline|Disabilitas,remove_punctuation,400,10489,3695,1.0,1.0
+label__agreement_band__topic,0|borderline|Disabilitas,remove_emoji,400,10451,3669,0.9963771570216418,0.9916102841677943
+label__agreement_band__topic,0|borderline|Disabilitas,full_normalize,400,10692,3637,1.0193536085422823,0.950744248985115
+label__agreement_band__topic,0|borderline|Disabilitas,existing_cleaner,400,10252,3527,0.977404900371818,0.9545331529093369
+label__agreement_band__topic,0|borderline|Jewish,raw,384,14130,4065,1.0,1.0
+label__agreement_band__topic,0|borderline|Jewish,lowercase,384,14131,4064,1.000070771408351,0.9997539975399754
+label__agreement_band__topic,0|borderline|Jewish,leet_decode,384,14131,4064,1.000070771408351,0.9881918819188192
+label__agreement_band__topic,0|borderline|Jewish,collapse_repetition,384,14130,4063,1.0,0.9960639606396064
+label__agreement_band__topic,0|borderline|Jewish,expand_emoji,384,14257,4075,1.0089879688605803,0.9997539975399754
+label__agreement_band__topic,0|borderline|Jewish,expand_slang,384,14133,4038,1.0002123142250532,0.9921279212792128
+label__agreement_band__topic,0|borderline|Jewish,keep_hashtag_content,384,14121,4057,0.9993630573248408,0.9958179581795817
+label__agreement_band__topic,0|borderline|Jewish,remove_hashtag,384,13632,3843,0.964755838641189,0.9453874538745387
+label__agreement_band__topic,0|borderline|Jewish,remove_url,384,14126,4063,0.9997169143665959,0.9995079950799508
+label__agreement_band__topic,0|borderline|Jewish,remove_mention,384,14051,4020,0.994409058740269,0.988929889298893
+label__agreement_band__topic,0|borderline|Jewish,remove_punctuation,384,14130,4065,1.0,1.0
+label__agreement_band__topic,0|borderline|Jewish,remove_emoji,384,14063,4043,0.9952583156404813,0.990159901599016
+label__agreement_band__topic,0|borderline|Jewish,full_normalize,384,14237,4031,1.0075725406935598,0.971709717097171
+label__agreement_band__topic,0|borderline|Jewish,existing_cleaner,384,13550,3791,0.9589525831564049,0.9325953259532596
+label__agreement_band__topic,"0|borderline|Jewish, Disabilitas",raw,2,82,69,1.0,1.0
+label__agreement_band__topic,"0|borderline|Jewish, Disabilitas",lowercase,2,82,69,1.0,1.0
+label__agreement_band__topic,"0|borderline|Jewish, Disabilitas",leet_decode,2,82,69,1.0,0.9710144927536232
+label__agreement_band__topic,"0|borderline|Jewish, Disabilitas",collapse_repetition,2,82,69,1.0,1.0
+label__agreement_band__topic,"0|borderline|Jewish, Disabilitas",expand_emoji,2,83,70,1.0121951219512195,1.0
+label__agreement_band__topic,"0|borderline|Jewish, Disabilitas",expand_slang,2,82,69,1.0,1.0
+label__agreement_band__topic,"0|borderline|Jewish, Disabilitas",keep_hashtag_content,2,82,69,1.0,1.0
+label__agreement_band__topic,"0|borderline|Jewish, Disabilitas",remove_hashtag,2,59,49,0.7195121951219512,0.7101449275362319
+label__agreement_band__topic,"0|borderline|Jewish, Disabilitas",remove_url,2,82,69,1.0,1.0
+label__agreement_band__topic,"0|borderline|Jewish, Disabilitas",remove_mention,2,82,69,1.0,1.0
+label__agreement_band__topic,"0|borderline|Jewish, Disabilitas",remove_punctuation,2,82,69,1.0,1.0
+label__agreement_band__topic,"0|borderline|Jewish, Disabilitas",remove_emoji,2,82,69,1.0,1.0
+label__agreement_band__topic,"0|borderline|Jewish, Disabilitas",full_normalize,2,83,70,1.0121951219512195,0.9710144927536232
+label__agreement_band__topic,"0|borderline|Jewish, Disabilitas",existing_cleaner,2,59,49,0.7195121951219512,0.7101449275362319
+label__agreement_band__topic,"0|borderline|Jewish, Rohingya",raw,9,669,292,1.0,1.0
+label__agreement_band__topic,"0|borderline|Jewish, Rohingya",lowercase,9,669,292,1.0,1.0
+label__agreement_band__topic,"0|borderline|Jewish, Rohingya",leet_decode,9,669,294,1.0,0.9931506849315068
+label__agreement_band__topic,"0|borderline|Jewish, Rohingya",collapse_repetition,9,669,292,1.0,1.0
+label__agreement_band__topic,"0|borderline|Jewish, Rohingya",expand_emoji,9,669,292,1.0,1.0
+label__agreement_band__topic,"0|borderline|Jewish, Rohingya",expand_slang,9,669,290,1.0,0.9897260273972602
+label__agreement_band__topic,"0|borderline|Jewish, Rohingya",keep_hashtag_content,9,668,291,0.9985052316890882,0.9931506849315068
+label__agreement_band__topic,"0|borderline|Jewish, Rohingya",remove_hashtag,9,645,280,0.9641255605381166,0.958904109589041
+label__agreement_band__topic,"0|borderline|Jewish, Rohingya",remove_url,9,641,289,0.9581464872944694,0.9897260273972602
+label__agreement_band__topic,"0|borderline|Jewish, Rohingya",remove_mention,9,663,291,0.9910313901345291,0.9965753424657534
+label__agreement_band__topic,"0|borderline|Jewish, Rohingya",remove_punctuation,9,669,292,1.0,1.0
+label__agreement_band__topic,"0|borderline|Jewish, Rohingya",remove_emoji,9,669,292,1.0,0.9965753424657534
+label__agreement_band__topic,"0|borderline|Jewish, Rohingya",full_normalize,9,669,292,1.0,0.9828767123287672
+label__agreement_band__topic,"0|borderline|Jewish, Rohingya",existing_cleaner,9,611,275,0.9133034379671151,0.9417808219178082
+label__agreement_band__topic,0|borderline|Kristen,raw,52,6508,1690,1.0,1.0
+label__agreement_band__topic,0|borderline|Kristen,lowercase,52,6508,1690,1.0,1.0
+label__agreement_band__topic,0|borderline|Kristen,leet_decode,52,6508,1692,1.0,0.9899408284023669
+label__agreement_band__topic,0|borderline|Kristen,collapse_repetition,52,6508,1689,1.0,0.9982248520710059
+label__agreement_band__topic,0|borderline|Kristen,expand_emoji,52,6524,1690,1.002458512599877,1.0
+label__agreement_band__topic,0|borderline|Kristen,expand_slang,52,6515,1685,1.0010755992624463,0.9940828402366864
+label__agreement_band__topic,0|borderline|Kristen,keep_hashtag_content,52,6508,1690,1.0,1.0
+label__agreement_band__topic,0|borderline|Kristen,remove_hashtag,52,6307,1584,0.9691149354640443,0.9372781065088758
+label__agreement_band__topic,0|borderline|Kristen,remove_url,52,6493,1683,0.9976951444376152,0.9958579881656805
+label__agreement_band__topic,0|borderline|Kristen,remove_mention,52,6494,1682,0.9978488014751076,0.9952662721893492
+label__agreement_band__topic,0|borderline|Kristen,remove_punctuation,52,6508,1690,1.0,1.0
+label__agreement_band__topic,0|borderline|Kristen,remove_emoji,52,6506,1688,0.9996926859250154,0.9982248520710059
+label__agreement_band__topic,0|borderline|Kristen,full_normalize,52,6524,1684,1.002458512599877,0.9804733727810651
+label__agreement_band__topic,0|borderline|Kristen,existing_cleaner,52,6278,1568,0.964658881376767,0.927810650887574
+label__agreement_band__topic,"0|borderline|Kristen, Jewish",raw,15,1091,470,1.0,1.0
+label__agreement_band__topic,"0|borderline|Kristen, Jewish",lowercase,15,1091,470,1.0,1.0
+label__agreement_band__topic,"0|borderline|Kristen, Jewish",leet_decode,15,1091,470,1.0,0.9957446808510638
+label__agreement_band__topic,"0|borderline|Kristen, Jewish",collapse_repetition,15,1091,470,1.0,0.997872340425532
+label__agreement_band__topic,"0|borderline|Kristen, Jewish",expand_emoji,15,1091,470,1.0,1.0
+label__agreement_band__topic,"0|borderline|Kristen, Jewish",expand_slang,15,1091,469,1.0,0.9957446808510638
+label__agreement_band__topic,"0|borderline|Kristen, Jewish",keep_hashtag_content,15,1091,470,1.0,1.0
+label__agreement_band__topic,"0|borderline|Kristen, Jewish",remove_hashtag,15,1081,464,0.9908340971585701,0.9872340425531915
+label__agreement_band__topic,"0|borderline|Kristen, Jewish",remove_url,15,1088,469,0.997250229147571,0.997872340425532
+label__agreement_band__topic,"0|borderline|Kristen, Jewish",remove_mention,15,1091,470,1.0,1.0
+label__agreement_band__topic,"0|borderline|Kristen, Jewish",remove_punctuation,15,1091,470,1.0,1.0
+label__agreement_band__topic,"0|borderline|Kristen, Jewish",remove_emoji,15,1087,468,0.9963336388634281,0.9957446808510638
+label__agreement_band__topic,"0|borderline|Kristen, Jewish",full_normalize,15,1091,468,1.0,0.9872340425531915
+label__agreement_band__topic,"0|borderline|Kristen, Jewish",existing_cleaner,15,1078,463,0.9880843263061412,0.9851063829787234
+label__agreement_band__topic,"0|borderline|Kristen, Rohingya",raw,2,562,173,1.0,1.0
+label__agreement_band__topic,"0|borderline|Kristen, Rohingya",lowercase,2,562,173,1.0,1.0
+label__agreement_band__topic,"0|borderline|Kristen, Rohingya",leet_decode,2,562,173,1.0,1.0
+label__agreement_band__topic,"0|borderline|Kristen, Rohingya",collapse_repetition,2,562,173,1.0,0.9884393063583815
+label__agreement_band__topic,"0|borderline|Kristen, Rohingya",expand_emoji,2,562,173,1.0,1.0
+label__agreement_band__topic,"0|borderline|Kristen, Rohingya",expand_slang,2,562,173,1.0,1.0
+label__agreement_band__topic,"0|borderline|Kristen, Rohingya",keep_hashtag_content,2,562,173,1.0,1.0
+label__agreement_band__topic,"0|borderline|Kristen, Rohingya",remove_hashtag,2,542,163,0.9644128113879004,0.9421965317919075
+label__agreement_band__topic,"0|borderline|Kristen, Rohingya",remove_url,2,562,173,1.0,1.0
+label__agreement_band__topic,"0|borderline|Kristen, Rohingya",remove_mention,2,562,173,1.0,1.0
+label__agreement_band__topic,"0|borderline|Kristen, Rohingya",remove_punctuation,2,562,173,1.0,1.0
+label__agreement_band__topic,"0|borderline|Kristen, Rohingya",remove_emoji,2,562,173,1.0,1.0
+label__agreement_band__topic,"0|borderline|Kristen, Rohingya",full_normalize,2,562,173,1.0,0.9884393063583815
+label__agreement_band__topic,"0|borderline|Kristen, Rohingya",existing_cleaner,2,542,163,0.9644128113879004,0.9421965317919075
+label__agreement_band__topic,0|borderline|LGBTQ+,raw,83,2805,1418,1.0,1.0
+label__agreement_band__topic,0|borderline|LGBTQ+,lowercase,83,2805,1418,1.0,1.0
+label__agreement_band__topic,0|borderline|LGBTQ+,leet_decode,83,2805,1418,1.0,0.9795486600846263
+label__agreement_band__topic,0|borderline|LGBTQ+,collapse_repetition,83,2805,1418,1.0,0.9978843441466855
+label__agreement_band__topic,0|borderline|LGBTQ+,expand_emoji,83,2843,1429,1.0135472370766487,1.0
+label__agreement_band__topic,0|borderline|LGBTQ+,expand_slang,83,2805,1404,1.0,0.9866008462623413
+label__agreement_band__topic,0|borderline|LGBTQ+,keep_hashtag_content,83,2805,1418,1.0,1.0
+label__agreement_band__topic,0|borderline|LGBTQ+,remove_hashtag,83,2682,1310,0.9561497326203209,0.923836389280677
+label__agreement_band__topic,0|borderline|LGBTQ+,remove_url,83,2791,1409,0.9950089126559715,0.9936530324400564
+label__agreement_band__topic,0|borderline|LGBTQ+,remove_mention,83,2798,1413,0.9975044563279858,0.9964739069111425
+label__agreement_band__topic,0|borderline|LGBTQ+,remove_punctuation,83,2805,1418,1.0,1.0
+label__agreement_band__topic,0|borderline|LGBTQ+,remove_emoji,83,2794,1410,0.996078431372549,0.9922425952045134
+label__agreement_band__topic,0|borderline|LGBTQ+,full_normalize,83,2839,1410,1.0121212121212122,0.9576868829337094
+label__agreement_band__topic,0|borderline|LGBTQ+,existing_cleaner,83,2661,1296,0.948663101604278,0.9139633286318759
+label__agreement_band__topic,"0|borderline|LGBTQ+, Jewish",raw,2,50,45,1.0,1.0
+label__agreement_band__topic,"0|borderline|LGBTQ+, Jewish",lowercase,2,50,45,1.0,1.0
+label__agreement_band__topic,"0|borderline|LGBTQ+, Jewish",leet_decode,2,50,45,1.0,1.0
+label__agreement_band__topic,"0|borderline|LGBTQ+, Jewish",collapse_repetition,2,50,45,1.0,1.0
+label__agreement_band__topic,"0|borderline|LGBTQ+, Jewish",expand_emoji,2,50,45,1.0,1.0
+label__agreement_band__topic,"0|borderline|LGBTQ+, Jewish",expand_slang,2,51,46,1.02,0.9777777777777777
+label__agreement_band__topic,"0|borderline|LGBTQ+, Jewish",keep_hashtag_content,2,50,45,1.0,1.0
+label__agreement_band__topic,"0|borderline|LGBTQ+, Jewish",remove_hashtag,2,47,42,0.94,0.9333333333333333
+label__agreement_band__topic,"0|borderline|LGBTQ+, Jewish",remove_url,2,50,45,1.0,1.0
+label__agreement_band__topic,"0|borderline|LGBTQ+, Jewish",remove_mention,2,50,45,1.0,1.0
+label__agreement_band__topic,"0|borderline|LGBTQ+, Jewish",remove_punctuation,2,50,45,1.0,1.0
+label__agreement_band__topic,"0|borderline|LGBTQ+, Jewish",remove_emoji,2,50,45,1.0,1.0
+label__agreement_band__topic,"0|borderline|LGBTQ+, Jewish",full_normalize,2,51,46,1.02,0.9777777777777777
+label__agreement_band__topic,"0|borderline|LGBTQ+, Jewish",existing_cleaner,2,47,42,0.94,0.9333333333333333
+label__agreement_band__topic,0|borderline|Rohingya,raw,18,1421,558,1.0,1.0
+label__agreement_band__topic,0|borderline|Rohingya,lowercase,18,1421,558,1.0,1.0
+label__agreement_band__topic,0|borderline|Rohingya,leet_decode,18,1420,557,0.9992962702322308,0.989247311827957
+label__agreement_band__topic,0|borderline|Rohingya,collapse_repetition,18,1421,558,1.0,0.9982078853046595
+label__agreement_band__topic,0|borderline|Rohingya,expand_emoji,18,1422,559,1.0007037297677692,1.0
+label__agreement_band__topic,0|borderline|Rohingya,expand_slang,18,1421,555,1.0,0.9910394265232975
+label__agreement_band__topic,0|borderline|Rohingya,keep_hashtag_content,18,1421,558,1.0,1.0
+label__agreement_band__topic,0|borderline|Rohingya,remove_hashtag,18,1393,544,0.9802955665024631,0.974910394265233
+label__agreement_band__topic,0|borderline|Rohingya,remove_url,18,1382,547,0.9725545390570021,0.9802867383512545
+label__agreement_band__topic,0|borderline|Rohingya,remove_mention,18,1412,551,0.9936664320900774,0.9874551971326165
+label__agreement_band__topic,0|borderline|Rohingya,remove_punctuation,18,1421,558,1.0,1.0
+label__agreement_band__topic,0|borderline|Rohingya,remove_emoji,18,1421,558,1.0,1.0
+label__agreement_band__topic,0|borderline|Rohingya,full_normalize,18,1421,555,1.0,0.978494623655914
+label__agreement_band__topic,0|borderline|Rohingya,existing_cleaner,18,1346,525,0.9472202674173118,0.9408602150537635
+label__agreement_band__topic,0|borderline|Syiah,raw,17,2247,814,1.0,1.0
+label__agreement_band__topic,0|borderline|Syiah,lowercase,17,2247,814,1.0,1.0
+label__agreement_band__topic,0|borderline|Syiah,leet_decode,17,2247,815,1.0,0.9975429975429976
+label__agreement_band__topic,0|borderline|Syiah,collapse_repetition,17,2247,814,1.0,0.9987714987714987
+label__agreement_band__topic,0|borderline|Syiah,expand_emoji,17,2249,815,1.0008900756564307,1.0
+label__agreement_band__topic,0|borderline|Syiah,expand_slang,17,2247,810,1.0,0.9914004914004914
+label__agreement_band__topic,0|borderline|Syiah,keep_hashtag_content,17,2247,814,1.0,1.0
+label__agreement_band__topic,0|borderline|Syiah,remove_hashtag,17,2223,807,0.9893190921228304,0.9914004914004914
+label__agreement_band__topic,0|borderline|Syiah,remove_url,17,2247,814,1.0,1.0
+label__agreement_band__topic,0|borderline|Syiah,remove_mention,17,2244,813,0.9986648865153538,0.9987714987714987
+label__agreement_band__topic,0|borderline|Syiah,remove_punctuation,17,2247,814,1.0,1.0
+label__agreement_band__topic,0|borderline|Syiah,remove_emoji,17,2134,751,0.94971072541166,0.9078624078624079
+label__agreement_band__topic,0|borderline|Syiah,full_normalize,17,2249,811,1.0008900756564307,0.9864864864864865
+label__agreement_band__topic,0|borderline|Syiah,existing_cleaner,17,2220,806,0.9879839786381842,0.9901719901719902
+label__agreement_band__topic,"0|borderline|Syiah, Ahmadiyah",raw,2,365,248,1.0,1.0
+label__agreement_band__topic,"0|borderline|Syiah, Ahmadiyah",lowercase,2,365,248,1.0,1.0
+label__agreement_band__topic,"0|borderline|Syiah, Ahmadiyah",leet_decode,2,343,237,0.9397260273972603,0.9435483870967742
+label__agreement_band__topic,"0|borderline|Syiah, Ahmadiyah",collapse_repetition,2,365,247,1.0,0.9959677419354839
+label__agreement_band__topic,"0|borderline|Syiah, Ahmadiyah",expand_emoji,2,365,248,1.0,1.0
+label__agreement_band__topic,"0|borderline|Syiah, Ahmadiyah",expand_slang,2,365,248,1.0,1.0
+label__agreement_band__topic,"0|borderline|Syiah, Ahmadiyah",keep_hashtag_content,2,365,248,1.0,1.0
+label__agreement_band__topic,"0|borderline|Syiah, Ahmadiyah",remove_hashtag,2,363,246,0.9945205479452055,0.9919354838709677
+label__agreement_band__topic,"0|borderline|Syiah, Ahmadiyah",remove_url,2,317,225,0.8684931506849315,0.907258064516129
+label__agreement_band__topic,"0|borderline|Syiah, Ahmadiyah",remove_mention,2,365,248,1.0,1.0
+label__agreement_band__topic,"0|borderline|Syiah, Ahmadiyah",remove_punctuation,2,365,248,1.0,1.0
+label__agreement_band__topic,"0|borderline|Syiah, Ahmadiyah",remove_emoji,2,352,235,0.9643835616438357,0.9395161290322581
+label__agreement_band__topic,"0|borderline|Syiah, Ahmadiyah",full_normalize,2,343,235,0.9397260273972603,0.9354838709677419
+label__agreement_band__topic,"0|borderline|Syiah, Ahmadiyah",existing_cleaner,2,315,223,0.863013698630137,0.8991935483870968
+label__agreement_band__topic,"0|borderline|Syiah, Ahmadiyah, Jewish",raw,1,292,149,1.0,1.0
+label__agreement_band__topic,"0|borderline|Syiah, Ahmadiyah, Jewish",lowercase,1,292,149,1.0,1.0
+label__agreement_band__topic,"0|borderline|Syiah, Ahmadiyah, Jewish",leet_decode,1,292,149,1.0,1.0
+label__agreement_band__topic,"0|borderline|Syiah, Ahmadiyah, Jewish",collapse_repetition,1,292,149,1.0,1.0
+label__agreement_band__topic,"0|borderline|Syiah, Ahmadiyah, Jewish",expand_emoji,1,292,149,1.0,1.0
+label__agreement_band__topic,"0|borderline|Syiah, Ahmadiyah, Jewish",expand_slang,1,292,148,1.0,0.9932885906040269
+label__agreement_band__topic,"0|borderline|Syiah, Ahmadiyah, Jewish",keep_hashtag_content,1,292,149,1.0,1.0
+label__agreement_band__topic,"0|borderline|Syiah, Ahmadiyah, Jewish",remove_hashtag,1,261,134,0.8938356164383562,0.8993288590604027
+label__agreement_band__topic,"0|borderline|Syiah, Ahmadiyah, Jewish",remove_url,1,292,149,1.0,1.0
+label__agreement_band__topic,"0|borderline|Syiah, Ahmadiyah, Jewish",remove_mention,1,292,149,1.0,1.0
+label__agreement_band__topic,"0|borderline|Syiah, Ahmadiyah, Jewish",remove_punctuation,1,292,149,1.0,1.0
+label__agreement_band__topic,"0|borderline|Syiah, Ahmadiyah, Jewish",remove_emoji,1,292,148,1.0,0.9798657718120806
+label__agreement_band__topic,"0|borderline|Syiah, Ahmadiyah, Jewish",full_normalize,1,292,147,1.0,0.9798657718120806
+label__agreement_band__topic,"0|borderline|Syiah, Ahmadiyah, Jewish",existing_cleaner,1,261,134,0.8938356164383562,0.8993288590604027
+label__agreement_band__topic,"0|borderline|Syiah, Jewish",raw,3,438,264,1.0,1.0
+label__agreement_band__topic,"0|borderline|Syiah, Jewish",lowercase,3,438,264,1.0,1.0
+label__agreement_band__topic,"0|borderline|Syiah, Jewish",leet_decode,3,438,264,1.0,1.0
+label__agreement_band__topic,"0|borderline|Syiah, Jewish",collapse_repetition,3,438,264,1.0,1.0
+label__agreement_band__topic,"0|borderline|Syiah, Jewish",expand_emoji,3,441,265,1.0068493150684932,1.0
+label__agreement_band__topic,"0|borderline|Syiah, Jewish",expand_slang,3,438,263,1.0,0.9924242424242424
+label__agreement_band__topic,"0|borderline|Syiah, Jewish",keep_hashtag_content,3,438,264,1.0,1.0
+label__agreement_band__topic,"0|borderline|Syiah, Jewish",remove_hashtag,3,438,264,1.0,1.0
+label__agreement_band__topic,"0|borderline|Syiah, Jewish",remove_url,3,438,264,1.0,1.0
+label__agreement_band__topic,"0|borderline|Syiah, Jewish",remove_mention,3,438,264,1.0,1.0
+label__agreement_band__topic,"0|borderline|Syiah, Jewish",remove_punctuation,3,438,264,1.0,1.0
+label__agreement_band__topic,"0|borderline|Syiah, Jewish",remove_emoji,3,430,257,0.9817351598173516,0.9659090909090909
+label__agreement_band__topic,"0|borderline|Syiah, Jewish",full_normalize,3,440,263,1.004566210045662,0.9886363636363636
+label__agreement_band__topic,"0|borderline|Syiah, Jewish",existing_cleaner,3,438,264,1.0,1.0
+label__agreement_band__topic,"0|borderline|Syiah, LGBTQ+, Jewish",raw,1,280,181,1.0,1.0
+label__agreement_band__topic,"0|borderline|Syiah, LGBTQ+, Jewish",lowercase,1,280,181,1.0,1.0
+label__agreement_band__topic,"0|borderline|Syiah, LGBTQ+, Jewish",leet_decode,1,280,181,1.0,1.0
+label__agreement_band__topic,"0|borderline|Syiah, LGBTQ+, Jewish",collapse_repetition,1,280,181,1.0,1.0
+label__agreement_band__topic,"0|borderline|Syiah, LGBTQ+, Jewish",expand_emoji,1,280,181,1.0,1.0
+label__agreement_band__topic,"0|borderline|Syiah, LGBTQ+, Jewish",expand_slang,1,280,180,1.0,0.994475138121547
+label__agreement_band__topic,"0|borderline|Syiah, LGBTQ+, Jewish",keep_hashtag_content,1,280,181,1.0,1.0
+label__agreement_band__topic,"0|borderline|Syiah, LGBTQ+, Jewish",remove_hashtag,1,279,180,0.9964285714285714,0.994475138121547
+label__agreement_band__topic,"0|borderline|Syiah, LGBTQ+, Jewish",remove_url,1,280,181,1.0,1.0
+label__agreement_band__topic,"0|borderline|Syiah, LGBTQ+, Jewish",remove_mention,1,280,181,1.0,1.0
+label__agreement_band__topic,"0|borderline|Syiah, LGBTQ+, Jewish",remove_punctuation,1,280,181,1.0,1.0
+label__agreement_band__topic,"0|borderline|Syiah, LGBTQ+, Jewish",remove_emoji,1,259,164,0.925,0.9005524861878453
+label__agreement_band__topic,"0|borderline|Syiah, LGBTQ+, Jewish",full_normalize,1,280,180,1.0,0.994475138121547
+label__agreement_band__topic,"0|borderline|Syiah, LGBTQ+, Jewish",existing_cleaner,1,279,180,0.9964285714285714,0.994475138121547
+label__agreement_band__topic,0|borderline|Tionghoa,raw,97,3670,1789,1.0,1.0
+label__agreement_band__topic,0|borderline|Tionghoa,lowercase,97,3670,1789,1.0,1.0
+label__agreement_band__topic,0|borderline|Tionghoa,leet_decode,97,3669,1791,0.9997275204359674,0.9865846841811068
+label__agreement_band__topic,0|borderline|Tionghoa,collapse_repetition,97,3670,1788,1.0,0.9972051425377306
+label__agreement_band__topic,0|borderline|Tionghoa,expand_emoji,97,3687,1796,1.0046321525885558,0.9994410285075461
+label__agreement_band__topic,0|borderline|Tionghoa,expand_slang,97,3673,1775,1.000817438692098,0.9888205701509223
+label__agreement_band__topic,0|borderline|Tionghoa,keep_hashtag_content,97,3670,1789,1.0,1.0
+label__agreement_band__topic,0|borderline|Tionghoa,remove_hashtag,97,3571,1719,0.9730245231607629,0.9608719955282281
+label__agreement_band__topic,0|borderline|Tionghoa,remove_url,97,3670,1789,1.0,1.0
+label__agreement_band__topic,0|borderline|Tionghoa,remove_mention,97,3658,1782,0.9967302452316076,0.9960871995528228
+label__agreement_band__topic,0|borderline|Tionghoa,remove_punctuation,97,3670,1789,1.0,1.0
+label__agreement_band__topic,0|borderline|Tionghoa,remove_emoji,97,3661,1783,0.9975476839237057,0.994969256567915
+label__agreement_band__topic,0|borderline|Tionghoa,full_normalize,97,3689,1774,1.0051771117166213,0.965902738960313
+label__agreement_band__topic,0|borderline|Tionghoa,existing_cleaner,97,3559,1710,0.9697547683923706,0.9558412520961431
+label__agreement_band__topic,"0|borderline|Tionghoa, Disabilitas",raw,4,594,201,1.0,1.0
+label__agreement_band__topic,"0|borderline|Tionghoa, Disabilitas",lowercase,4,594,201,1.0,1.0
+label__agreement_band__topic,"0|borderline|Tionghoa, Disabilitas",leet_decode,4,594,201,1.0,0.9950248756218906
+label__agreement_band__topic,"0|borderline|Tionghoa, Disabilitas",collapse_repetition,4,594,201,1.0,0.9950248756218906
+label__agreement_band__topic,"0|borderline|Tionghoa, Disabilitas",expand_emoji,4,626,207,1.0538720538720538,1.0
+label__agreement_band__topic,"0|borderline|Tionghoa, Disabilitas",expand_slang,4,594,198,1.0,0.9601990049751243
+label__agreement_band__topic,"0|borderline|Tionghoa, Disabilitas",keep_hashtag_content,4,594,201,1.0,1.0
+label__agreement_band__topic,"0|borderline|Tionghoa, Disabilitas",remove_hashtag,4,576,194,0.9696969696969697,0.9651741293532339
+label__agreement_band__topic,"0|borderline|Tionghoa, Disabilitas",remove_url,4,594,201,1.0,1.0
+label__agreement_band__topic,"0|borderline|Tionghoa, Disabilitas",remove_mention,4,594,201,1.0,1.0
+label__agreement_band__topic,"0|borderline|Tionghoa, Disabilitas",remove_punctuation,4,594,201,1.0,1.0
+label__agreement_band__topic,"0|borderline|Tionghoa, Disabilitas",remove_emoji,4,594,201,1.0,0.9751243781094527
+label__agreement_band__topic,"0|borderline|Tionghoa, Disabilitas",full_normalize,4,626,203,1.0538720538720538,0.945273631840796
+label__agreement_band__topic,"0|borderline|Tionghoa, Disabilitas",existing_cleaner,4,576,194,0.9696969696969697,0.9651741293532339
+label__agreement_band__topic,"0|borderline|Tionghoa, Jewish",raw,3,78,57,1.0,1.0
+label__agreement_band__topic,"0|borderline|Tionghoa, Jewish",lowercase,3,78,57,1.0,1.0
+label__agreement_band__topic,"0|borderline|Tionghoa, Jewish",leet_decode,3,78,57,1.0,1.0
+label__agreement_band__topic,"0|borderline|Tionghoa, Jewish",collapse_repetition,3,78,57,1.0,1.0
+label__agreement_band__topic,"0|borderline|Tionghoa, Jewish",expand_emoji,3,78,57,1.0,1.0
+label__agreement_band__topic,"0|borderline|Tionghoa, Jewish",expand_slang,3,78,57,1.0,1.0
+label__agreement_band__topic,"0|borderline|Tionghoa, Jewish",keep_hashtag_content,3,78,57,1.0,1.0
+label__agreement_band__topic,"0|borderline|Tionghoa, Jewish",remove_hashtag,3,73,56,0.9358974358974359,0.9824561403508771
+label__agreement_band__topic,"0|borderline|Tionghoa, Jewish",remove_url,3,78,57,1.0,1.0
+label__agreement_band__topic,"0|borderline|Tionghoa, Jewish",remove_mention,3,78,57,1.0,1.0
+label__agreement_band__topic,"0|borderline|Tionghoa, Jewish",remove_punctuation,3,78,57,1.0,1.0
+label__agreement_band__topic,"0|borderline|Tionghoa, Jewish",remove_emoji,3,78,57,1.0,1.0
+label__agreement_band__topic,"0|borderline|Tionghoa, Jewish",full_normalize,3,78,57,1.0,1.0
+label__agreement_band__topic,"0|borderline|Tionghoa, Jewish",existing_cleaner,3,73,56,0.9358974358974359,0.9824561403508771
+label__agreement_band__topic,0|borderline|UNKNOWN,raw,170,3933,1666,1.0,1.0
+label__agreement_band__topic,0|borderline|UNKNOWN,lowercase,170,3933,1666,1.0,1.0
+label__agreement_band__topic,0|borderline|UNKNOWN,leet_decode,170,3931,1664,0.999491482329011,0.9891956782713085
+label__agreement_band__topic,0|borderline|UNKNOWN,collapse_repetition,170,3933,1665,1.0,0.9987995198079231
+label__agreement_band__topic,0|borderline|UNKNOWN,expand_emoji,170,3953,1670,1.0050851767098907,1.0
+label__agreement_band__topic,0|borderline|UNKNOWN,expand_slang,170,3939,1661,1.0015255530129672,0.9951980792316927
+label__agreement_band__topic,0|borderline|UNKNOWN,keep_hashtag_content,170,3933,1666,1.0,1.0
+label__agreement_band__topic,0|borderline|UNKNOWN,remove_hashtag,170,3804,1574,0.9672006102212052,0.9447779111644657
+label__agreement_band__topic,0|borderline|UNKNOWN,remove_url,170,3933,1666,1.0,1.0
+label__agreement_band__topic,0|borderline|UNKNOWN,remove_mention,170,3933,1666,1.0,1.0
+label__agreement_band__topic,0|borderline|UNKNOWN,remove_punctuation,170,3933,1666,1.0,1.0
+label__agreement_band__topic,0|borderline|UNKNOWN,remove_emoji,170,3929,1664,0.9989829646580218,0.9951980792316927
+label__agreement_band__topic,0|borderline|UNKNOWN,full_normalize,170,3964,1654,1.0078820239003305,0.9771908763505402
+label__agreement_band__topic,0|borderline|UNKNOWN,existing_cleaner,170,3804,1574,0.9672006102212052,0.9447779111644657
+label__agreement_band__topic,0|unanimous|Ahmadiyah,raw,93,8883,4486,1.0,1.0
+label__agreement_band__topic,0|unanimous|Ahmadiyah,lowercase,93,8883,4486,1.0,1.0
+label__agreement_band__topic,0|unanimous|Ahmadiyah,leet_decode,93,8879,4481,0.9995497016773612,0.9906375390102541
+label__agreement_band__topic,0|unanimous|Ahmadiyah,collapse_repetition,93,8883,4485,1.0,0.9988854213107445
+label__agreement_band__topic,0|unanimous|Ahmadiyah,expand_emoji,93,8911,4494,1.0031520882584712,0.9995541685242978
+label__agreement_band__topic,0|unanimous|Ahmadiyah,expand_slang,93,8883,4485,1.0,0.9991083370485956
+label__agreement_band__topic,0|unanimous|Ahmadiyah,keep_hashtag_content,93,8883,4486,1.0,1.0
+label__agreement_band__topic,0|unanimous|Ahmadiyah,remove_hashtag,93,8870,4480,0.9985365304514241,0.9986625055728935
+label__agreement_band__topic,0|unanimous|Ahmadiyah,remove_url,93,8701,4452,0.9795114263199369,0.9924208649130629
+label__agreement_band__topic,0|unanimous|Ahmadiyah,remove_mention,93,8881,4485,0.9997748508386807,0.999777084262149
+label__agreement_band__topic,0|unanimous|Ahmadiyah,remove_punctuation,93,8883,4486,1.0,1.0
+label__agreement_band__topic,0|unanimous|Ahmadiyah,remove_emoji,93,8681,4405,0.9772599347067432,0.9772625947391886
+label__agreement_band__topic,0|unanimous|Ahmadiyah,full_normalize,93,8907,4482,1.0027017899358326,0.9866250557289344
+label__agreement_band__topic,0|unanimous|Ahmadiyah,existing_cleaner,93,8686,4445,0.9778228076100417,0.9908604547481052
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Jewish",raw,1,608,546,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Jewish",lowercase,1,608,546,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Jewish",leet_decode,1,608,546,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Jewish",collapse_repetition,1,608,546,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Jewish",expand_emoji,1,608,546,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Jewish",expand_slang,1,608,546,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Jewish",keep_hashtag_content,1,608,546,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Jewish",remove_hashtag,1,608,546,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Jewish",remove_url,1,608,546,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Jewish",remove_mention,1,608,546,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Jewish",remove_punctuation,1,608,546,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Jewish",remove_emoji,1,604,543,0.993421052631579,0.9945054945054945
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Jewish",full_normalize,1,608,546,1.0,0.9963369963369964
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Jewish",existing_cleaner,1,608,546,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Kristen",raw,2,199,135,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Kristen",lowercase,2,199,135,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Kristen",leet_decode,2,199,135,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Kristen",collapse_repetition,2,199,135,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Kristen",expand_emoji,2,199,135,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Kristen",expand_slang,2,199,134,1.0,0.9925925925925926
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Kristen",keep_hashtag_content,2,199,135,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Kristen",remove_hashtag,2,198,134,0.9949748743718593,0.9925925925925926
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Kristen",remove_url,2,199,135,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Kristen",remove_mention,2,199,135,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Kristen",remove_punctuation,2,199,135,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Kristen",remove_emoji,2,199,135,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Kristen",full_normalize,2,199,134,1.0,0.9925925925925926
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Kristen",existing_cleaner,2,198,134,0.9949748743718593,0.9925925925925926
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Tionghoa",raw,2,252,117,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Tionghoa",lowercase,2,252,117,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Tionghoa",leet_decode,2,252,117,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Tionghoa",collapse_repetition,2,252,117,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Tionghoa",expand_emoji,2,252,117,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Tionghoa",expand_slang,2,252,117,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Tionghoa",keep_hashtag_content,2,252,117,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Tionghoa",remove_hashtag,2,252,117,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Tionghoa",remove_url,2,252,117,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Tionghoa",remove_mention,2,252,117,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Tionghoa",remove_punctuation,2,252,117,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Tionghoa",remove_emoji,2,236,110,0.9365079365079365,0.9401709401709402
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Tionghoa",full_normalize,2,252,117,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Ahmadiyah, Tionghoa",existing_cleaner,2,252,117,1.0,1.0
+label__agreement_band__topic,0|unanimous|Disabilitas,raw,5690,165113,26763,1.0,1.0
+label__agreement_band__topic,0|unanimous|Disabilitas,lowercase,5690,165116,26764,1.0000181693749128,0.999887904943392
+label__agreement_band__topic,0|unanimous|Disabilitas,leet_decode,5690,165078,26724,0.9997880239593491,0.9723872510555618
+label__agreement_band__topic,0|unanimous|Disabilitas,collapse_repetition,5690,165113,26549,1.0,0.9773194335463139
+label__agreement_band__topic,0|unanimous|Disabilitas,expand_emoji,5690,169044,26757,1.0238079375942537,0.998991144490528
+label__agreement_band__topic,0|unanimous|Disabilitas,expand_slang,5690,165194,26734,1.0004905731226494,0.998654859320704
+label__agreement_band__topic,0|unanimous|Disabilitas,keep_hashtag_content,5690,165027,26734,0.9994791445858291,0.9979822889810559
+label__agreement_band__topic,0|unanimous|Disabilitas,remove_hashtag,5690,160276,24759,0.9707049111820389,0.9251205021858536
+label__agreement_band__topic,0|unanimous|Disabilitas,remove_url,5690,164846,26716,0.9983829256327484,0.9982438441131413
+label__agreement_band__topic,0|unanimous|Disabilitas,remove_mention,5690,164001,26230,0.9932652183656041,0.9800844449426447
+label__agreement_band__topic,0|unanimous|Disabilitas,remove_punctuation,5690,165113,26763,1.0,1.0
+label__agreement_band__topic,0|unanimous|Disabilitas,remove_emoji,5690,164368,26374,0.995487938563287,0.9813548555842021
+label__agreement_band__topic,0|unanimous|Disabilitas,full_normalize,5690,168720,26426,1.0218456451036564,0.9464185629413743
+label__agreement_band__topic,0|unanimous|Disabilitas,existing_cleaner,5690,158900,24140,0.9623712245553045,0.9018420954302582
+label__agreement_band__topic,0|unanimous|Jewish,raw,6697,276788,27329,1.0,1.0
+label__agreement_band__topic,0|unanimous|Jewish,lowercase,6697,276788,27329,1.0,1.0
+label__agreement_band__topic,0|unanimous|Jewish,leet_decode,6697,276735,27360,0.9998085177103053,0.9783014380328588
+label__agreement_band__topic,0|unanimous|Jewish,collapse_repetition,6697,276788,27283,1.0,0.9934867722931684
+label__agreement_band__topic,0|unanimous|Jewish,expand_emoji,6697,277794,27333,1.0036345506308078,0.9996706794979692
+label__agreement_band__topic,0|unanimous|Jewish,expand_slang,6697,276831,27290,1.0001553535557899,0.9983899886567382
+label__agreement_band__topic,0|unanimous|Jewish,keep_hashtag_content,6697,276655,27300,0.9995194878390682,0.9979874858209228
+label__agreement_band__topic,0|unanimous|Jewish,remove_hashtag,6697,266517,25331,0.962892177406535,0.9268908485491603
+label__agreement_band__topic,0|unanimous|Jewish,remove_url,6697,276170,27270,0.9977672442446927,0.9978411211533535
+label__agreement_band__topic,0|unanimous|Jewish,remove_mention,6697,275455,26883,0.9951840397705103,0.9836803395660287
+label__agreement_band__topic,0|unanimous|Jewish,remove_punctuation,6697,276788,27329,1.0,1.0
+label__agreement_band__topic,0|unanimous|Jewish,remove_emoji,6697,275131,26784,0.9940134687919997,0.9733250393355044
+label__agreement_band__topic,0|unanimous|Jewish,full_normalize,6697,277791,27231,1.0036237120106364,0.9702879724834425
+label__agreement_band__topic,0|unanimous|Jewish,existing_cleaner,6697,264566,24782,0.9558434614217379,0.9068022979252809
+label__agreement_band__topic,"0|unanimous|Jewish, Disabilitas",raw,57,4084,1584,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Jewish, Disabilitas",lowercase,57,4084,1584,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Jewish, Disabilitas",leet_decode,57,4084,1584,1.0,0.9974747474747475
+label__agreement_band__topic,"0|unanimous|Jewish, Disabilitas",collapse_repetition,57,4084,1580,1.0,0.9943181818181818
+label__agreement_band__topic,"0|unanimous|Jewish, Disabilitas",expand_emoji,57,4106,1591,1.005386875612145,1.0
+label__agreement_band__topic,"0|unanimous|Jewish, Disabilitas",expand_slang,57,4088,1563,1.000979431929481,0.9816919191919192
+label__agreement_band__topic,"0|unanimous|Jewish, Disabilitas",keep_hashtag_content,57,4084,1584,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Jewish, Disabilitas",remove_hashtag,57,4006,1538,0.9809010773751224,0.9709595959595959
+label__agreement_band__topic,"0|unanimous|Jewish, Disabilitas",remove_url,57,4081,1582,0.9992654260528894,0.9987373737373737
+label__agreement_band__topic,"0|unanimous|Jewish, Disabilitas",remove_mention,57,4074,1576,0.9975514201762977,0.9949494949494949
+label__agreement_band__topic,"0|unanimous|Jewish, Disabilitas",remove_punctuation,57,4084,1584,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Jewish, Disabilitas",remove_emoji,57,4074,1581,0.9975514201762977,0.9949494949494949
+label__agreement_band__topic,"0|unanimous|Jewish, Disabilitas",full_normalize,57,4108,1563,1.0058765915768855,0.9696969696969697
+label__agreement_band__topic,"0|unanimous|Jewish, Disabilitas",existing_cleaner,57,3993,1528,0.9777179236043095,0.9646464646464646
+label__agreement_band__topic,"0|unanimous|Jewish, Rohingya",raw,152,10658,2362,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Jewish, Rohingya",lowercase,152,10658,2362,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Jewish, Rohingya",leet_decode,152,10658,2366,1.0,0.9944961896697714
+label__agreement_band__topic,"0|unanimous|Jewish, Rohingya",collapse_repetition,152,10658,2361,1.0,0.9953429297205758
+label__agreement_band__topic,"0|unanimous|Jewish, Rohingya",expand_emoji,152,10695,2369,1.003471570651154,1.0
+label__agreement_band__topic,"0|unanimous|Jewish, Rohingya",expand_slang,152,10660,2352,1.0001876524676299,0.9944961896697714
+label__agreement_band__topic,"0|unanimous|Jewish, Rohingya",keep_hashtag_content,152,10658,2362,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Jewish, Rohingya",remove_hashtag,152,10255,2241,0.9621880277725652,0.9487722269263336
+label__agreement_band__topic,"0|unanimous|Jewish, Rohingya",remove_url,152,10618,2352,0.996246950647401,0.995766299745978
+label__agreement_band__topic,"0|unanimous|Jewish, Rohingya",remove_mention,152,10590,2339,0.9936198161005817,0.9902624894157493
+label__agreement_band__topic,"0|unanimous|Jewish, Rohingya",remove_punctuation,152,10658,2362,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Jewish, Rohingya",remove_emoji,152,10644,2363,0.9986864327265903,0.9961896697713802
+label__agreement_band__topic,"0|unanimous|Jewish, Rohingya",full_normalize,152,10696,2360,1.003565396884969,0.9839119390347163
+label__agreement_band__topic,"0|unanimous|Jewish, Rohingya",existing_cleaner,152,10147,2207,0.952054794520548,0.9343776460626587
+label__agreement_band__topic,"0|unanimous|Jewish, Rohingya, Disabilitas",raw,1,226,128,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Jewish, Rohingya, Disabilitas",lowercase,1,226,128,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Jewish, Rohingya, Disabilitas",leet_decode,1,226,128,1.0,0.9921875
+label__agreement_band__topic,"0|unanimous|Jewish, Rohingya, Disabilitas",collapse_repetition,1,226,128,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Jewish, Rohingya, Disabilitas",expand_emoji,1,226,128,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Jewish, Rohingya, Disabilitas",expand_slang,1,226,128,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Jewish, Rohingya, Disabilitas",keep_hashtag_content,1,226,128,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Jewish, Rohingya, Disabilitas",remove_hashtag,1,226,128,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Jewish, Rohingya, Disabilitas",remove_url,1,226,128,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Jewish, Rohingya, Disabilitas",remove_mention,1,226,128,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Jewish, Rohingya, Disabilitas",remove_punctuation,1,226,128,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Jewish, Rohingya, Disabilitas",remove_emoji,1,226,128,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Jewish, Rohingya, Disabilitas",full_normalize,1,226,128,1.0,0.9921875
+label__agreement_band__topic,"0|unanimous|Jewish, Rohingya, Disabilitas",existing_cleaner,1,226,128,1.0,1.0
+label__agreement_band__topic,0|unanimous|Kristen,raw,1199,94211,14263,1.0,1.0
+label__agreement_band__topic,0|unanimous|Kristen,lowercase,1199,94220,14264,1.0000955302459373,0.9996494426137559
+label__agreement_band__topic,0|unanimous|Kristen,leet_decode,1199,94200,14289,0.999883240810521,0.9724461894412115
+label__agreement_band__topic,0|unanimous|Kristen,collapse_repetition,1199,94211,14234,1.0,0.9930589637523662
+label__agreement_band__topic,0|unanimous|Kristen,expand_emoji,1199,94798,14266,1.0062306949294668,0.9996494426137559
+label__agreement_band__topic,0|unanimous|Kristen,expand_slang,1199,94226,14233,1.000159217076562,0.9969852064783005
+label__agreement_band__topic,0|unanimous|Kristen,keep_hashtag_content,1199,94149,14234,0.9993419027502096,0.9964944261375587
+label__agreement_band__topic,0|unanimous|Kristen,remove_hashtag,1199,89711,12815,0.9522348770313446,0.8984785809437005
+label__agreement_band__topic,0|unanimous|Kristen,remove_url,1199,93407,14157,0.9914659646962669,0.9925681834116244
+label__agreement_band__topic,0|unanimous|Kristen,remove_mention,1199,92959,13841,0.9867106813429429,0.9704129566009956
+label__agreement_band__topic,0|unanimous|Kristen,remove_punctuation,1199,94211,14263,1.0,1.0
+label__agreement_band__topic,0|unanimous|Kristen,remove_emoji,1199,93672,14154,0.9942787997155321,0.9852064783004978
+label__agreement_band__topic,0|unanimous|Kristen,full_normalize,1199,94756,14206,1.0057848871150927,0.9608076842179065
+label__agreement_band__topic,0|unanimous|Kristen,existing_cleaner,1199,87664,12246,0.9305070533164918,0.8581644815256257
+label__agreement_band__topic,"0|unanimous|Kristen, Disabilitas",raw,1,51,40,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Disabilitas",lowercase,1,51,40,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Disabilitas",leet_decode,1,51,40,1.0,0.975
+label__agreement_band__topic,"0|unanimous|Kristen, Disabilitas",collapse_repetition,1,51,41,1.0,0.975
+label__agreement_band__topic,"0|unanimous|Kristen, Disabilitas",expand_emoji,1,53,41,1.0392156862745099,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Disabilitas",expand_slang,1,51,40,1.0,0.9
+label__agreement_band__topic,"0|unanimous|Kristen, Disabilitas",keep_hashtag_content,1,51,40,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Disabilitas",remove_hashtag,1,51,40,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Disabilitas",remove_url,1,47,36,0.9215686274509803,0.9
+label__agreement_band__topic,"0|unanimous|Kristen, Disabilitas",remove_mention,1,51,40,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Disabilitas",remove_punctuation,1,51,40,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Disabilitas",remove_emoji,1,51,40,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Disabilitas",full_normalize,1,53,41,1.0392156862745099,0.825
+label__agreement_band__topic,"0|unanimous|Kristen, Disabilitas",existing_cleaner,1,47,36,0.9215686274509803,0.9
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish",raw,107,6939,1980,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish",lowercase,107,6939,1980,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish",leet_decode,107,6939,1980,1.0,0.9797979797979798
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish",collapse_repetition,107,6939,1979,1.0,0.997979797979798
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish",expand_emoji,107,6953,1985,1.0020175817841188,0.998989898989899
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish",expand_slang,107,6939,1964,1.0,0.990909090909091
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish",keep_hashtag_content,107,6933,1975,0.9991353220925205,0.996969696969697
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish",remove_hashtag,107,6755,1908,0.9734832108372964,0.9636363636363636
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish",remove_url,107,6861,1959,0.988759187202767,0.9893939393939394
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish",remove_mention,107,6849,1905,0.9870298313878081,0.9621212121212122
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish",remove_punctuation,107,6939,1980,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish",remove_emoji,107,6906,1963,0.995244271508863,0.9888888888888889
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish",full_normalize,107,6951,1963,1.001729355814959,0.9661616161616161
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish",existing_cleaner,107,6588,1808,0.9494163424124513,0.9131313131313131
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish, Disabilitas",raw,1,286,171,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish, Disabilitas",lowercase,1,286,171,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish, Disabilitas",leet_decode,1,286,170,1.0,0.9883040935672515
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish, Disabilitas",collapse_repetition,1,286,171,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish, Disabilitas",expand_emoji,1,286,171,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish, Disabilitas",expand_slang,1,286,171,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish, Disabilitas",keep_hashtag_content,1,286,171,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish, Disabilitas",remove_hashtag,1,286,171,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish, Disabilitas",remove_url,1,286,171,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish, Disabilitas",remove_mention,1,286,171,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish, Disabilitas",remove_punctuation,1,286,171,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish, Disabilitas",remove_emoji,1,286,171,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish, Disabilitas",full_normalize,1,286,170,1.0,0.9883040935672515
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish, Disabilitas",existing_cleaner,1,286,171,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish, Rohingya",raw,5,717,364,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish, Rohingya",lowercase,5,717,364,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish, Rohingya",leet_decode,5,717,364,1.0,0.9972527472527473
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish, Rohingya",collapse_repetition,5,717,364,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish, Rohingya",expand_emoji,5,717,364,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish, Rohingya",expand_slang,5,717,364,1.0,0.9972527472527473
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish, Rohingya",keep_hashtag_content,5,717,364,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish, Rohingya",remove_hashtag,5,681,338,0.9497907949790795,0.9285714285714286
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish, Rohingya",remove_url,5,717,364,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish, Rohingya",remove_mention,5,715,363,0.99721059972106,0.9972527472527473
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish, Rohingya",remove_punctuation,5,717,364,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish, Rohingya",remove_emoji,5,704,357,0.9818688981868898,0.9697802197802198
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish, Rohingya",full_normalize,5,717,364,1.0,0.9945054945054945
+label__agreement_band__topic,"0|unanimous|Kristen, Jewish, Rohingya",existing_cleaner,5,679,336,0.9470013947001394,0.9230769230769231
+label__agreement_band__topic,"0|unanimous|Kristen, LGBTQ+",raw,7,730,342,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, LGBTQ+",lowercase,7,730,342,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, LGBTQ+",leet_decode,7,730,342,1.0,0.9912280701754386
+label__agreement_band__topic,"0|unanimous|Kristen, LGBTQ+",collapse_repetition,7,730,342,1.0,0.9941520467836257
+label__agreement_band__topic,"0|unanimous|Kristen, LGBTQ+",expand_emoji,7,731,343,1.0013698630136987,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, LGBTQ+",expand_slang,7,730,341,1.0,0.9970760233918129
+label__agreement_band__topic,"0|unanimous|Kristen, LGBTQ+",keep_hashtag_content,7,730,342,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, LGBTQ+",remove_hashtag,7,730,342,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, LGBTQ+",remove_url,7,700,333,0.958904109589041,0.9736842105263158
+label__agreement_band__topic,"0|unanimous|Kristen, LGBTQ+",remove_mention,7,729,341,0.9986301369863013,0.9970760233918129
+label__agreement_band__topic,"0|unanimous|Kristen, LGBTQ+",remove_punctuation,7,730,342,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, LGBTQ+",remove_emoji,7,730,342,1.0,0.9970760233918129
+label__agreement_band__topic,"0|unanimous|Kristen, LGBTQ+",full_normalize,7,731,342,1.0013698630136987,0.9824561403508771
+label__agreement_band__topic,"0|unanimous|Kristen, LGBTQ+",existing_cleaner,7,699,332,0.9575342465753425,0.9707602339181286
+label__agreement_band__topic,"0|unanimous|Kristen, LGBTQ+, Jewish, Rohingya",raw,1,408,127,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, LGBTQ+, Jewish, Rohingya",lowercase,1,408,127,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, LGBTQ+, Jewish, Rohingya",leet_decode,1,408,127,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, LGBTQ+, Jewish, Rohingya",collapse_repetition,1,408,127,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, LGBTQ+, Jewish, Rohingya",expand_emoji,1,408,127,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, LGBTQ+, Jewish, Rohingya",expand_slang,1,408,127,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, LGBTQ+, Jewish, Rohingya",keep_hashtag_content,1,408,127,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, LGBTQ+, Jewish, Rohingya",remove_hashtag,1,388,118,0.9509803921568627,0.9291338582677166
+label__agreement_band__topic,"0|unanimous|Kristen, LGBTQ+, Jewish, Rohingya",remove_url,1,408,127,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, LGBTQ+, Jewish, Rohingya",remove_mention,1,408,127,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, LGBTQ+, Jewish, Rohingya",remove_punctuation,1,408,127,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, LGBTQ+, Jewish, Rohingya",remove_emoji,1,408,127,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, LGBTQ+, Jewish, Rohingya",full_normalize,1,408,127,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, LGBTQ+, Jewish, Rohingya",existing_cleaner,1,388,118,0.9509803921568627,0.9291338582677166
+label__agreement_band__topic,"0|unanimous|Kristen, Rohingya",raw,2,699,301,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Rohingya",lowercase,2,699,301,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Rohingya",leet_decode,2,699,301,1.0,0.9933554817275747
+label__agreement_band__topic,"0|unanimous|Kristen, Rohingya",collapse_repetition,2,699,301,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Rohingya",expand_emoji,2,699,301,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Rohingya",expand_slang,2,699,301,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Rohingya",keep_hashtag_content,2,699,301,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Rohingya",remove_hashtag,2,661,273,0.9456366237482118,0.9069767441860465
+label__agreement_band__topic,"0|unanimous|Kristen, Rohingya",remove_url,2,699,301,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Rohingya",remove_mention,2,697,300,0.9971387696709585,0.9966777408637874
+label__agreement_band__topic,"0|unanimous|Kristen, Rohingya",remove_punctuation,2,699,301,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Rohingya",remove_emoji,2,690,292,0.9871244635193133,0.9700996677740864
+label__agreement_band__topic,"0|unanimous|Kristen, Rohingya",full_normalize,2,699,301,1.0,0.9933554817275747
+label__agreement_band__topic,"0|unanimous|Kristen, Rohingya",existing_cleaner,2,659,271,0.9427753934191703,0.9003322259136213
+label__agreement_band__topic,"0|unanimous|Kristen, Tionghoa",raw,8,446,281,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Tionghoa",lowercase,8,446,281,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Tionghoa",leet_decode,8,446,282,1.0,0.9928825622775801
+label__agreement_band__topic,"0|unanimous|Kristen, Tionghoa",collapse_repetition,8,446,281,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Tionghoa",expand_emoji,8,452,284,1.0134529147982063,0.9928825622775801
+label__agreement_band__topic,"0|unanimous|Kristen, Tionghoa",expand_slang,8,446,277,1.0,0.9679715302491103
+label__agreement_band__topic,"0|unanimous|Kristen, Tionghoa",keep_hashtag_content,8,446,281,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Tionghoa",remove_hashtag,8,438,275,0.9820627802690582,0.9786476868327402
+label__agreement_band__topic,"0|unanimous|Kristen, Tionghoa",remove_url,8,446,281,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Tionghoa",remove_mention,8,424,265,0.9506726457399103,0.9430604982206405
+label__agreement_band__topic,"0|unanimous|Kristen, Tionghoa",remove_punctuation,8,446,281,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Tionghoa",remove_emoji,8,446,281,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Tionghoa",full_normalize,8,453,279,1.015695067264574,0.9430604982206405
+label__agreement_band__topic,"0|unanimous|Kristen, Tionghoa",existing_cleaner,8,416,259,0.9327354260089686,0.9217081850533808
+label__agreement_band__topic,"0|unanimous|Kristen, Tionghoa, Jewish",raw,2,269,174,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Tionghoa, Jewish",lowercase,2,269,174,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Tionghoa, Jewish",leet_decode,2,269,174,1.0,0.9655172413793104
+label__agreement_band__topic,"0|unanimous|Kristen, Tionghoa, Jewish",collapse_repetition,2,269,174,1.0,0.9942528735632183
+label__agreement_band__topic,"0|unanimous|Kristen, Tionghoa, Jewish",expand_emoji,2,269,174,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Tionghoa, Jewish",expand_slang,2,269,174,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Tionghoa, Jewish",keep_hashtag_content,2,269,174,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Tionghoa, Jewish",remove_hashtag,2,269,174,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Tionghoa, Jewish",remove_url,2,269,174,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Tionghoa, Jewish",remove_mention,2,269,174,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Tionghoa, Jewish",remove_punctuation,2,269,174,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Kristen, Tionghoa, Jewish",remove_emoji,2,269,174,1.0,0.9942528735632183
+label__agreement_band__topic,"0|unanimous|Kristen, Tionghoa, Jewish",full_normalize,2,269,174,1.0,0.9597701149425287
+label__agreement_band__topic,"0|unanimous|Kristen, Tionghoa, Jewish",existing_cleaner,2,269,174,1.0,1.0
+label__agreement_band__topic,0|unanimous|LGBTQ+,raw,494,21509,7774,1.0,1.0
+label__agreement_band__topic,0|unanimous|LGBTQ+,lowercase,494,21509,7774,1.0,1.0
+label__agreement_band__topic,0|unanimous|LGBTQ+,leet_decode,494,21509,7780,1.0,0.9830203241574479
+label__agreement_band__topic,0|unanimous|LGBTQ+,collapse_repetition,494,21509,7767,1.0,0.9956264471314639
+label__agreement_band__topic,0|unanimous|LGBTQ+,expand_emoji,494,21691,7789,1.0084615742247431,0.9994854643684075
+label__agreement_band__topic,0|unanimous|LGBTQ+,expand_slang,494,21512,7741,1.0001394764982101,0.9945973758682789
+label__agreement_band__topic,0|unanimous|LGBTQ+,keep_hashtag_content,494,21505,7774,0.9998140313357199,0.9997427321842037
+label__agreement_band__topic,0|unanimous|LGBTQ+,remove_hashtag,494,20972,7469,0.9750337068204008,0.9607666580910728
+label__agreement_band__topic,0|unanimous|LGBTQ+,remove_url,494,21298,7727,0.9901901529592264,0.9939542063287883
+label__agreement_band__topic,0|unanimous|LGBTQ+,remove_mention,494,21391,7678,0.994513924403738,0.9876511448417803
+label__agreement_band__topic,0|unanimous|LGBTQ+,remove_punctuation,494,21509,7774,1.0,1.0
+label__agreement_band__topic,0|unanimous|LGBTQ+,remove_emoji,494,21219,7622,0.9865172718396951,0.9764599948546436
+label__agreement_band__topic,0|unanimous|LGBTQ+,full_normalize,494,21683,7738,1.008089636896183,0.9709287368150245
+label__agreement_band__topic,0|unanimous|LGBTQ+,existing_cleaner,494,20643,7325,0.9597377841833651,0.9422433753537433
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Disabilitas",raw,4,561,224,1.0,1.0
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Disabilitas",lowercase,4,561,224,1.0,1.0
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Disabilitas",leet_decode,4,529,208,0.9429590017825312,0.9241071428571429
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Disabilitas",collapse_repetition,4,561,224,1.0,1.0
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Disabilitas",expand_emoji,4,565,226,1.0071301247771836,1.0
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Disabilitas",expand_slang,4,561,222,1.0,0.9910714285714286
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Disabilitas",keep_hashtag_content,4,529,208,0.9429590017825312,0.9241071428571429
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Disabilitas",remove_hashtag,4,525,207,0.9358288770053476,0.9241071428571429
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Disabilitas",remove_url,4,561,224,1.0,1.0
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Disabilitas",remove_mention,4,561,224,1.0,1.0
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Disabilitas",remove_punctuation,4,561,224,1.0,1.0
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Disabilitas",remove_emoji,4,561,224,1.0,1.0
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Disabilitas",full_normalize,4,532,208,0.948306595365419,0.9151785714285714
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Disabilitas",existing_cleaner,4,525,207,0.9358288770053476,0.9241071428571429
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Jewish",raw,3,75,40,1.0,1.0
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Jewish",lowercase,3,75,40,1.0,1.0
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Jewish",leet_decode,3,75,40,1.0,0.9
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Jewish",collapse_repetition,3,75,40,1.0,1.0
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Jewish",expand_emoji,3,75,40,1.0,1.0
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Jewish",expand_slang,3,75,40,1.0,1.0
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Jewish",keep_hashtag_content,3,75,40,1.0,1.0
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Jewish",remove_hashtag,3,65,35,0.8666666666666667,0.875
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Jewish",remove_url,3,67,35,0.8933333333333333,0.875
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Jewish",remove_mention,3,74,40,0.9866666666666667,1.0
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Jewish",remove_punctuation,3,75,40,1.0,1.0
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Jewish",remove_emoji,3,69,37,0.92,0.875
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Jewish",full_normalize,3,75,40,1.0,0.875
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Jewish",existing_cleaner,3,56,30,0.7466666666666667,0.75
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Rohingya",raw,2,66,32,1.0,1.0
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Rohingya",lowercase,2,66,32,1.0,1.0
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Rohingya",leet_decode,2,66,32,1.0,0.90625
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Rohingya",collapse_repetition,2,66,32,1.0,1.0
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Rohingya",expand_emoji,2,66,32,1.0,1.0
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Rohingya",expand_slang,2,66,32,1.0,0.96875
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Rohingya",keep_hashtag_content,2,66,32,1.0,1.0
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Rohingya",remove_hashtag,2,62,30,0.9393939393939394,0.9375
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Rohingya",remove_url,2,58,27,0.8787878787878788,0.84375
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Rohingya",remove_mention,2,66,32,1.0,1.0
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Rohingya",remove_punctuation,2,66,32,1.0,1.0
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Rohingya",remove_emoji,2,66,32,1.0,1.0
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Rohingya",full_normalize,2,66,32,1.0,0.875
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Rohingya",existing_cleaner,2,54,25,0.8181818181818182,0.78125
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Tionghoa",raw,3,52,50,1.0,1.0
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Tionghoa",lowercase,3,52,50,1.0,1.0
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Tionghoa",leet_decode,3,52,50,1.0,0.98
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Tionghoa",collapse_repetition,3,52,50,1.0,1.0
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Tionghoa",expand_emoji,3,52,50,1.0,1.0
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Tionghoa",expand_slang,3,52,50,1.0,0.98
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Tionghoa",keep_hashtag_content,3,52,50,1.0,1.0
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Tionghoa",remove_hashtag,3,44,43,0.8461538461538461,0.86
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Tionghoa",remove_url,3,52,50,1.0,1.0
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Tionghoa",remove_mention,3,52,50,1.0,1.0
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Tionghoa",remove_punctuation,3,52,50,1.0,1.0
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Tionghoa",remove_emoji,3,52,50,1.0,1.0
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Tionghoa",full_normalize,3,52,49,1.0,0.94
+label__agreement_band__topic,"0|unanimous|LGBTQ+, Tionghoa",existing_cleaner,3,44,43,0.8461538461538461,0.86
+label__agreement_band__topic,0|unanimous|Rohingya,raw,1361,149067,11545,1.0,1.0
+label__agreement_band__topic,0|unanimous|Rohingya,lowercase,1361,149067,11545,1.0,1.0
+label__agreement_band__topic,0|unanimous|Rohingya,leet_decode,1361,149045,11557,0.999852415356853,0.9584235599826765
+label__agreement_band__topic,0|unanimous|Rohingya,collapse_repetition,1361,149067,11531,1.0,0.99549588566479
+label__agreement_band__topic,0|unanimous|Rohingya,expand_emoji,1361,149418,11557,1.0023546458974824,0.9996535296665223
+label__agreement_band__topic,0|unanimous|Rohingya,expand_slang,1361,149079,11515,1.0000805007144438,0.9966219142485925
+label__agreement_band__topic,0|unanimous|Rohingya,keep_hashtag_content,1361,149027,11526,0.9997316642851872,0.9980944131658727
+label__agreement_band__topic,0|unanimous|Rohingya,remove_hashtag,1361,145768,10768,0.9778690119208141,0.9326981377219575
+label__agreement_band__topic,0|unanimous|Rohingya,remove_url,1361,145536,11202,0.9763126647748999,0.9702901689042875
+label__agreement_band__topic,0|unanimous|Rohingya,remove_mention,1361,147969,11099,0.9926341846283886,0.9613685578172368
+label__agreement_band__topic,0|unanimous|Rohingya,remove_punctuation,1361,149067,11545,1.0,1.0
+label__agreement_band__topic,0|unanimous|Rohingya,remove_emoji,1361,148560,11541,0.9965988448147477,0.9900389779125163
+label__agreement_band__topic,0|unanimous|Rohingya,full_normalize,1361,149407,11506,1.002280853575909,0.9490688609787787
+label__agreement_band__topic,0|unanimous|Rohingya,existing_cleaner,1361,141148,9947,0.9468762368599355,0.8615851017756605
+label__agreement_band__topic,"0|unanimous|Rohingya, Disabilitas",raw,2,47,45,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Rohingya, Disabilitas",lowercase,2,47,45,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Rohingya, Disabilitas",leet_decode,2,47,45,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Rohingya, Disabilitas",collapse_repetition,2,47,45,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Rohingya, Disabilitas",expand_emoji,2,47,45,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Rohingya, Disabilitas",expand_slang,2,47,46,1.0,0.9777777777777777
+label__agreement_band__topic,"0|unanimous|Rohingya, Disabilitas",keep_hashtag_content,2,47,45,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Rohingya, Disabilitas",remove_hashtag,2,47,45,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Rohingya, Disabilitas",remove_url,2,47,45,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Rohingya, Disabilitas",remove_mention,2,47,45,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Rohingya, Disabilitas",remove_punctuation,2,47,45,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Rohingya, Disabilitas",remove_emoji,2,47,45,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Rohingya, Disabilitas",full_normalize,2,47,45,1.0,0.9333333333333333
+label__agreement_band__topic,"0|unanimous|Rohingya, Disabilitas",existing_cleaner,2,47,45,1.0,1.0
+label__agreement_band__topic,0|unanimous|Syiah,raw,343,40999,10989,1.0,1.0
+label__agreement_band__topic,0|unanimous|Syiah,lowercase,343,40999,10989,1.0,1.0
+label__agreement_band__topic,0|unanimous|Syiah,leet_decode,343,40999,10997,1.0,0.985985985985986
+label__agreement_band__topic,0|unanimous|Syiah,collapse_repetition,343,40999,10980,1.0,0.9967239967239967
+label__agreement_band__topic,0|unanimous|Syiah,expand_emoji,343,41179,11005,1.0043903509841703,1.0
+label__agreement_band__topic,0|unanimous|Syiah,expand_slang,343,41014,10966,1.0003658625820142,0.9974519974519974
+label__agreement_band__topic,0|unanimous|Syiah,keep_hashtag_content,343,40996,10991,0.9999268274835972,0.999908999909
+label__agreement_band__topic,0|unanimous|Syiah,remove_hashtag,343,40370,10751,0.9846581623942048,0.9783419783419783
+label__agreement_band__topic,0|unanimous|Syiah,remove_url,343,40365,10910,0.9845362082002,0.9928109928109928
+label__agreement_band__topic,0|unanimous|Syiah,remove_mention,343,40769,10886,0.9943901070757823,0.9906269906269907
+label__agreement_band__topic,0|unanimous|Syiah,remove_punctuation,343,40999,10989,1.0,1.0
+label__agreement_band__topic,0|unanimous|Syiah,remove_emoji,343,40717,10808,0.9931217834581332,0.9801619801619802
+label__agreement_band__topic,0|unanimous|Syiah,full_normalize,343,41200,10964,1.0049025585989901,0.9791609791609791
+label__agreement_band__topic,0|unanimous|Syiah,existing_cleaner,343,39507,10566,0.963608868508988,0.9615069615069615
+label__agreement_band__topic,"0|unanimous|Syiah, Ahmadiyah",raw,4,684,387,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Ahmadiyah",lowercase,4,684,387,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Ahmadiyah",leet_decode,4,663,377,0.9692982456140351,0.958656330749354
+label__agreement_band__topic,"0|unanimous|Syiah, Ahmadiyah",collapse_repetition,4,684,386,1.0,0.9974160206718347
+label__agreement_band__topic,"0|unanimous|Syiah, Ahmadiyah",expand_emoji,4,684,387,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Ahmadiyah",expand_slang,4,684,387,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Ahmadiyah",keep_hashtag_content,4,684,387,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Ahmadiyah",remove_hashtag,4,682,385,0.9970760233918129,0.9948320413436692
+label__agreement_band__topic,"0|unanimous|Syiah, Ahmadiyah",remove_url,4,636,364,0.9298245614035088,0.9405684754521964
+label__agreement_band__topic,"0|unanimous|Syiah, Ahmadiyah",remove_mention,4,682,386,0.9970760233918129,0.9974160206718347
+label__agreement_band__topic,"0|unanimous|Syiah, Ahmadiyah",remove_punctuation,4,684,387,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Ahmadiyah",remove_emoji,4,667,375,0.9751461988304093,0.9612403100775194
+label__agreement_band__topic,"0|unanimous|Syiah, Ahmadiyah",full_normalize,4,663,375,0.9692982456140351,0.9534883720930233
+label__agreement_band__topic,"0|unanimous|Syiah, Ahmadiyah",existing_cleaner,4,632,361,0.9239766081871345,0.9328165374677002
+label__agreement_band__topic,"0|unanimous|Syiah, Disabilitas",raw,2,334,190,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Disabilitas",lowercase,2,334,190,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Disabilitas",leet_decode,2,334,189,1.0,0.9894736842105263
+label__agreement_band__topic,"0|unanimous|Syiah, Disabilitas",collapse_repetition,2,334,190,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Disabilitas",expand_emoji,2,334,190,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Disabilitas",expand_slang,2,334,189,1.0,0.9894736842105263
+label__agreement_band__topic,"0|unanimous|Syiah, Disabilitas",keep_hashtag_content,2,334,190,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Disabilitas",remove_hashtag,2,334,190,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Disabilitas",remove_url,2,334,190,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Disabilitas",remove_mention,2,334,190,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Disabilitas",remove_punctuation,2,334,190,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Disabilitas",remove_emoji,2,330,189,0.9880239520958084,0.9842105263157894
+label__agreement_band__topic,"0|unanimous|Syiah, Disabilitas",full_normalize,2,334,188,1.0,0.9789473684210527
+label__agreement_band__topic,"0|unanimous|Syiah, Disabilitas",existing_cleaner,2,334,190,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Jewish",raw,33,1977,1062,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Jewish",lowercase,33,1977,1062,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Jewish",leet_decode,33,1978,1062,1.0005058168942842,0.9830508474576272
+label__agreement_band__topic,"0|unanimous|Syiah, Jewish",collapse_repetition,33,1977,1062,1.0,0.9971751412429378
+label__agreement_band__topic,"0|unanimous|Syiah, Jewish",expand_emoji,33,1982,1065,1.0025290844714214,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Jewish",expand_slang,33,1977,1053,1.0,0.9896421845574388
+label__agreement_band__topic,"0|unanimous|Syiah, Jewish",keep_hashtag_content,33,1976,1062,0.9994941831057157,0.9990583804143126
+label__agreement_band__topic,"0|unanimous|Syiah, Jewish",remove_hashtag,33,1912,1021,0.9671219018715225,0.9613935969868174
+label__agreement_band__topic,"0|unanimous|Syiah, Jewish",remove_url,33,1969,1058,0.9959534648457259,0.9962335216572504
+label__agreement_band__topic,"0|unanimous|Syiah, Jewish",remove_mention,33,1960,1047,0.9914011127971675,0.9858757062146892
+label__agreement_band__topic,"0|unanimous|Syiah, Jewish",remove_punctuation,33,1977,1062,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Jewish",remove_emoji,33,1800,983,0.9104704097116844,0.9180790960451978
+label__agreement_band__topic,"0|unanimous|Syiah, Jewish",full_normalize,33,1983,1053,1.0030349013657056,0.9651600753295668
+label__agreement_band__topic,"0|unanimous|Syiah, Jewish",existing_cleaner,33,1887,1002,0.9544764795144158,0.943502824858757
+label__agreement_band__topic,"0|unanimous|Syiah, Kristen",raw,3,397,225,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Kristen",lowercase,3,397,225,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Kristen",leet_decode,3,397,225,1.0,0.9955555555555555
+label__agreement_band__topic,"0|unanimous|Syiah, Kristen",collapse_repetition,3,397,225,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Kristen",expand_emoji,3,397,225,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Kristen",expand_slang,3,397,225,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Kristen",keep_hashtag_content,3,397,225,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Kristen",remove_hashtag,3,367,200,0.924433249370277,0.8888888888888888
+label__agreement_band__topic,"0|unanimous|Syiah, Kristen",remove_url,3,397,225,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Kristen",remove_mention,3,397,225,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Kristen",remove_punctuation,3,397,225,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Kristen",remove_emoji,3,397,225,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Kristen",full_normalize,3,397,225,1.0,0.9955555555555555
+label__agreement_band__topic,"0|unanimous|Syiah, Kristen",existing_cleaner,3,367,200,0.924433249370277,0.8888888888888888
+label__agreement_band__topic,"0|unanimous|Syiah, Kristen, Jewish",raw,2,386,317,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Kristen, Jewish",lowercase,2,386,317,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Kristen, Jewish",leet_decode,2,386,317,1.0,0.9810725552050473
+label__agreement_band__topic,"0|unanimous|Syiah, Kristen, Jewish",collapse_repetition,2,386,317,1.0,0.9968454258675079
+label__agreement_band__topic,"0|unanimous|Syiah, Kristen, Jewish",expand_emoji,2,386,317,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Kristen, Jewish",expand_slang,2,386,316,1.0,0.9968454258675079
+label__agreement_band__topic,"0|unanimous|Syiah, Kristen, Jewish",keep_hashtag_content,2,386,317,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Kristen, Jewish",remove_hashtag,2,386,317,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Kristen, Jewish",remove_url,2,386,317,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Kristen, Jewish",remove_mention,2,386,317,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Kristen, Jewish",remove_punctuation,2,386,317,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Kristen, Jewish",remove_emoji,2,364,297,0.9430051813471503,0.9369085173501577
+label__agreement_band__topic,"0|unanimous|Syiah, Kristen, Jewish",full_normalize,2,386,316,1.0,0.9779179810725552
+label__agreement_band__topic,"0|unanimous|Syiah, Kristen, Jewish",existing_cleaner,2,386,317,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Rohingya",raw,30,6193,566,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Rohingya",lowercase,30,6193,566,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Rohingya",leet_decode,30,6193,569,1.0,0.9929328621908127
+label__agreement_band__topic,"0|unanimous|Syiah, Rohingya",collapse_repetition,30,6193,566,1.0,0.9982332155477032
+label__agreement_band__topic,"0|unanimous|Syiah, Rohingya",expand_emoji,30,6193,566,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Rohingya",expand_slang,30,6193,566,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Rohingya",keep_hashtag_content,30,6193,566,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Rohingya",remove_hashtag,30,6165,556,0.9954787663491038,0.9823321554770318
+label__agreement_band__topic,"0|unanimous|Syiah, Rohingya",remove_url,30,6087,546,0.9828839011787502,0.9646643109540636
+label__agreement_band__topic,"0|unanimous|Syiah, Rohingya",remove_mention,30,6183,564,0.9983852736961085,0.9964664310954063
+label__agreement_band__topic,"0|unanimous|Syiah, Rohingya",remove_punctuation,30,6193,566,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Rohingya",remove_emoji,30,6191,566,0.9996770547392217,0.9946996466431095
+label__agreement_band__topic,"0|unanimous|Syiah, Rohingya",full_normalize,30,6193,570,1.0,0.9893992932862191
+label__agreement_band__topic,"0|unanimous|Syiah, Rohingya",existing_cleaner,30,6049,533,0.9767479412239626,0.941696113074205
+label__agreement_band__topic,"0|unanimous|Syiah, Tionghoa",raw,2,746,659,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Tionghoa",lowercase,2,746,659,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Tionghoa",leet_decode,2,746,659,1.0,0.9984825493171472
+label__agreement_band__topic,"0|unanimous|Syiah, Tionghoa",collapse_repetition,2,746,659,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Tionghoa",expand_emoji,2,747,660,1.0013404825737264,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Tionghoa",expand_slang,2,746,659,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Tionghoa",keep_hashtag_content,2,746,659,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Tionghoa",remove_hashtag,2,746,659,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Tionghoa",remove_url,2,746,659,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Tionghoa",remove_mention,2,746,659,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Tionghoa",remove_punctuation,2,746,659,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Syiah, Tionghoa",remove_emoji,2,743,656,0.9959785522788204,0.992412746585736
+label__agreement_band__topic,"0|unanimous|Syiah, Tionghoa",full_normalize,2,747,660,1.0013404825737264,0.9984825493171472
+label__agreement_band__topic,"0|unanimous|Syiah, Tionghoa",existing_cleaner,2,746,659,1.0,1.0
+label__agreement_band__topic,0|unanimous|Tionghoa,raw,4947,211298,24740,1.0,1.0
+label__agreement_band__topic,0|unanimous|Tionghoa,lowercase,4947,211302,24741,1.0000189306098497,0.9998787388843977
+label__agreement_band__topic,0|unanimous|Tionghoa,leet_decode,4947,211232,24804,0.9996876449374816,0.9472514147130153
+label__agreement_band__topic,0|unanimous|Tionghoa,collapse_repetition,4947,211298,24641,1.0,0.9875909458367017
+label__agreement_band__topic,0|unanimous|Tionghoa,expand_emoji,4947,213496,24750,1.0104023701123532,0.999232012934519
+label__agreement_band__topic,0|unanimous|Tionghoa,expand_slang,4947,211322,24715,1.0001135836590975,0.9986661277283752
+label__agreement_band__topic,0|unanimous|Tionghoa,keep_hashtag_content,4947,211121,24724,0.9991623205141553,0.9978981406628941
+label__agreement_band__topic,0|unanimous|Tionghoa,remove_hashtag,4947,195438,21747,0.9249401319463506,0.8790218270008084
+label__agreement_band__topic,0|unanimous|Tionghoa,remove_url,4947,209877,24520,0.993274900850931,0.9911075181891673
+label__agreement_band__topic,0|unanimous|Tionghoa,remove_mention,4947,210248,24360,0.9950307149144809,0.98464025869038
+label__agreement_band__topic,0|unanimous|Tionghoa,remove_punctuation,4947,211298,24740,1.0,1.0
+label__agreement_band__topic,0|unanimous|Tionghoa,remove_emoji,4947,209906,24207,0.9934121477723404,0.9736459175424413
+label__agreement_band__topic,0|unanimous|Tionghoa,full_normalize,4947,213327,24638,1.0096025518462077,0.9324171382376718
+label__agreement_band__topic,0|unanimous|Tionghoa,existing_cleaner,4947,192973,21091,0.9132741436265369,0.8523443815683104
+label__agreement_band__topic,"0|unanimous|Tionghoa, Disabilitas",raw,22,1286,689,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Tionghoa, Disabilitas",lowercase,22,1286,689,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Tionghoa, Disabilitas",leet_decode,22,1286,689,1.0,0.988388969521045
+label__agreement_band__topic,"0|unanimous|Tionghoa, Disabilitas",collapse_repetition,22,1286,689,1.0,0.9970972423802612
+label__agreement_band__topic,"0|unanimous|Tionghoa, Disabilitas",expand_emoji,22,1302,696,1.0124416796267497,0.9985486211901307
+label__agreement_band__topic,"0|unanimous|Tionghoa, Disabilitas",expand_slang,22,1289,688,1.0023328149300155,0.9927431059506531
+label__agreement_band__topic,"0|unanimous|Tionghoa, Disabilitas",keep_hashtag_content,22,1279,682,0.994556765163297,0.9796806966618288
+label__agreement_band__topic,"0|unanimous|Tionghoa, Disabilitas",remove_hashtag,22,1241,647,0.9650077760497667,0.9390420899854862
+label__agreement_band__topic,"0|unanimous|Tionghoa, Disabilitas",remove_url,22,1282,685,0.9968895800933126,0.9941944847605225
+label__agreement_band__topic,"0|unanimous|Tionghoa, Disabilitas",remove_mention,22,1278,685,0.9937791601866252,0.9941944847605225
+label__agreement_band__topic,"0|unanimous|Tionghoa, Disabilitas",remove_punctuation,22,1286,689,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Tionghoa, Disabilitas",remove_emoji,22,1281,685,0.9961119751166407,0.9898403483309144
+label__agreement_band__topic,"0|unanimous|Tionghoa, Disabilitas",full_normalize,22,1302,691,1.0124416796267497,0.9709724238026125
+label__agreement_band__topic,"0|unanimous|Tionghoa, Disabilitas",existing_cleaner,22,1229,639,0.9556765163297045,0.9274310595065312
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish",raw,76,5488,1560,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish",lowercase,76,5488,1560,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish",leet_decode,76,5488,1560,1.0,0.9935897435897436
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish",collapse_repetition,76,5488,1560,1.0,0.9993589743589744
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish",expand_emoji,76,5498,1562,1.0018221574344024,0.9993589743589744
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish",expand_slang,76,5490,1553,1.0003644314868805,0.9935897435897436
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish",keep_hashtag_content,76,5488,1560,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish",remove_hashtag,76,5333,1496,0.9717565597667639,0.958974358974359
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish",remove_url,76,5488,1560,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish",remove_mention,76,5476,1554,0.9978134110787172,0.9961538461538462
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish",remove_punctuation,76,5488,1560,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish",remove_emoji,76,5440,1551,0.9912536443148688,0.9871794871794872
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish",full_normalize,76,5496,1551,1.001457725947522,0.9839743589743589
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish",existing_cleaner,76,5321,1489,0.969569970845481,0.9544871794871795
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish, Disabilitas",raw,1,378,122,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish, Disabilitas",lowercase,1,378,122,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish, Disabilitas",leet_decode,1,378,122,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish, Disabilitas",collapse_repetition,1,378,122,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish, Disabilitas",expand_emoji,1,378,122,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish, Disabilitas",expand_slang,1,378,121,1.0,0.9836065573770492
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish, Disabilitas",keep_hashtag_content,1,378,122,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish, Disabilitas",remove_hashtag,1,378,122,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish, Disabilitas",remove_url,1,378,122,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish, Disabilitas",remove_mention,1,378,122,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish, Disabilitas",remove_punctuation,1,378,122,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish, Disabilitas",remove_emoji,1,378,122,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish, Disabilitas",full_normalize,1,378,121,1.0,0.9836065573770492
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish, Disabilitas",existing_cleaner,1,378,122,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish, Rohingya",raw,1,312,170,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish, Rohingya",lowercase,1,312,170,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish, Rohingya",leet_decode,1,312,170,1.0,0.9764705882352941
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish, Rohingya",collapse_repetition,1,312,170,1.0,0.9941176470588236
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish, Rohingya",expand_emoji,1,312,170,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish, Rohingya",expand_slang,1,312,170,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish, Rohingya",keep_hashtag_content,1,312,170,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish, Rohingya",remove_hashtag,1,312,170,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish, Rohingya",remove_url,1,312,170,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish, Rohingya",remove_mention,1,312,170,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish, Rohingya",remove_punctuation,1,312,170,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish, Rohingya",remove_emoji,1,312,170,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish, Rohingya",full_normalize,1,312,170,1.0,0.9705882352941176
+label__agreement_band__topic,"0|unanimous|Tionghoa, Jewish, Rohingya",existing_cleaner,1,312,170,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Tionghoa, Rohingya",raw,5,162,132,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Tionghoa, Rohingya",lowercase,5,162,132,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Tionghoa, Rohingya",leet_decode,5,162,132,1.0,0.9924242424242424
+label__agreement_band__topic,"0|unanimous|Tionghoa, Rohingya",collapse_repetition,5,162,132,1.0,0.9848484848484849
+label__agreement_band__topic,"0|unanimous|Tionghoa, Rohingya",expand_emoji,5,163,133,1.0061728395061729,1.0
+label__agreement_band__topic,"0|unanimous|Tionghoa, Rohingya",expand_slang,5,162,131,1.0,0.9848484848484849
+label__agreement_band__topic,"0|unanimous|Tionghoa, Rohingya",keep_hashtag_content,5,162,132,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Tionghoa, Rohingya",remove_hashtag,5,156,126,0.9629629629629629,0.9545454545454546
+label__agreement_band__topic,"0|unanimous|Tionghoa, Rohingya",remove_url,5,158,128,0.9753086419753086,0.9696969696969697
+label__agreement_band__topic,"0|unanimous|Tionghoa, Rohingya",remove_mention,5,162,132,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Tionghoa, Rohingya",remove_punctuation,5,162,132,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Tionghoa, Rohingya",remove_emoji,5,162,132,1.0,1.0
+label__agreement_band__topic,"0|unanimous|Tionghoa, Rohingya",full_normalize,5,163,130,1.0061728395061729,0.946969696969697
+label__agreement_band__topic,"0|unanimous|Tionghoa, Rohingya",existing_cleaner,5,152,122,0.9382716049382716,0.9242424242424242
+label__agreement_band__topic,0|unanimous|UNKNOWN,raw,1807,45996,10888,1.0,1.0
+label__agreement_band__topic,0|unanimous|UNKNOWN,lowercase,1807,45996,10888,1.0,1.0
+label__agreement_band__topic,0|unanimous|UNKNOWN,leet_decode,1807,45991,10903,0.9998912948952082,0.9832843497428362
+label__agreement_band__topic,0|unanimous|UNKNOWN,collapse_repetition,1807,45996,10875,1.0,0.9956833210874357
+label__agreement_band__topic,0|unanimous|UNKNOWN,expand_emoji,1807,46323,10897,1.0071093138533787,0.9998163115356355
+label__agreement_band__topic,0|unanimous|UNKNOWN,expand_slang,1807,46035,10860,1.0008478998173753,0.9971528288023512
+label__agreement_band__topic,0|unanimous|UNKNOWN,keep_hashtag_content,1807,45991,10890,0.9998912948952082,0.9998163115356355
+label__agreement_band__topic,0|unanimous|UNKNOWN,remove_hashtag,1807,44933,10406,0.9768892947212802,0.9557310800881704
+label__agreement_band__topic,0|unanimous|UNKNOWN,remove_url,1807,45850,10865,0.9968258109400817,0.9978875826598089
+label__agreement_band__topic,0|unanimous|UNKNOWN,remove_mention,1807,45908,10846,0.9980867901556657,0.9961425422483468
+label__agreement_band__topic,0|unanimous|UNKNOWN,remove_punctuation,1807,45996,10888,1.0,1.0
+label__agreement_band__topic,0|unanimous|UNKNOWN,remove_emoji,1807,44000,10611,0.956604922167145,0.9679463629684056
+label__agreement_band__topic,0|unanimous|UNKNOWN,full_normalize,1807,46440,10850,1.0096530133055048,0.974834680382072
+label__agreement_band__topic,0|unanimous|UNKNOWN,existing_cleaner,1807,44699,10333,0.9718018958170276,0.9490264511388685
+label__agreement_band__topic,1|borderline|Ahmadiyah,raw,11,1463,391,1.0,1.0
+label__agreement_band__topic,1|borderline|Ahmadiyah,lowercase,11,1463,391,1.0,1.0
+label__agreement_band__topic,1|borderline|Ahmadiyah,leet_decode,11,1463,391,1.0,0.9872122762148338
+label__agreement_band__topic,1|borderline|Ahmadiyah,collapse_repetition,11,1463,391,1.0,0.9974424552429667
+label__agreement_band__topic,1|borderline|Ahmadiyah,expand_emoji,11,1492,395,1.0198222829801777,1.0
+label__agreement_band__topic,1|borderline|Ahmadiyah,expand_slang,11,1463,390,1.0,0.9974424552429667
+label__agreement_band__topic,1|borderline|Ahmadiyah,keep_hashtag_content,11,1463,391,1.0,1.0
+label__agreement_band__topic,1|borderline|Ahmadiyah,remove_hashtag,11,1459,387,0.9972658920027341,0.989769820971867
+label__agreement_band__topic,1|borderline|Ahmadiyah,remove_url,11,1463,391,1.0,1.0
+label__agreement_band__topic,1|borderline|Ahmadiyah,remove_mention,11,1462,390,0.9993164730006835,0.9974424552429667
+label__agreement_band__topic,1|borderline|Ahmadiyah,remove_punctuation,11,1463,391,1.0,1.0
+label__agreement_band__topic,1|borderline|Ahmadiyah,remove_emoji,11,1425,367,0.974025974025974,0.928388746803069
+label__agreement_band__topic,1|borderline|Ahmadiyah,full_normalize,11,1492,394,1.0198222829801777,0.979539641943734
+label__agreement_band__topic,1|borderline|Ahmadiyah,existing_cleaner,11,1458,386,0.9965823650034177,0.9872122762148338
+label__agreement_band__topic,"1|borderline|Ahmadiyah, Kristen",raw,1,79,62,1.0,1.0
+label__agreement_band__topic,"1|borderline|Ahmadiyah, Kristen",lowercase,1,79,62,1.0,1.0
+label__agreement_band__topic,"1|borderline|Ahmadiyah, Kristen",leet_decode,1,79,62,1.0,1.0
+label__agreement_band__topic,"1|borderline|Ahmadiyah, Kristen",collapse_repetition,1,79,62,1.0,1.0
+label__agreement_band__topic,"1|borderline|Ahmadiyah, Kristen",expand_emoji,1,79,62,1.0,1.0
+label__agreement_band__topic,"1|borderline|Ahmadiyah, Kristen",expand_slang,1,79,62,1.0,1.0
+label__agreement_band__topic,"1|borderline|Ahmadiyah, Kristen",keep_hashtag_content,1,79,62,1.0,1.0
+label__agreement_band__topic,"1|borderline|Ahmadiyah, Kristen",remove_hashtag,1,79,62,1.0,1.0
+label__agreement_band__topic,"1|borderline|Ahmadiyah, Kristen",remove_url,1,79,62,1.0,1.0
+label__agreement_band__topic,"1|borderline|Ahmadiyah, Kristen",remove_mention,1,79,62,1.0,1.0
+label__agreement_band__topic,"1|borderline|Ahmadiyah, Kristen",remove_punctuation,1,79,62,1.0,1.0
+label__agreement_band__topic,"1|borderline|Ahmadiyah, Kristen",remove_emoji,1,79,62,1.0,1.0
+label__agreement_band__topic,"1|borderline|Ahmadiyah, Kristen",full_normalize,1,79,62,1.0,1.0
+label__agreement_band__topic,"1|borderline|Ahmadiyah, Kristen",existing_cleaner,1,79,62,1.0,1.0
+label__agreement_band__topic,1|borderline|Disabilitas,raw,594,15218,4831,1.0,1.0
+label__agreement_band__topic,1|borderline|Disabilitas,lowercase,594,15218,4831,1.0,1.0
+label__agreement_band__topic,1|borderline|Disabilitas,leet_decode,594,15217,4833,0.999934288342752,0.9892361829848892
+label__agreement_band__topic,1|borderline|Disabilitas,collapse_repetition,594,15218,4814,1.0,0.9867522252121714
+label__agreement_band__topic,1|borderline|Disabilitas,expand_emoji,594,15476,4840,1.016953607569983,0.9989650175947009
+label__agreement_band__topic,1|borderline|Disabilitas,expand_slang,594,15280,4801,1.0040741227493757,0.9921341337197268
+label__agreement_band__topic,1|borderline|Disabilitas,keep_hashtag_content,594,15218,4831,1.0,1.0
+label__agreement_band__topic,1|borderline|Disabilitas,remove_hashtag,594,14982,4665,0.984492048889473,0.9656385841440696
+label__agreement_band__topic,1|borderline|Disabilitas,remove_url,594,15218,4831,1.0,1.0
+label__agreement_band__topic,1|borderline|Disabilitas,remove_mention,594,15147,4779,0.9953344723353923,0.9892361829848892
+label__agreement_band__topic,1|borderline|Disabilitas,remove_punctuation,594,15218,4831,1.0,1.0
+label__agreement_band__topic,1|borderline|Disabilitas,remove_emoji,594,15136,4760,0.9946116441056644,0.981370316704616
+label__agreement_band__topic,1|borderline|Disabilitas,full_normalize,594,15569,4763,1.0230647916940465,0.9598426826743945
+label__agreement_band__topic,1|borderline|Disabilitas,existing_cleaner,594,14911,4613,0.9798265212248652,0.9548747671289588
+label__agreement_band__topic,1|borderline|Jewish,raw,943,37078,7803,1.0,1.0
+label__agreement_band__topic,1|borderline|Jewish,lowercase,943,37078,7803,1.0,1.0
+label__agreement_band__topic,1|borderline|Jewish,leet_decode,943,37072,7788,0.9998381789740547,0.9851339228501859
+label__agreement_band__topic,1|borderline|Jewish,collapse_repetition,943,37078,7792,1.0,0.9946174548250672
+label__agreement_band__topic,1|borderline|Jewish,expand_emoji,943,37379,7815,1.0081180214682561,0.999359220812508
+label__agreement_band__topic,1|borderline|Jewish,expand_slang,943,37090,7774,1.0003236420518906,0.9947456106625657
+label__agreement_band__topic,1|borderline|Jewish,keep_hashtag_content,943,37051,7783,0.9992718053832461,0.9970524157375369
+label__agreement_band__topic,1|borderline|Jewish,remove_hashtag,943,35902,7350,0.9682830789147203,0.9419454056132257
+label__agreement_band__topic,1|borderline|Jewish,remove_url,943,37058,7797,0.9994605965801823,0.9992310649750096
+label__agreement_band__topic,1|borderline|Jewish,remove_mention,943,36885,7700,0.9947947569987594,0.986799948737665
+label__agreement_band__topic,1|borderline|Jewish,remove_punctuation,943,37078,7803,1.0,1.0
+label__agreement_band__topic,1|borderline|Jewish,remove_emoji,943,36747,7652,0.9910728734020173,0.9743688325003204
+label__agreement_band__topic,1|borderline|Jewish,full_normalize,943,37345,7727,1.007201035654566,0.9703960015378701
+label__agreement_band__topic,1|borderline|Jewish,existing_cleaner,943,35689,7232,0.962538432493662,0.9268230167884147
+label__agreement_band__topic,"1|borderline|Jewish, Disabilitas",raw,20,851,488,1.0,1.0
+label__agreement_band__topic,"1|borderline|Jewish, Disabilitas",lowercase,20,851,488,1.0,1.0
+label__agreement_band__topic,"1|borderline|Jewish, Disabilitas",leet_decode,20,851,488,1.0,0.9979508196721312
+label__agreement_band__topic,"1|borderline|Jewish, Disabilitas",collapse_repetition,20,851,488,1.0,1.0
+label__agreement_band__topic,"1|borderline|Jewish, Disabilitas",expand_emoji,20,854,491,1.0035252643948296,1.0
+label__agreement_band__topic,"1|borderline|Jewish, Disabilitas",expand_slang,20,852,482,1.00117508813161,0.9733606557377049
+label__agreement_band__topic,"1|borderline|Jewish, Disabilitas",keep_hashtag_content,20,851,488,1.0,1.0
+label__agreement_band__topic,"1|borderline|Jewish, Disabilitas",remove_hashtag,20,832,474,0.9776733254994124,0.9713114754098361
+label__agreement_band__topic,"1|borderline|Jewish, Disabilitas",remove_url,20,851,488,1.0,1.0
+label__agreement_band__topic,"1|borderline|Jewish, Disabilitas",remove_mention,20,845,485,0.9929494712103408,0.9938524590163934
+label__agreement_band__topic,"1|borderline|Jewish, Disabilitas",remove_punctuation,20,851,488,1.0,1.0
+label__agreement_band__topic,"1|borderline|Jewish, Disabilitas",remove_emoji,20,846,488,0.9941245593419507,0.9897540983606558
+label__agreement_band__topic,"1|borderline|Jewish, Disabilitas",full_normalize,20,856,483,1.0058754406580495,0.9651639344262295
+label__agreement_band__topic,"1|borderline|Jewish, Disabilitas",existing_cleaner,20,826,471,0.9706227967097533,0.9651639344262295
+label__agreement_band__topic,"1|borderline|Jewish, Rohingya",raw,14,685,380,1.0,1.0
+label__agreement_band__topic,"1|borderline|Jewish, Rohingya",lowercase,14,685,380,1.0,1.0
+label__agreement_band__topic,"1|borderline|Jewish, Rohingya",leet_decode,14,685,380,1.0,0.9973684210526316
+label__agreement_band__topic,"1|borderline|Jewish, Rohingya",collapse_repetition,14,685,380,1.0,1.0
+label__agreement_band__topic,"1|borderline|Jewish, Rohingya",expand_emoji,14,691,384,1.0087591240875913,1.0
+label__agreement_band__topic,"1|borderline|Jewish, Rohingya",expand_slang,14,685,379,1.0,0.9973684210526316
+label__agreement_band__topic,"1|borderline|Jewish, Rohingya",keep_hashtag_content,14,685,380,1.0,1.0
+label__agreement_band__topic,"1|borderline|Jewish, Rohingya",remove_hashtag,14,656,359,0.9576642335766423,0.9447368421052632
+label__agreement_band__topic,"1|borderline|Jewish, Rohingya",remove_url,14,685,380,1.0,1.0
+label__agreement_band__topic,"1|borderline|Jewish, Rohingya",remove_mention,14,681,376,0.9941605839416059,0.9894736842105263
+label__agreement_band__topic,"1|borderline|Jewish, Rohingya",remove_punctuation,14,685,380,1.0,1.0
+label__agreement_band__topic,"1|borderline|Jewish, Rohingya",remove_emoji,14,684,379,0.9985401459854014,0.9921052631578947
+label__agreement_band__topic,"1|borderline|Jewish, Rohingya",full_normalize,14,691,383,1.0087591240875913,0.9947368421052631
+label__agreement_band__topic,"1|borderline|Jewish, Rohingya",existing_cleaner,14,652,355,0.9518248175182482,0.9342105263157895
+label__agreement_band__topic,1|borderline|Kristen,raw,77,4000,1628,1.0,1.0
+label__agreement_band__topic,1|borderline|Kristen,lowercase,77,4000,1628,1.0,1.0
+label__agreement_band__topic,1|borderline|Kristen,leet_decode,77,4000,1628,1.0,0.9858722358722358
+label__agreement_band__topic,1|borderline|Kristen,collapse_repetition,77,4000,1626,1.0,0.9926289926289926
+label__agreement_band__topic,1|borderline|Kristen,expand_emoji,77,4059,1635,1.01475,0.9987714987714987
+label__agreement_band__topic,1|borderline|Kristen,expand_slang,77,4001,1608,1.00025,0.980958230958231
+label__agreement_band__topic,1|borderline|Kristen,keep_hashtag_content,77,4000,1628,1.0,1.0
+label__agreement_band__topic,1|borderline|Kristen,remove_hashtag,77,3941,1574,0.98525,0.9668304668304668
+label__agreement_band__topic,1|borderline|Kristen,remove_url,77,4000,1628,1.0,1.0
+label__agreement_band__topic,1|borderline|Kristen,remove_mention,77,3927,1564,0.98175,0.9606879606879607
+label__agreement_band__topic,1|borderline|Kristen,remove_punctuation,77,4000,1628,1.0,1.0
+label__agreement_band__topic,1|borderline|Kristen,remove_emoji,77,3999,1626,0.99975,0.9975429975429976
+label__agreement_band__topic,1|borderline|Kristen,full_normalize,77,4053,1604,1.01325,0.9527027027027027
+label__agreement_band__topic,1|borderline|Kristen,existing_cleaner,77,3868,1508,0.967,0.9262899262899262
+label__agreement_band__topic,"1|borderline|Kristen, Disabilitas",raw,2,216,132,1.0,1.0
+label__agreement_band__topic,"1|borderline|Kristen, Disabilitas",lowercase,2,216,132,1.0,1.0
+label__agreement_band__topic,"1|borderline|Kristen, Disabilitas",leet_decode,2,216,132,1.0,1.0
+label__agreement_band__topic,"1|borderline|Kristen, Disabilitas",collapse_repetition,2,216,132,1.0,1.0
+label__agreement_band__topic,"1|borderline|Kristen, Disabilitas",expand_emoji,2,218,133,1.0092592592592593,1.0
+label__agreement_band__topic,"1|borderline|Kristen, Disabilitas",expand_slang,2,216,131,1.0,0.9924242424242424
+label__agreement_band__topic,"1|borderline|Kristen, Disabilitas",keep_hashtag_content,2,216,132,1.0,1.0
+label__agreement_band__topic,"1|borderline|Kristen, Disabilitas",remove_hashtag,2,216,132,1.0,1.0
+label__agreement_band__topic,"1|borderline|Kristen, Disabilitas",remove_url,2,216,132,1.0,1.0
+label__agreement_band__topic,"1|borderline|Kristen, Disabilitas",remove_mention,2,216,132,1.0,1.0
+label__agreement_band__topic,"1|borderline|Kristen, Disabilitas",remove_punctuation,2,216,132,1.0,1.0
+label__agreement_band__topic,"1|borderline|Kristen, Disabilitas",remove_emoji,2,216,132,1.0,1.0
+label__agreement_band__topic,"1|borderline|Kristen, Disabilitas",full_normalize,2,218,132,1.0092592592592593,0.9924242424242424
+label__agreement_band__topic,"1|borderline|Kristen, Disabilitas",existing_cleaner,2,216,132,1.0,1.0
+label__agreement_band__topic,"1|borderline|Kristen, Jewish",raw,27,1528,748,1.0,1.0
+label__agreement_band__topic,"1|borderline|Kristen, Jewish",lowercase,27,1528,748,1.0,1.0
+label__agreement_band__topic,"1|borderline|Kristen, Jewish",leet_decode,27,1528,748,1.0,0.9946524064171123
+label__agreement_band__topic,"1|borderline|Kristen, Jewish",collapse_repetition,27,1528,748,1.0,1.0
+label__agreement_band__topic,"1|borderline|Kristen, Jewish",expand_emoji,27,1535,751,1.0045811518324608,1.0
+label__agreement_band__topic,"1|borderline|Kristen, Jewish",expand_slang,27,1528,736,1.0,0.9812834224598931
+label__agreement_band__topic,"1|borderline|Kristen, Jewish",keep_hashtag_content,27,1528,748,1.0,1.0
+label__agreement_band__topic,"1|borderline|Kristen, Jewish",remove_hashtag,27,1504,737,0.9842931937172775,0.9852941176470589
+label__agreement_band__topic,"1|borderline|Kristen, Jewish",remove_url,27,1524,744,0.9973821989528796,0.9946524064171123
+label__agreement_band__topic,"1|borderline|Kristen, Jewish",remove_mention,27,1515,735,0.9914921465968587,0.982620320855615
+label__agreement_band__topic,"1|borderline|Kristen, Jewish",remove_punctuation,27,1528,748,1.0,1.0
+label__agreement_band__topic,"1|borderline|Kristen, Jewish",remove_emoji,27,1526,747,0.9986910994764397,0.9946524064171123
+label__agreement_band__topic,"1|borderline|Kristen, Jewish",full_normalize,27,1534,736,1.0039267015706805,0.9692513368983957
+label__agreement_band__topic,"1|borderline|Kristen, Jewish",existing_cleaner,27,1487,720,0.9731675392670157,0.9625668449197861
+label__agreement_band__topic,"1|borderline|Kristen, LGBTQ+",raw,1,32,27,1.0,1.0
+label__agreement_band__topic,"1|borderline|Kristen, LGBTQ+",lowercase,1,32,27,1.0,1.0
+label__agreement_band__topic,"1|borderline|Kristen, LGBTQ+",leet_decode,1,32,27,1.0,1.0
+label__agreement_band__topic,"1|borderline|Kristen, LGBTQ+",collapse_repetition,1,32,27,1.0,1.0
+label__agreement_band__topic,"1|borderline|Kristen, LGBTQ+",expand_emoji,1,33,28,1.03125,1.0
+label__agreement_band__topic,"1|borderline|Kristen, LGBTQ+",expand_slang,1,32,27,1.0,0.9629629629629629
+label__agreement_band__topic,"1|borderline|Kristen, LGBTQ+",keep_hashtag_content,1,32,27,1.0,1.0
+label__agreement_band__topic,"1|borderline|Kristen, LGBTQ+",remove_hashtag,1,32,27,1.0,1.0
+label__agreement_band__topic,"1|borderline|Kristen, LGBTQ+",remove_url,1,32,27,1.0,1.0
+label__agreement_band__topic,"1|borderline|Kristen, LGBTQ+",remove_mention,1,31,26,0.96875,0.9629629629629629
+label__agreement_band__topic,"1|borderline|Kristen, LGBTQ+",remove_punctuation,1,32,27,1.0,1.0
+label__agreement_band__topic,"1|borderline|Kristen, LGBTQ+",remove_emoji,1,32,27,1.0,1.0
+label__agreement_band__topic,"1|borderline|Kristen, LGBTQ+",full_normalize,1,33,28,1.03125,0.9629629629629629
+label__agreement_band__topic,"1|borderline|Kristen, LGBTQ+",existing_cleaner,1,31,26,0.96875,0.9629629629629629
+label__agreement_band__topic,"1|borderline|Kristen, Tionghoa",raw,2,259,188,1.0,1.0
+label__agreement_band__topic,"1|borderline|Kristen, Tionghoa",lowercase,2,259,188,1.0,1.0
+label__agreement_band__topic,"1|borderline|Kristen, Tionghoa",leet_decode,2,259,188,1.0,0.9946808510638298
+label__agreement_band__topic,"1|borderline|Kristen, Tionghoa",collapse_repetition,2,259,188,1.0,1.0
+label__agreement_band__topic,"1|borderline|Kristen, Tionghoa",expand_emoji,2,263,189,1.0154440154440154,1.0
+label__agreement_band__topic,"1|borderline|Kristen, Tionghoa",expand_slang,2,259,187,1.0,0.9893617021276596
+label__agreement_band__topic,"1|borderline|Kristen, Tionghoa",keep_hashtag_content,2,259,188,1.0,1.0
+label__agreement_band__topic,"1|borderline|Kristen, Tionghoa",remove_hashtag,2,259,188,1.0,1.0
+label__agreement_band__topic,"1|borderline|Kristen, Tionghoa",remove_url,2,259,188,1.0,1.0
+label__agreement_band__topic,"1|borderline|Kristen, Tionghoa",remove_mention,2,259,188,1.0,1.0
+label__agreement_band__topic,"1|borderline|Kristen, Tionghoa",remove_punctuation,2,259,188,1.0,1.0
+label__agreement_band__topic,"1|borderline|Kristen, Tionghoa",remove_emoji,2,259,187,1.0,0.9787234042553191
+label__agreement_band__topic,"1|borderline|Kristen, Tionghoa",full_normalize,2,261,188,1.0077220077220077,0.9840425531914894
+label__agreement_band__topic,"1|borderline|Kristen, Tionghoa",existing_cleaner,2,259,188,1.0,1.0
+label__agreement_band__topic,1|borderline|LGBTQ+,raw,238,8012,3184,1.0,1.0
+label__agreement_band__topic,1|borderline|LGBTQ+,lowercase,238,8013,3184,1.0001248127808287,0.9996859296482412
+label__agreement_band__topic,1|borderline|LGBTQ+,leet_decode,238,8013,3190,1.0001248127808287,0.9820979899497487
+label__agreement_band__topic,1|borderline|LGBTQ+,collapse_repetition,238,8012,3177,1.0,0.9912060301507538
+label__agreement_band__topic,1|borderline|LGBTQ+,expand_emoji,238,8099,3197,1.0108587119321018,0.9981155778894473
+label__agreement_band__topic,1|borderline|LGBTQ+,expand_slang,238,8014,3165,1.0002496255616575,0.990891959798995
+label__agreement_band__topic,1|borderline|LGBTQ+,keep_hashtag_content,238,8009,3182,0.9996255616575137,0.9984296482412061
+label__agreement_band__topic,1|borderline|LGBTQ+,remove_hashtag,238,7518,2901,0.9383424862705941,0.9111180904522613
+label__agreement_band__topic,1|borderline|LGBTQ+,remove_url,238,7991,3174,0.997378931602596,0.996859296482412
+label__agreement_band__topic,1|borderline|LGBTQ+,remove_mention,238,7952,3143,0.9925112331502746,0.9871231155778895
+label__agreement_band__topic,1|borderline|LGBTQ+,remove_punctuation,238,8012,3184,1.0,1.0
+label__agreement_band__topic,1|borderline|LGBTQ+,remove_emoji,238,7998,3170,0.9982526210683974,0.990891959798995
+label__agreement_band__topic,1|borderline|LGBTQ+,full_normalize,238,8097,3157,1.0106090863704444,0.9550879396984925
+label__agreement_band__topic,1|borderline|LGBTQ+,existing_cleaner,238,7438,2846,0.9283574638042935,0.8935301507537688
+label__agreement_band__topic,"1|borderline|LGBTQ+, Disabilitas",raw,4,124,93,1.0,1.0
+label__agreement_band__topic,"1|borderline|LGBTQ+, Disabilitas",lowercase,4,124,93,1.0,1.0
+label__agreement_band__topic,"1|borderline|LGBTQ+, Disabilitas",leet_decode,4,124,93,1.0,1.0
+label__agreement_band__topic,"1|borderline|LGBTQ+, Disabilitas",collapse_repetition,4,124,93,1.0,1.0
+label__agreement_band__topic,"1|borderline|LGBTQ+, Disabilitas",expand_emoji,4,125,94,1.0080645161290323,1.0
+label__agreement_band__topic,"1|borderline|LGBTQ+, Disabilitas",expand_slang,4,124,91,1.0,0.9032258064516129
+label__agreement_band__topic,"1|borderline|LGBTQ+, Disabilitas",keep_hashtag_content,4,124,93,1.0,1.0
+label__agreement_band__topic,"1|borderline|LGBTQ+, Disabilitas",remove_hashtag,4,124,93,1.0,1.0
+label__agreement_band__topic,"1|borderline|LGBTQ+, Disabilitas",remove_url,4,124,93,1.0,1.0
+label__agreement_band__topic,"1|borderline|LGBTQ+, Disabilitas",remove_mention,4,124,93,1.0,1.0
+label__agreement_band__topic,"1|borderline|LGBTQ+, Disabilitas",remove_punctuation,4,124,93,1.0,1.0
+label__agreement_band__topic,"1|borderline|LGBTQ+, Disabilitas",remove_emoji,4,124,93,1.0,1.0
+label__agreement_band__topic,"1|borderline|LGBTQ+, Disabilitas",full_normalize,4,125,91,1.0080645161290323,0.8924731182795699
+label__agreement_band__topic,"1|borderline|LGBTQ+, Disabilitas",existing_cleaner,4,124,93,1.0,1.0
+label__agreement_band__topic,"1|borderline|LGBTQ+, Jewish",raw,4,88,69,1.0,1.0
+label__agreement_band__topic,"1|borderline|LGBTQ+, Jewish",lowercase,4,88,69,1.0,1.0
+label__agreement_band__topic,"1|borderline|LGBTQ+, Jewish",leet_decode,4,88,69,1.0,1.0
+label__agreement_band__topic,"1|borderline|LGBTQ+, Jewish",collapse_repetition,4,88,69,1.0,1.0
+label__agreement_band__topic,"1|borderline|LGBTQ+, Jewish",expand_emoji,4,90,71,1.0227272727272727,1.0
+label__agreement_band__topic,"1|borderline|LGBTQ+, Jewish",expand_slang,4,88,69,1.0,1.0
+label__agreement_band__topic,"1|borderline|LGBTQ+, Jewish",keep_hashtag_content,4,88,69,1.0,1.0
+label__agreement_band__topic,"1|borderline|LGBTQ+, Jewish",remove_hashtag,4,87,68,0.9886363636363636,0.9855072463768116
+label__agreement_band__topic,"1|borderline|LGBTQ+, Jewish",remove_url,4,88,69,1.0,1.0
+label__agreement_band__topic,"1|borderline|LGBTQ+, Jewish",remove_mention,4,84,68,0.9545454545454546,0.9855072463768116
+label__agreement_band__topic,"1|borderline|LGBTQ+, Jewish",remove_punctuation,4,88,69,1.0,1.0
+label__agreement_band__topic,"1|borderline|LGBTQ+, Jewish",remove_emoji,4,88,69,1.0,1.0
+label__agreement_band__topic,"1|borderline|LGBTQ+, Jewish",full_normalize,4,90,71,1.0227272727272727,1.0
+label__agreement_band__topic,"1|borderline|LGBTQ+, Jewish",existing_cleaner,4,83,67,0.9431818181818182,0.9710144927536232
+label__agreement_band__topic,1|borderline|Rohingya,raw,23,821,449,1.0,1.0
+label__agreement_band__topic,1|borderline|Rohingya,lowercase,23,821,449,1.0,1.0
+label__agreement_band__topic,1|borderline|Rohingya,leet_decode,23,821,449,1.0,0.9955456570155902
+label__agreement_band__topic,1|borderline|Rohingya,collapse_repetition,23,821,449,1.0,0.9933184855233853
+label__agreement_band__topic,1|borderline|Rohingya,expand_emoji,23,836,452,1.0182704019488429,1.0
+label__agreement_band__topic,1|borderline|Rohingya,expand_slang,23,821,439,1.0,0.9688195991091314
+label__agreement_band__topic,1|borderline|Rohingya,keep_hashtag_content,23,821,449,1.0,1.0
+label__agreement_band__topic,1|borderline|Rohingya,remove_hashtag,23,805,435,0.9805115712545676,0.9688195991091314
+label__agreement_band__topic,1|borderline|Rohingya,remove_url,23,813,445,0.9902557856272838,0.9910913140311804
+label__agreement_band__topic,1|borderline|Rohingya,remove_mention,23,811,440,0.9878197320341048,0.9799554565701559
+label__agreement_band__topic,1|borderline|Rohingya,remove_punctuation,23,821,449,1.0,1.0
+label__agreement_band__topic,1|borderline|Rohingya,remove_emoji,23,821,449,1.0,0.9955456570155902
+label__agreement_band__topic,1|borderline|Rohingya,full_normalize,23,836,441,1.0182704019488429,0.9576837416481069
+label__agreement_band__topic,1|borderline|Rohingya,existing_cleaner,23,787,422,0.9585870889159561,0.9398663697104677
+label__agreement_band__topic,1|borderline|Syiah,raw,69,7424,2280,1.0,1.0
+label__agreement_band__topic,1|borderline|Syiah,lowercase,69,7424,2280,1.0,1.0
+label__agreement_band__topic,1|borderline|Syiah,leet_decode,69,7425,2274,1.000134698275862,0.9881578947368421
+label__agreement_band__topic,1|borderline|Syiah,collapse_repetition,69,7424,2279,1.0,0.9956140350877193
+label__agreement_band__topic,1|borderline|Syiah,expand_emoji,69,7458,2291,1.0045797413793103,1.0
+label__agreement_band__topic,1|borderline|Syiah,expand_slang,69,7424,2264,1.0,0.9921052631578947
+label__agreement_band__topic,1|borderline|Syiah,keep_hashtag_content,69,7424,2280,1.0,1.0
+label__agreement_band__topic,1|borderline|Syiah,remove_hashtag,69,7409,2268,0.997979525862069,0.9947368421052631
+label__agreement_band__topic,1|borderline|Syiah,remove_url,69,7424,2280,1.0,1.0
+label__agreement_band__topic,1|borderline|Syiah,remove_mention,69,7416,2274,0.9989224137931034,0.9973684210526316
+label__agreement_band__topic,1|borderline|Syiah,remove_punctuation,69,7424,2280,1.0,1.0
+label__agreement_band__topic,1|borderline|Syiah,remove_emoji,69,7058,2204,0.9507004310344828,0.9574561403508772
+label__agreement_band__topic,1|borderline|Syiah,full_normalize,69,7455,2261,1.0041756465517242,0.9732456140350877
+label__agreement_band__topic,1|borderline|Syiah,existing_cleaner,69,7401,2262,0.9969019396551724,0.9921052631578947
+label__agreement_band__topic,"1|borderline|Syiah, Ahmadiyah, Jewish",raw,1,292,149,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Ahmadiyah, Jewish",lowercase,1,292,149,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Ahmadiyah, Jewish",leet_decode,1,292,149,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Ahmadiyah, Jewish",collapse_repetition,1,292,149,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Ahmadiyah, Jewish",expand_emoji,1,292,149,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Ahmadiyah, Jewish",expand_slang,1,292,148,1.0,0.9932885906040269
+label__agreement_band__topic,"1|borderline|Syiah, Ahmadiyah, Jewish",keep_hashtag_content,1,292,149,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Ahmadiyah, Jewish",remove_hashtag,1,261,134,0.8938356164383562,0.8993288590604027
+label__agreement_band__topic,"1|borderline|Syiah, Ahmadiyah, Jewish",remove_url,1,292,149,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Ahmadiyah, Jewish",remove_mention,1,292,149,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Ahmadiyah, Jewish",remove_punctuation,1,292,149,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Ahmadiyah, Jewish",remove_emoji,1,292,148,1.0,0.9798657718120806
+label__agreement_band__topic,"1|borderline|Syiah, Ahmadiyah, Jewish",full_normalize,1,292,147,1.0,0.9798657718120806
+label__agreement_band__topic,"1|borderline|Syiah, Ahmadiyah, Jewish",existing_cleaner,1,261,134,0.8938356164383562,0.8993288590604027
+label__agreement_band__topic,"1|borderline|Syiah, Disabilitas",raw,4,948,364,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Disabilitas",lowercase,4,948,364,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Disabilitas",leet_decode,4,948,364,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Disabilitas",collapse_repetition,4,948,364,1.0,0.9945054945054945
+label__agreement_band__topic,"1|borderline|Syiah, Disabilitas",expand_emoji,4,962,368,1.0147679324894514,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Disabilitas",expand_slang,4,948,360,1.0,0.9835164835164835
+label__agreement_band__topic,"1|borderline|Syiah, Disabilitas",keep_hashtag_content,4,948,364,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Disabilitas",remove_hashtag,4,946,363,0.9978902953586498,0.9972527472527473
+label__agreement_band__topic,"1|borderline|Syiah, Disabilitas",remove_url,4,948,364,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Disabilitas",remove_mention,4,948,364,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Disabilitas",remove_punctuation,4,948,364,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Disabilitas",remove_emoji,4,922,353,0.9725738396624473,0.9560439560439561
+label__agreement_band__topic,"1|borderline|Syiah, Disabilitas",full_normalize,4,959,362,1.011603375527426,0.9752747252747253
+label__agreement_band__topic,"1|borderline|Syiah, Disabilitas",existing_cleaner,4,946,363,0.9978902953586498,0.9972527472527473
+label__agreement_band__topic,"1|borderline|Syiah, Jewish",raw,33,3156,1181,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Jewish",lowercase,33,3156,1181,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Jewish",leet_decode,33,3156,1181,1.0,0.9966130397967824
+label__agreement_band__topic,"1|borderline|Syiah, Jewish",collapse_repetition,33,3156,1181,1.0,0.9991532599491956
+label__agreement_band__topic,"1|borderline|Syiah, Jewish",expand_emoji,33,3167,1183,1.0034854245880862,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Jewish",expand_slang,33,3156,1175,1.0,0.9915325994919559
+label__agreement_band__topic,"1|borderline|Syiah, Jewish",keep_hashtag_content,33,3155,1182,0.9996831432192649,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Jewish",remove_hashtag,33,3108,1173,0.9847908745247148,0.9932260795935648
+label__agreement_band__topic,"1|borderline|Syiah, Jewish",remove_url,33,3156,1181,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Jewish",remove_mention,33,3150,1177,0.9980988593155894,0.9966130397967824
+label__agreement_band__topic,"1|borderline|Syiah, Jewish",remove_punctuation,33,3156,1181,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Jewish",remove_emoji,33,3122,1148,0.9892268694550064,0.9618966977138018
+label__agreement_band__topic,"1|borderline|Syiah, Jewish",full_normalize,33,3165,1173,1.002851711026616,0.9839119390347163
+label__agreement_band__topic,"1|borderline|Syiah, Jewish",existing_cleaner,33,3102,1168,0.9828897338403042,0.9889923793395428
+label__agreement_band__topic,"1|borderline|Syiah, Jewish, Disabilitas",raw,1,114,85,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Jewish, Disabilitas",lowercase,1,114,85,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Jewish, Disabilitas",leet_decode,1,114,85,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Jewish, Disabilitas",collapse_repetition,1,114,85,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Jewish, Disabilitas",expand_emoji,1,114,85,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Jewish, Disabilitas",expand_slang,1,114,85,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Jewish, Disabilitas",keep_hashtag_content,1,114,85,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Jewish, Disabilitas",remove_hashtag,1,114,85,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Jewish, Disabilitas",remove_url,1,114,85,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Jewish, Disabilitas",remove_mention,1,114,85,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Jewish, Disabilitas",remove_punctuation,1,114,85,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Jewish, Disabilitas",remove_emoji,1,114,85,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Jewish, Disabilitas",full_normalize,1,114,85,1.0,0.9647058823529412
+label__agreement_band__topic,"1|borderline|Syiah, Jewish, Disabilitas",existing_cleaner,1,114,85,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Jewish, Rohingya",raw,1,42,37,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Jewish, Rohingya",lowercase,1,42,37,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Jewish, Rohingya",leet_decode,1,42,37,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Jewish, Rohingya",collapse_repetition,1,42,37,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Jewish, Rohingya",expand_emoji,1,46,39,1.0952380952380953,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Jewish, Rohingya",expand_slang,1,42,37,1.0,0.972972972972973
+label__agreement_band__topic,"1|borderline|Syiah, Jewish, Rohingya",keep_hashtag_content,1,42,37,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Jewish, Rohingya",remove_hashtag,1,42,37,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Jewish, Rohingya",remove_url,1,42,37,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Jewish, Rohingya",remove_mention,1,42,37,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Jewish, Rohingya",remove_punctuation,1,42,37,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Jewish, Rohingya",remove_emoji,1,42,37,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Jewish, Rohingya",full_normalize,1,46,38,1.0952380952380953,0.9459459459459459
+label__agreement_band__topic,"1|borderline|Syiah, Jewish, Rohingya",existing_cleaner,1,42,37,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Kristen",raw,1,17,15,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Kristen",lowercase,1,17,15,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Kristen",leet_decode,1,17,15,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Kristen",collapse_repetition,1,17,15,1.0,0.9333333333333333
+label__agreement_band__topic,"1|borderline|Syiah, Kristen",expand_emoji,1,17,15,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Kristen",expand_slang,1,17,15,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Kristen",keep_hashtag_content,1,17,15,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Kristen",remove_hashtag,1,17,15,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Kristen",remove_url,1,17,15,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Kristen",remove_mention,1,16,14,0.9411764705882353,0.9333333333333333
+label__agreement_band__topic,"1|borderline|Syiah, Kristen",remove_punctuation,1,17,15,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Kristen",remove_emoji,1,17,15,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Kristen",full_normalize,1,17,15,1.0,0.9333333333333333
+label__agreement_band__topic,"1|borderline|Syiah, Kristen",existing_cleaner,1,16,14,0.9411764705882353,0.9333333333333333
+label__agreement_band__topic,"1|borderline|Syiah, Kristen, Jewish",raw,2,85,60,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Kristen, Jewish",lowercase,2,85,60,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Kristen, Jewish",leet_decode,2,85,60,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Kristen, Jewish",collapse_repetition,2,85,60,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Kristen, Jewish",expand_emoji,2,85,60,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Kristen, Jewish",expand_slang,2,85,60,1.0,0.9833333333333333
+label__agreement_band__topic,"1|borderline|Syiah, Kristen, Jewish",keep_hashtag_content,2,85,60,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Kristen, Jewish",remove_hashtag,2,85,60,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Kristen, Jewish",remove_url,2,85,60,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Kristen, Jewish",remove_mention,2,85,60,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Kristen, Jewish",remove_punctuation,2,85,60,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Kristen, Jewish",remove_emoji,2,85,60,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Kristen, Jewish",full_normalize,2,85,60,1.0,0.9833333333333333
+label__agreement_band__topic,"1|borderline|Syiah, Kristen, Jewish",existing_cleaner,2,85,60,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Rohingya, Disabilitas",raw,1,200,131,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Rohingya, Disabilitas",lowercase,1,200,131,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Rohingya, Disabilitas",leet_decode,1,200,131,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Rohingya, Disabilitas",collapse_repetition,1,200,131,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Rohingya, Disabilitas",expand_emoji,1,200,131,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Rohingya, Disabilitas",expand_slang,1,200,131,1.0,0.9923664122137404
+label__agreement_band__topic,"1|borderline|Syiah, Rohingya, Disabilitas",keep_hashtag_content,1,200,131,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Rohingya, Disabilitas",remove_hashtag,1,200,131,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Rohingya, Disabilitas",remove_url,1,200,131,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Rohingya, Disabilitas",remove_mention,1,199,131,0.995,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Rohingya, Disabilitas",remove_punctuation,1,200,131,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Rohingya, Disabilitas",remove_emoji,1,200,131,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Rohingya, Disabilitas",full_normalize,1,200,131,1.0,0.9923664122137404
+label__agreement_band__topic,"1|borderline|Syiah, Rohingya, Disabilitas",existing_cleaner,1,199,131,0.995,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Tionghoa, Jewish",raw,1,287,141,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Tionghoa, Jewish",lowercase,1,287,141,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Tionghoa, Jewish",leet_decode,1,287,141,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Tionghoa, Jewish",collapse_repetition,1,287,141,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Tionghoa, Jewish",expand_emoji,1,287,141,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Tionghoa, Jewish",expand_slang,1,287,142,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Tionghoa, Jewish",keep_hashtag_content,1,287,141,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Tionghoa, Jewish",remove_hashtag,1,287,141,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Tionghoa, Jewish",remove_url,1,287,141,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Tionghoa, Jewish",remove_mention,1,287,141,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Tionghoa, Jewish",remove_punctuation,1,287,141,1.0,1.0
+label__agreement_band__topic,"1|borderline|Syiah, Tionghoa, Jewish",remove_emoji,1,248,124,0.8641114982578397,0.8794326241134752
+label__agreement_band__topic,"1|borderline|Syiah, Tionghoa, Jewish",full_normalize,1,287,142,1.0,0.9929078014184397
+label__agreement_band__topic,"1|borderline|Syiah, Tionghoa, Jewish",existing_cleaner,1,287,141,1.0,1.0
+label__agreement_band__topic,1|borderline|Tionghoa,raw,261,8998,3224,1.0,1.0
+label__agreement_band__topic,1|borderline|Tionghoa,lowercase,261,8998,3224,1.0,1.0
+label__agreement_band__topic,1|borderline|Tionghoa,leet_decode,261,8998,3229,1.0,0.9928660049627791
+label__agreement_band__topic,1|borderline|Tionghoa,collapse_repetition,261,8998,3222,1.0,0.9934863523573201
+label__agreement_band__topic,1|borderline|Tionghoa,expand_emoji,261,9134,3245,1.0151144698821961,0.999379652605459
+label__agreement_band__topic,1|borderline|Tionghoa,expand_slang,261,9001,3198,1.000333407423872,0.9897642679900744
+label__agreement_band__topic,1|borderline|Tionghoa,keep_hashtag_content,261,8998,3224,1.0,1.0
+label__agreement_band__topic,1|borderline|Tionghoa,remove_hashtag,261,8760,3086,0.973549677706157,0.957196029776675
+label__agreement_band__topic,1|borderline|Tionghoa,remove_url,261,8998,3224,1.0,1.0
+label__agreement_band__topic,1|borderline|Tionghoa,remove_mention,261,8971,3207,0.9969993331851522,0.994727047146402
+label__agreement_band__topic,1|borderline|Tionghoa,remove_punctuation,261,8998,3224,1.0,1.0
+label__agreement_band__topic,1|borderline|Tionghoa,remove_emoji,261,8985,3213,0.9985552344965548,0.9950372208436724
+label__agreement_band__topic,1|borderline|Tionghoa,full_normalize,261,9129,3199,1.0145587908424094,0.9686724565756824
+label__agreement_band__topic,1|borderline|Tionghoa,existing_cleaner,261,8733,3067,0.9705490108913092,0.951302729528536
+label__agreement_band__topic,"1|borderline|Tionghoa, Disabilitas",raw,8,275,173,1.0,1.0
+label__agreement_band__topic,"1|borderline|Tionghoa, Disabilitas",lowercase,8,275,173,1.0,1.0
+label__agreement_band__topic,"1|borderline|Tionghoa, Disabilitas",leet_decode,8,275,173,1.0,0.9942196531791907
+label__agreement_band__topic,"1|borderline|Tionghoa, Disabilitas",collapse_repetition,8,275,173,1.0,0.9884393063583815
+label__agreement_band__topic,"1|borderline|Tionghoa, Disabilitas",expand_emoji,8,275,173,1.0,1.0
+label__agreement_band__topic,"1|borderline|Tionghoa, Disabilitas",expand_slang,8,278,169,1.010909090909091,0.8901734104046243
+label__agreement_band__topic,"1|borderline|Tionghoa, Disabilitas",keep_hashtag_content,8,275,173,1.0,1.0
+label__agreement_band__topic,"1|borderline|Tionghoa, Disabilitas",remove_hashtag,8,275,173,1.0,1.0
+label__agreement_band__topic,"1|borderline|Tionghoa, Disabilitas",remove_url,8,275,173,1.0,1.0
+label__agreement_band__topic,"1|borderline|Tionghoa, Disabilitas",remove_mention,8,275,173,1.0,1.0
+label__agreement_band__topic,"1|borderline|Tionghoa, Disabilitas",remove_punctuation,8,275,173,1.0,1.0
+label__agreement_band__topic,"1|borderline|Tionghoa, Disabilitas",remove_emoji,8,275,173,1.0,1.0
+label__agreement_band__topic,"1|borderline|Tionghoa, Disabilitas",full_normalize,8,278,166,1.010909090909091,0.8497109826589595
+label__agreement_band__topic,"1|borderline|Tionghoa, Disabilitas",existing_cleaner,8,275,173,1.0,1.0
+label__agreement_band__topic,"1|borderline|Tionghoa, Jewish",raw,8,422,258,1.0,1.0
+label__agreement_band__topic,"1|borderline|Tionghoa, Jewish",lowercase,8,422,258,1.0,1.0
+label__agreement_band__topic,"1|borderline|Tionghoa, Jewish",leet_decode,8,422,258,1.0,1.0
+label__agreement_band__topic,"1|borderline|Tionghoa, Jewish",collapse_repetition,8,422,258,1.0,0.9961240310077519
+label__agreement_band__topic,"1|borderline|Tionghoa, Jewish",expand_emoji,8,432,261,1.0236966824644549,1.0
+label__agreement_band__topic,"1|borderline|Tionghoa, Jewish",expand_slang,8,422,252,1.0,0.9728682170542635
+label__agreement_band__topic,"1|borderline|Tionghoa, Jewish",keep_hashtag_content,8,422,258,1.0,1.0
+label__agreement_band__topic,"1|borderline|Tionghoa, Jewish",remove_hashtag,8,416,253,0.985781990521327,0.9806201550387597
+label__agreement_band__topic,"1|borderline|Tionghoa, Jewish",remove_url,8,422,258,1.0,1.0
+label__agreement_band__topic,"1|borderline|Tionghoa, Jewish",remove_mention,8,422,258,1.0,1.0
+label__agreement_band__topic,"1|borderline|Tionghoa, Jewish",remove_punctuation,8,422,258,1.0,1.0
+label__agreement_band__topic,"1|borderline|Tionghoa, Jewish",remove_emoji,8,414,250,0.981042654028436,0.9689922480620154
+label__agreement_band__topic,"1|borderline|Tionghoa, Jewish",full_normalize,8,432,254,1.0236966824644549,0.9612403100775194
+label__agreement_band__topic,"1|borderline|Tionghoa, Jewish",existing_cleaner,8,416,253,0.985781990521327,0.9806201550387597
+label__agreement_band__topic,"1|borderline|Tionghoa, Rohingya",raw,1,26,20,1.0,1.0
+label__agreement_band__topic,"1|borderline|Tionghoa, Rohingya",lowercase,1,26,20,1.0,1.0
+label__agreement_band__topic,"1|borderline|Tionghoa, Rohingya",leet_decode,1,26,20,1.0,1.0
+label__agreement_band__topic,"1|borderline|Tionghoa, Rohingya",collapse_repetition,1,26,20,1.0,1.0
+label__agreement_band__topic,"1|borderline|Tionghoa, Rohingya",expand_emoji,1,26,20,1.0,1.0
+label__agreement_band__topic,"1|borderline|Tionghoa, Rohingya",expand_slang,1,26,20,1.0,1.0
+label__agreement_band__topic,"1|borderline|Tionghoa, Rohingya",keep_hashtag_content,1,26,20,1.0,1.0
+label__agreement_band__topic,"1|borderline|Tionghoa, Rohingya",remove_hashtag,1,26,20,1.0,1.0
+label__agreement_band__topic,"1|borderline|Tionghoa, Rohingya",remove_url,1,26,20,1.0,1.0
+label__agreement_band__topic,"1|borderline|Tionghoa, Rohingya",remove_mention,1,26,20,1.0,1.0
+label__agreement_band__topic,"1|borderline|Tionghoa, Rohingya",remove_punctuation,1,26,20,1.0,1.0
+label__agreement_band__topic,"1|borderline|Tionghoa, Rohingya",remove_emoji,1,26,20,1.0,1.0
+label__agreement_band__topic,"1|borderline|Tionghoa, Rohingya",full_normalize,1,26,20,1.0,0.95
+label__agreement_band__topic,"1|borderline|Tionghoa, Rohingya",existing_cleaner,1,26,20,1.0,1.0
+label__agreement_band__topic,1|borderline|UNKNOWN,raw,227,8928,3012,1.0,1.0
+label__agreement_band__topic,1|borderline|UNKNOWN,lowercase,227,8928,3012,1.0,1.0
+label__agreement_band__topic,1|borderline|UNKNOWN,leet_decode,227,8868,2996,0.9932795698924731,0.9824037184594954
+label__agreement_band__topic,1|borderline|UNKNOWN,collapse_repetition,227,8928,3011,1.0,0.9960159362549801
+label__agreement_band__topic,1|borderline|UNKNOWN,expand_emoji,227,9094,3023,1.0185931899641576,0.999667994687915
+label__agreement_band__topic,1|borderline|UNKNOWN,expand_slang,227,8938,2998,1.0011200716845878,0.9936918990703851
+label__agreement_band__topic,1|borderline|UNKNOWN,keep_hashtag_content,227,8928,3012,1.0,1.0
+label__agreement_band__topic,1|borderline|UNKNOWN,remove_hashtag,227,8832,2963,0.989247311827957,0.9837317397078353
+label__agreement_band__topic,1|borderline|UNKNOWN,remove_url,227,8928,3012,1.0,1.0
+label__agreement_band__topic,1|borderline|UNKNOWN,remove_mention,227,8918,3005,0.9988799283154122,0.997675962815405
+label__agreement_band__topic,1|borderline|UNKNOWN,remove_punctuation,227,8928,3012,1.0,1.0
+label__agreement_band__topic,1|borderline|UNKNOWN,remove_emoji,227,8488,2898,0.9507168458781362,0.9598273572377158
+label__agreement_band__topic,1|borderline|UNKNOWN,full_normalize,227,9077,2983,1.0166890681003584,0.9648074369189907
+label__agreement_band__topic,1|borderline|UNKNOWN,existing_cleaner,227,8822,2956,0.9881272401433692,0.9814077025232404
+label__agreement_band__topic,1|unanimous|Ahmadiyah,raw,10,758,449,1.0,1.0
+label__agreement_band__topic,1|unanimous|Ahmadiyah,lowercase,10,758,449,1.0,1.0
+label__agreement_band__topic,1|unanimous|Ahmadiyah,leet_decode,10,758,449,1.0,0.9888641425389755
+label__agreement_band__topic,1|unanimous|Ahmadiyah,collapse_repetition,10,758,449,1.0,0.9977728285077951
+label__agreement_band__topic,1|unanimous|Ahmadiyah,expand_emoji,10,760,451,1.0026385224274406,1.0
+label__agreement_band__topic,1|unanimous|Ahmadiyah,expand_slang,10,758,443,1.0,0.9821826280623608
+label__agreement_band__topic,1|unanimous|Ahmadiyah,keep_hashtag_content,10,758,449,1.0,1.0
+label__agreement_band__topic,1|unanimous|Ahmadiyah,remove_hashtag,10,754,445,0.9947229551451188,0.9910913140311804
+label__agreement_band__topic,1|unanimous|Ahmadiyah,remove_url,10,758,449,1.0,1.0
+label__agreement_band__topic,1|unanimous|Ahmadiyah,remove_mention,10,750,443,0.9894459102902374,0.9866369710467706
+label__agreement_band__topic,1|unanimous|Ahmadiyah,remove_punctuation,10,758,449,1.0,1.0
+label__agreement_band__topic,1|unanimous|Ahmadiyah,remove_emoji,10,737,428,0.9722955145118733,0.9465478841870824
+label__agreement_band__topic,1|unanimous|Ahmadiyah,full_normalize,10,760,442,1.0026385224274406,0.9643652561247216
+label__agreement_band__topic,1|unanimous|Ahmadiyah,existing_cleaner,10,746,439,0.9841688654353562,0.977728285077951
+label__agreement_band__topic,"1|unanimous|Ahmadiyah, Kristen, Jewish",raw,1,40,36,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Ahmadiyah, Kristen, Jewish",lowercase,1,40,36,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Ahmadiyah, Kristen, Jewish",leet_decode,1,40,36,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Ahmadiyah, Kristen, Jewish",collapse_repetition,1,40,36,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Ahmadiyah, Kristen, Jewish",expand_emoji,1,47,37,1.175,1.0
+label__agreement_band__topic,"1|unanimous|Ahmadiyah, Kristen, Jewish",expand_slang,1,40,36,1.0,0.9722222222222222
+label__agreement_band__topic,"1|unanimous|Ahmadiyah, Kristen, Jewish",keep_hashtag_content,1,40,36,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Ahmadiyah, Kristen, Jewish",remove_hashtag,1,40,36,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Ahmadiyah, Kristen, Jewish",remove_url,1,40,36,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Ahmadiyah, Kristen, Jewish",remove_mention,1,40,36,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Ahmadiyah, Kristen, Jewish",remove_punctuation,1,40,36,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Ahmadiyah, Kristen, Jewish",remove_emoji,1,40,36,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Ahmadiyah, Kristen, Jewish",full_normalize,1,42,37,1.05,0.9722222222222222
+label__agreement_band__topic,"1|unanimous|Ahmadiyah, Kristen, Jewish",existing_cleaner,1,40,36,1.0,1.0
+label__agreement_band__topic,1|unanimous|Disabilitas,raw,238,5451,2162,1.0,1.0
+label__agreement_band__topic,1|unanimous|Disabilitas,lowercase,238,5451,2162,1.0,1.0
+label__agreement_band__topic,1|unanimous|Disabilitas,leet_decode,238,5451,2160,1.0,0.9907493061979649
+label__agreement_band__topic,1|unanimous|Disabilitas,collapse_repetition,238,5451,2159,1.0,0.9893617021276596
+label__agreement_band__topic,1|unanimous|Disabilitas,expand_emoji,238,5546,2176,1.0174279948633278,0.9981498612395929
+label__agreement_band__topic,1|unanimous|Disabilitas,expand_slang,238,5484,2134,1.0060539350577875,0.982886216466235
+label__agreement_band__topic,1|unanimous|Disabilitas,keep_hashtag_content,238,5450,2162,0.9998165474224913,0.9995374653098983
+label__agreement_band__topic,1|unanimous|Disabilitas,remove_hashtag,238,5398,2129,0.9902770133920381,0.984736355226642
+label__agreement_band__topic,1|unanimous|Disabilitas,remove_url,238,5447,2159,0.9992661896899652,0.9986123959296948
+label__agreement_band__topic,1|unanimous|Disabilitas,remove_mention,238,5416,2130,0.993579159787195,0.9851988899167438
+label__agreement_band__topic,1|unanimous|Disabilitas,remove_punctuation,238,5451,2162,1.0,1.0
+label__agreement_band__topic,1|unanimous|Disabilitas,remove_emoji,238,5442,2158,0.9983489268024216,0.9939870490286772
+label__agreement_band__topic,1|unanimous|Disabilitas,full_normalize,238,5629,2120,1.032654558796551,0.9514338575393154
+label__agreement_band__topic,1|unanimous|Disabilitas,existing_cleaner,238,5359,2094,0.9831223628691983,0.9685476410730804
+label__agreement_band__topic,1|unanimous|Jewish,raw,583,15963,4605,1.0,1.0
+label__agreement_band__topic,1|unanimous|Jewish,lowercase,583,15963,4605,1.0,1.0
+label__agreement_band__topic,1|unanimous|Jewish,leet_decode,583,15962,4603,0.9999373551337468,0.9893593919652551
+label__agreement_band__topic,1|unanimous|Jewish,collapse_repetition,583,15963,4592,1.0,0.9917480998914223
+label__agreement_band__topic,1|unanimous|Jewish,expand_emoji,583,16240,4617,1.0173526279521394,0.9993485342019544
+label__agreement_band__topic,1|unanimous|Jewish,expand_slang,583,15970,4569,1.0004385140637724,0.990228013029316
+label__agreement_band__topic,1|unanimous|Jewish,keep_hashtag_content,583,15963,4605,1.0,1.0
+label__agreement_band__topic,1|unanimous|Jewish,remove_hashtag,583,15515,4424,0.9719350999185616,0.9606948968512486
+label__agreement_band__topic,1|unanimous|Jewish,remove_url,583,15909,4589,0.9966171772223267,0.9965255157437568
+label__agreement_band__topic,1|unanimous|Jewish,remove_mention,583,15871,4541,0.9942366723047046,0.9861020629750271
+label__agreement_band__topic,1|unanimous|Jewish,remove_punctuation,583,15963,4605,1.0,1.0
+label__agreement_band__topic,1|unanimous|Jewish,remove_emoji,583,15911,4555,0.996742466954833,0.9852334419109663
+label__agreement_band__topic,1|unanimous|Jewish,full_normalize,583,16201,4535,1.0149094781682642,0.9639522258414767
+label__agreement_band__topic,1|unanimous|Jewish,existing_cleaner,583,15369,4340,0.9627889494455929,0.9424538545059717
+label__agreement_band__topic,"1|unanimous|Jewish, Disabilitas",raw,14,328,238,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Jewish, Disabilitas",lowercase,14,328,238,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Jewish, Disabilitas",leet_decode,14,328,238,1.0,0.9957983193277311
+label__agreement_band__topic,"1|unanimous|Jewish, Disabilitas",collapse_repetition,14,328,238,1.0,0.9915966386554622
+label__agreement_band__topic,"1|unanimous|Jewish, Disabilitas",expand_emoji,14,330,240,1.0060975609756098,1.0
+label__agreement_band__topic,"1|unanimous|Jewish, Disabilitas",expand_slang,14,328,233,1.0,0.9663865546218487
+label__agreement_band__topic,"1|unanimous|Jewish, Disabilitas",keep_hashtag_content,14,328,238,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Jewish, Disabilitas",remove_hashtag,14,327,237,0.9969512195121951,0.9957983193277311
+label__agreement_band__topic,"1|unanimous|Jewish, Disabilitas",remove_url,14,324,234,0.9878048780487805,0.9831932773109243
+label__agreement_band__topic,"1|unanimous|Jewish, Disabilitas",remove_mention,14,324,234,0.9878048780487805,0.9831932773109243
+label__agreement_band__topic,"1|unanimous|Jewish, Disabilitas",remove_punctuation,14,328,238,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Jewish, Disabilitas",remove_emoji,14,328,238,1.0,0.9957983193277311
+label__agreement_band__topic,"1|unanimous|Jewish, Disabilitas",full_normalize,14,330,234,1.0060975609756098,0.9453781512605042
+label__agreement_band__topic,"1|unanimous|Jewish, Disabilitas",existing_cleaner,14,319,229,0.9725609756097561,0.9621848739495799
+label__agreement_band__topic,"1|unanimous|Jewish, Rohingya",raw,12,343,207,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Jewish, Rohingya",lowercase,12,343,207,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Jewish, Rohingya",leet_decode,12,343,207,1.0,0.9903381642512077
+label__agreement_band__topic,"1|unanimous|Jewish, Rohingya",collapse_repetition,12,343,207,1.0,0.9951690821256038
+label__agreement_band__topic,"1|unanimous|Jewish, Rohingya",expand_emoji,12,343,207,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Jewish, Rohingya",expand_slang,12,343,206,1.0,0.9951690821256038
+label__agreement_band__topic,"1|unanimous|Jewish, Rohingya",keep_hashtag_content,12,343,207,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Jewish, Rohingya",remove_hashtag,12,323,196,0.9416909620991254,0.9468599033816425
+label__agreement_band__topic,"1|unanimous|Jewish, Rohingya",remove_url,12,343,207,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Jewish, Rohingya",remove_mention,12,341,205,0.9941690962099126,0.9903381642512077
+label__agreement_band__topic,"1|unanimous|Jewish, Rohingya",remove_punctuation,12,343,207,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Jewish, Rohingya",remove_emoji,12,343,206,1.0,0.9951690821256038
+label__agreement_band__topic,"1|unanimous|Jewish, Rohingya",full_normalize,12,343,206,1.0,0.9758454106280193
+label__agreement_band__topic,"1|unanimous|Jewish, Rohingya",existing_cleaner,12,321,194,0.9358600583090378,0.9371980676328503
+label__agreement_band__topic,1|unanimous|Kristen,raw,53,1988,1017,1.0,1.0
+label__agreement_band__topic,1|unanimous|Kristen,lowercase,53,1988,1017,1.0,1.0
+label__agreement_band__topic,1|unanimous|Kristen,leet_decode,53,1988,1018,1.0,0.9705014749262537
+label__agreement_band__topic,1|unanimous|Kristen,collapse_repetition,53,1988,1017,1.0,0.9941002949852508
+label__agreement_band__topic,1|unanimous|Kristen,expand_emoji,53,2021,1021,1.016599597585513,1.0
+label__agreement_band__topic,1|unanimous|Kristen,expand_slang,53,1990,1006,1.0010060362173039,0.9823008849557522
+label__agreement_band__topic,1|unanimous|Kristen,keep_hashtag_content,53,1988,1017,1.0,1.0
+label__agreement_band__topic,1|unanimous|Kristen,remove_hashtag,53,1984,1013,0.9979879275653923,0.9960668633235005
+label__agreement_band__topic,1|unanimous|Kristen,remove_url,53,1984,1013,0.9979879275653923,0.9960668633235005
+label__agreement_band__topic,1|unanimous|Kristen,remove_mention,53,1906,939,0.9587525150905433,0.9233038348082596
+label__agreement_band__topic,1|unanimous|Kristen,remove_punctuation,53,1988,1017,1.0,1.0
+label__agreement_band__topic,1|unanimous|Kristen,remove_emoji,53,1987,1015,0.9994969818913481,0.9901671583087512
+label__agreement_band__topic,1|unanimous|Kristen,full_normalize,53,2016,1003,1.0140845070422535,0.9380530973451328
+label__agreement_band__topic,1|unanimous|Kristen,existing_cleaner,53,1898,931,0.954728370221328,0.9154375614552606
+label__agreement_band__topic,"1|unanimous|Kristen, Disabilitas",raw,1,33,29,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, Disabilitas",lowercase,1,33,29,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, Disabilitas",leet_decode,1,33,29,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, Disabilitas",collapse_repetition,1,33,29,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, Disabilitas",expand_emoji,1,33,29,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, Disabilitas",expand_slang,1,33,29,1.0,0.9655172413793104
+label__agreement_band__topic,"1|unanimous|Kristen, Disabilitas",keep_hashtag_content,1,33,29,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, Disabilitas",remove_hashtag,1,33,29,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, Disabilitas",remove_url,1,33,29,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, Disabilitas",remove_mention,1,33,29,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, Disabilitas",remove_punctuation,1,33,29,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, Disabilitas",remove_emoji,1,33,29,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, Disabilitas",full_normalize,1,33,29,1.0,0.9655172413793104
+label__agreement_band__topic,"1|unanimous|Kristen, Disabilitas",existing_cleaner,1,33,29,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, Jewish",raw,13,465,287,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, Jewish",lowercase,13,465,287,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, Jewish",leet_decode,13,465,287,1.0,0.9930313588850174
+label__agreement_band__topic,"1|unanimous|Kristen, Jewish",collapse_repetition,13,465,287,1.0,0.9965156794425087
+label__agreement_band__topic,"1|unanimous|Kristen, Jewish",expand_emoji,13,472,288,1.0150537634408603,0.9965156794425087
+label__agreement_band__topic,"1|unanimous|Kristen, Jewish",expand_slang,13,465,283,1.0,0.9721254355400697
+label__agreement_band__topic,"1|unanimous|Kristen, Jewish",keep_hashtag_content,13,465,287,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, Jewish",remove_hashtag,13,465,287,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, Jewish",remove_url,13,461,283,0.9913978494623656,0.9860627177700348
+label__agreement_band__topic,"1|unanimous|Kristen, Jewish",remove_mention,13,463,285,0.9956989247311828,0.9930313588850174
+label__agreement_band__topic,"1|unanimous|Kristen, Jewish",remove_punctuation,13,465,287,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, Jewish",remove_emoji,13,465,287,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, Jewish",full_normalize,13,471,284,1.0129032258064516,0.9512195121951219
+label__agreement_band__topic,"1|unanimous|Kristen, Jewish",existing_cleaner,13,459,281,0.9870967741935484,0.9790940766550522
+label__agreement_band__topic,"1|unanimous|Kristen, Jewish, Disabilitas",raw,1,9,9,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, Jewish, Disabilitas",lowercase,1,9,9,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, Jewish, Disabilitas",leet_decode,1,9,9,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, Jewish, Disabilitas",collapse_repetition,1,9,9,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, Jewish, Disabilitas",expand_emoji,1,9,9,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, Jewish, Disabilitas",expand_slang,1,9,9,1.0,0.8888888888888888
+label__agreement_band__topic,"1|unanimous|Kristen, Jewish, Disabilitas",keep_hashtag_content,1,9,9,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, Jewish, Disabilitas",remove_hashtag,1,9,9,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, Jewish, Disabilitas",remove_url,1,9,9,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, Jewish, Disabilitas",remove_mention,1,9,9,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, Jewish, Disabilitas",remove_punctuation,1,9,9,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, Jewish, Disabilitas",remove_emoji,1,9,9,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, Jewish, Disabilitas",full_normalize,1,9,9,1.0,0.7777777777777778
+label__agreement_band__topic,"1|unanimous|Kristen, Jewish, Disabilitas",existing_cleaner,1,9,9,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, LGBTQ+",raw,1,52,48,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, LGBTQ+",lowercase,1,52,48,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, LGBTQ+",leet_decode,1,52,48,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, LGBTQ+",collapse_repetition,1,52,48,1.0,0.9791666666666666
+label__agreement_band__topic,"1|unanimous|Kristen, LGBTQ+",expand_emoji,1,56,49,1.0769230769230769,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, LGBTQ+",expand_slang,1,52,48,1.0,0.9375
+label__agreement_band__topic,"1|unanimous|Kristen, LGBTQ+",keep_hashtag_content,1,52,48,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, LGBTQ+",remove_hashtag,1,52,48,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, LGBTQ+",remove_url,1,52,48,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, LGBTQ+",remove_mention,1,52,48,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, LGBTQ+",remove_punctuation,1,52,48,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, LGBTQ+",remove_emoji,1,52,48,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, LGBTQ+",full_normalize,1,54,49,1.0384615384615385,0.9166666666666666
+label__agreement_band__topic,"1|unanimous|Kristen, LGBTQ+",existing_cleaner,1,52,48,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, LGBTQ+, Disabilitas",raw,1,43,41,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, LGBTQ+, Disabilitas",lowercase,1,43,41,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, LGBTQ+, Disabilitas",leet_decode,1,43,41,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, LGBTQ+, Disabilitas",collapse_repetition,1,43,41,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, LGBTQ+, Disabilitas",expand_emoji,1,43,41,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, LGBTQ+, Disabilitas",expand_slang,1,43,41,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, LGBTQ+, Disabilitas",keep_hashtag_content,1,43,41,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, LGBTQ+, Disabilitas",remove_hashtag,1,43,41,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, LGBTQ+, Disabilitas",remove_url,1,43,41,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, LGBTQ+, Disabilitas",remove_mention,1,43,41,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, LGBTQ+, Disabilitas",remove_punctuation,1,43,41,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, LGBTQ+, Disabilitas",remove_emoji,1,43,41,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, LGBTQ+, Disabilitas",full_normalize,1,43,41,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Kristen, LGBTQ+, Disabilitas",existing_cleaner,1,43,41,1.0,1.0
+label__agreement_band__topic,1|unanimous|LGBTQ+,raw,63,1600,974,1.0,1.0
+label__agreement_band__topic,1|unanimous|LGBTQ+,lowercase,63,1600,974,1.0,1.0
+label__agreement_band__topic,1|unanimous|LGBTQ+,leet_decode,63,1600,974,1.0,0.9845995893223819
+label__agreement_band__topic,1|unanimous|LGBTQ+,collapse_repetition,63,1600,974,1.0,0.9917864476386037
+label__agreement_band__topic,1|unanimous|LGBTQ+,expand_emoji,63,1646,986,1.02875,0.9989733059548255
+label__agreement_band__topic,1|unanimous|LGBTQ+,expand_slang,63,1600,953,1.0,0.9691991786447639
+label__agreement_band__topic,1|unanimous|LGBTQ+,keep_hashtag_content,63,1599,974,0.999375,0.9989733059548255
+label__agreement_band__topic,1|unanimous|LGBTQ+,remove_hashtag,63,1560,941,0.975,0.9661190965092402
+label__agreement_band__topic,1|unanimous|LGBTQ+,remove_url,63,1584,968,0.99,0.9938398357289527
+label__agreement_band__topic,1|unanimous|LGBTQ+,remove_mention,63,1584,958,0.99,0.9835728952772074
+label__agreement_band__topic,1|unanimous|LGBTQ+,remove_punctuation,63,1600,974,1.0,1.0
+label__agreement_band__topic,1|unanimous|LGBTQ+,remove_emoji,63,1599,974,0.999375,0.9958932238193019
+label__agreement_band__topic,1|unanimous|LGBTQ+,full_normalize,63,1642,956,1.02625,0.9342915811088296
+label__agreement_band__topic,1|unanimous|LGBTQ+,existing_cleaner,63,1528,919,0.955,0.9435318275154004
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Disabilitas",raw,1,15,14,1.0,1.0
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Disabilitas",lowercase,1,15,14,1.0,1.0
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Disabilitas",leet_decode,1,15,14,1.0,1.0
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Disabilitas",collapse_repetition,1,15,14,1.0,1.0
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Disabilitas",expand_emoji,1,15,14,1.0,1.0
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Disabilitas",expand_slang,1,15,14,1.0,1.0
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Disabilitas",keep_hashtag_content,1,15,14,1.0,1.0
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Disabilitas",remove_hashtag,1,15,14,1.0,1.0
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Disabilitas",remove_url,1,15,14,1.0,1.0
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Disabilitas",remove_mention,1,15,14,1.0,1.0
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Disabilitas",remove_punctuation,1,15,14,1.0,1.0
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Disabilitas",remove_emoji,1,15,14,1.0,1.0
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Disabilitas",full_normalize,1,15,14,1.0,1.0
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Disabilitas",existing_cleaner,1,15,14,1.0,1.0
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Jewish",raw,4,89,69,1.0,1.0
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Jewish",lowercase,4,89,69,1.0,1.0
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Jewish",leet_decode,4,89,69,1.0,0.9565217391304348
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Jewish",collapse_repetition,4,89,69,1.0,1.0
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Jewish",expand_emoji,4,92,71,1.0337078651685394,1.0
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Jewish",expand_slang,4,89,69,1.0,1.0
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Jewish",keep_hashtag_content,4,89,69,1.0,1.0
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Jewish",remove_hashtag,4,88,68,0.9887640449438202,0.9855072463768116
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Jewish",remove_url,4,85,65,0.9550561797752809,0.9420289855072463
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Jewish",remove_mention,4,80,64,0.898876404494382,0.927536231884058
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Jewish",remove_punctuation,4,89,69,1.0,1.0
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Jewish",remove_emoji,4,89,69,1.0,1.0
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Jewish",full_normalize,4,92,71,1.0337078651685394,0.927536231884058
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Jewish",existing_cleaner,4,75,59,0.8426966292134831,0.855072463768116
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Jewish, Disabilitas",raw,1,13,13,1.0,1.0
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Jewish, Disabilitas",lowercase,1,13,13,1.0,1.0
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Jewish, Disabilitas",leet_decode,1,13,13,1.0,1.0
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Jewish, Disabilitas",collapse_repetition,1,13,13,1.0,1.0
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Jewish, Disabilitas",expand_emoji,1,13,13,1.0,1.0
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Jewish, Disabilitas",expand_slang,1,13,13,1.0,1.0
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Jewish, Disabilitas",keep_hashtag_content,1,13,13,1.0,1.0
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Jewish, Disabilitas",remove_hashtag,1,13,13,1.0,1.0
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Jewish, Disabilitas",remove_url,1,13,13,1.0,1.0
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Jewish, Disabilitas",remove_mention,1,13,13,1.0,1.0
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Jewish, Disabilitas",remove_punctuation,1,13,13,1.0,1.0
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Jewish, Disabilitas",remove_emoji,1,13,13,1.0,1.0
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Jewish, Disabilitas",full_normalize,1,13,13,1.0,1.0
+label__agreement_band__topic,"1|unanimous|LGBTQ+, Jewish, Disabilitas",existing_cleaner,1,13,13,1.0,1.0
+label__agreement_band__topic,1|unanimous|Rohingya,raw,86,2907,1283,1.0,1.0
+label__agreement_band__topic,1|unanimous|Rohingya,lowercase,86,2907,1283,1.0,1.0
+label__agreement_band__topic,1|unanimous|Rohingya,leet_decode,86,2907,1287,1.0,0.9797349961028838
+label__agreement_band__topic,1|unanimous|Rohingya,collapse_repetition,86,2907,1281,1.0,0.9883086515978177
+label__agreement_band__topic,1|unanimous|Rohingya,expand_emoji,86,2943,1293,1.0123839009287925,0.9984411535463756
+label__agreement_band__topic,1|unanimous|Rohingya,expand_slang,86,2914,1266,1.0024079807361541,0.9812938425565082
+label__agreement_band__topic,1|unanimous|Rohingya,keep_hashtag_content,86,2907,1283,1.0,1.0
+label__agreement_band__topic,1|unanimous|Rohingya,remove_hashtag,86,2866,1262,0.9858961128310973,0.9836321122369447
+label__agreement_band__topic,1|unanimous|Rohingya,remove_url,86,2784,1255,0.957688338493292,0.9781761496492596
+label__agreement_band__topic,1|unanimous|Rohingya,remove_mention,86,2836,1230,0.9755761953904368,0.9586905689789555
+label__agreement_band__topic,1|unanimous|Rohingya,remove_punctuation,86,2907,1283,1.0,1.0
+label__agreement_band__topic,1|unanimous|Rohingya,remove_emoji,86,2906,1283,0.999656002751978,0.9976617303195635
+label__agreement_band__topic,1|unanimous|Rohingya,full_normalize,86,2949,1265,1.0144478844169247,0.936087295401403
+label__agreement_band__topic,1|unanimous|Rohingya,existing_cleaner,86,2673,1181,0.9195046439628483,0.9204988308651598
+label__agreement_band__topic,1|unanimous|Syiah,raw,103,5883,2087,1.0,1.0
+label__agreement_band__topic,1|unanimous|Syiah,lowercase,103,5883,2087,1.0,1.0
+label__agreement_band__topic,1|unanimous|Syiah,leet_decode,103,5881,2082,0.9996600373958865,0.9688548155246766
+label__agreement_band__topic,1|unanimous|Syiah,collapse_repetition,103,5883,2086,1.0,0.9942501197891711
+label__agreement_band__topic,1|unanimous|Syiah,expand_emoji,103,5920,2094,1.0062893081761006,0.9995208433157643
+label__agreement_band__topic,1|unanimous|Syiah,expand_slang,103,5884,2077,1.0001699813020568,0.9923334930522281
+label__agreement_band__topic,1|unanimous|Syiah,keep_hashtag_content,103,5883,2087,1.0,1.0
+label__agreement_band__topic,1|unanimous|Syiah,remove_hashtag,103,5863,2073,0.9966003739588645,0.9932918064206996
+label__agreement_band__topic,1|unanimous|Syiah,remove_url,103,5678,2020,0.9651538330783613,0.967896502156205
+label__agreement_band__topic,1|unanimous|Syiah,remove_mention,103,5791,2012,0.9843617202107768,0.9640632486823191
+label__agreement_band__topic,1|unanimous|Syiah,remove_punctuation,103,5883,2087,1.0,1.0
+label__agreement_band__topic,1|unanimous|Syiah,remove_emoji,103,5488,1967,0.9328573856875744,0.9362721609966459
+label__agreement_band__topic,1|unanimous|Syiah,full_normalize,103,5908,2069,1.0042495325514194,0.9501677048394825
+label__agreement_band__topic,1|unanimous|Syiah,existing_cleaner,103,5567,1932,0.9462859085500595,0.9257307139434595
+label__agreement_band__topic,"1|unanimous|Syiah, Ahmadiyah",raw,2,98,33,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Ahmadiyah",lowercase,2,98,33,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Ahmadiyah",leet_decode,2,98,33,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Ahmadiyah",collapse_repetition,2,98,33,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Ahmadiyah",expand_emoji,2,98,33,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Ahmadiyah",expand_slang,2,98,33,1.0,0.9090909090909091
+label__agreement_band__topic,"1|unanimous|Syiah, Ahmadiyah",keep_hashtag_content,2,98,33,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Ahmadiyah",remove_hashtag,2,98,33,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Ahmadiyah",remove_url,2,98,33,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Ahmadiyah",remove_mention,2,98,33,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Ahmadiyah",remove_punctuation,2,98,33,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Ahmadiyah",remove_emoji,2,98,33,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Ahmadiyah",full_normalize,2,98,33,1.0,0.9090909090909091
+label__agreement_band__topic,"1|unanimous|Syiah, Ahmadiyah",existing_cleaner,2,98,33,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Disabilitas",raw,5,545,214,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Disabilitas",lowercase,5,545,214,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Disabilitas",leet_decode,5,545,214,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Disabilitas",collapse_repetition,5,545,214,1.0,0.9953271028037384
+label__agreement_band__topic,"1|unanimous|Syiah, Disabilitas",expand_emoji,5,545,214,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Disabilitas",expand_slang,5,545,213,1.0,0.9953271028037384
+label__agreement_band__topic,"1|unanimous|Syiah, Disabilitas",keep_hashtag_content,5,545,214,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Disabilitas",remove_hashtag,5,545,214,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Disabilitas",remove_url,5,545,214,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Disabilitas",remove_mention,5,545,214,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Disabilitas",remove_punctuation,5,545,214,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Disabilitas",remove_emoji,5,537,213,0.9853211009174312,0.9906542056074766
+label__agreement_band__topic,"1|unanimous|Syiah, Disabilitas",full_normalize,5,545,213,1.0,0.985981308411215
+label__agreement_band__topic,"1|unanimous|Syiah, Disabilitas",existing_cleaner,5,545,214,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Jewish",raw,38,2168,1055,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Jewish",lowercase,38,2168,1055,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Jewish",leet_decode,38,2168,1055,1.0,0.990521327014218
+label__agreement_band__topic,"1|unanimous|Syiah, Jewish",collapse_repetition,38,2168,1055,1.0,0.9971563981042654
+label__agreement_band__topic,"1|unanimous|Syiah, Jewish",expand_emoji,38,2189,1059,1.0096863468634687,0.9990521327014218
+label__agreement_band__topic,"1|unanimous|Syiah, Jewish",expand_slang,38,2168,1050,1.0,0.9895734597156398
+label__agreement_band__topic,"1|unanimous|Syiah, Jewish",keep_hashtag_content,38,2168,1055,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Jewish",remove_hashtag,38,2165,1054,0.9986162361623616,0.9990521327014218
+label__agreement_band__topic,"1|unanimous|Syiah, Jewish",remove_url,38,2164,1051,0.9981549815498155,0.9962085308056872
+label__agreement_band__topic,"1|unanimous|Syiah, Jewish",remove_mention,38,2145,1032,0.9893911439114391,0.9781990521327014
+label__agreement_band__topic,"1|unanimous|Syiah, Jewish",remove_punctuation,38,2168,1055,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Jewish",remove_emoji,38,2085,999,0.9617158671586716,0.9402843601895735
+label__agreement_band__topic,"1|unanimous|Syiah, Jewish",full_normalize,38,2189,1050,1.0096863468634687,0.9734597156398104
+label__agreement_band__topic,"1|unanimous|Syiah, Jewish",existing_cleaner,38,2138,1027,0.9861623616236163,0.9734597156398104
+label__agreement_band__topic,"1|unanimous|Syiah, Jewish, Rohingya",raw,2,562,198,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Jewish, Rohingya",lowercase,2,562,198,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Jewish, Rohingya",leet_decode,2,562,198,1.0,0.9949494949494949
+label__agreement_band__topic,"1|unanimous|Syiah, Jewish, Rohingya",collapse_repetition,2,562,198,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Jewish, Rohingya",expand_emoji,2,562,198,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Jewish, Rohingya",expand_slang,2,562,200,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Jewish, Rohingya",keep_hashtag_content,2,562,198,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Jewish, Rohingya",remove_hashtag,2,562,198,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Jewish, Rohingya",remove_url,2,562,198,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Jewish, Rohingya",remove_mention,2,562,198,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Jewish, Rohingya",remove_punctuation,2,562,198,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Jewish, Rohingya",remove_emoji,2,514,188,0.9145907473309609,0.9242424242424242
+label__agreement_band__topic,"1|unanimous|Syiah, Jewish, Rohingya",full_normalize,2,562,197,1.0,0.9646464646464646
+label__agreement_band__topic,"1|unanimous|Syiah, Jewish, Rohingya",existing_cleaner,2,562,198,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, LGBTQ+",raw,1,77,63,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, LGBTQ+",lowercase,1,77,63,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, LGBTQ+",leet_decode,1,77,63,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, LGBTQ+",collapse_repetition,1,77,63,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, LGBTQ+",expand_emoji,1,77,63,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, LGBTQ+",expand_slang,1,77,63,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, LGBTQ+",keep_hashtag_content,1,77,63,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, LGBTQ+",remove_hashtag,1,77,63,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, LGBTQ+",remove_url,1,77,63,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, LGBTQ+",remove_mention,1,77,63,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, LGBTQ+",remove_punctuation,1,77,63,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, LGBTQ+",remove_emoji,1,77,63,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, LGBTQ+",full_normalize,1,77,63,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, LGBTQ+",existing_cleaner,1,77,63,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Rohingya, Disabilitas",raw,1,47,41,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Rohingya, Disabilitas",lowercase,1,47,41,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Rohingya, Disabilitas",leet_decode,1,47,41,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Rohingya, Disabilitas",collapse_repetition,1,47,41,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Rohingya, Disabilitas",expand_emoji,1,47,41,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Rohingya, Disabilitas",expand_slang,1,47,41,1.0,0.975609756097561
+label__agreement_band__topic,"1|unanimous|Syiah, Rohingya, Disabilitas",keep_hashtag_content,1,47,41,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Rohingya, Disabilitas",remove_hashtag,1,47,41,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Rohingya, Disabilitas",remove_url,1,47,41,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Rohingya, Disabilitas",remove_mention,1,46,40,0.9787234042553191,0.975609756097561
+label__agreement_band__topic,"1|unanimous|Syiah, Rohingya, Disabilitas",remove_punctuation,1,47,41,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Syiah, Rohingya, Disabilitas",remove_emoji,1,47,41,1.0,0.926829268292683
+label__agreement_band__topic,"1|unanimous|Syiah, Rohingya, Disabilitas",full_normalize,1,47,41,1.0,0.9512195121951219
+label__agreement_band__topic,"1|unanimous|Syiah, Rohingya, Disabilitas",existing_cleaner,1,46,40,0.9787234042553191,0.975609756097561
+label__agreement_band__topic,1|unanimous|Tionghoa,raw,110,2700,1434,1.0,1.0
+label__agreement_band__topic,1|unanimous|Tionghoa,lowercase,110,2700,1434,1.0,1.0
+label__agreement_band__topic,1|unanimous|Tionghoa,leet_decode,110,2700,1434,1.0,0.9916317991631799
+label__agreement_band__topic,1|unanimous|Tionghoa,collapse_repetition,110,2700,1434,1.0,0.99581589958159
+label__agreement_band__topic,1|unanimous|Tionghoa,expand_emoji,110,2743,1442,1.015925925925926,0.99860529986053
+label__agreement_band__topic,1|unanimous|Tionghoa,expand_slang,110,2703,1411,1.001111111111111,0.9776847977684798
+label__agreement_band__topic,1|unanimous|Tionghoa,keep_hashtag_content,110,2700,1434,1.0,1.0
+label__agreement_band__topic,1|unanimous|Tionghoa,remove_hashtag,110,2670,1413,0.9888888888888889,0.9853556485355649
+label__agreement_band__topic,1|unanimous|Tionghoa,remove_url,110,2696,1431,0.9985185185185185,0.997907949790795
+label__agreement_band__topic,1|unanimous|Tionghoa,remove_mention,110,2674,1411,0.9903703703703703,0.9839609483960948
+label__agreement_band__topic,1|unanimous|Tionghoa,remove_punctuation,110,2700,1434,1.0,1.0
+label__agreement_band__topic,1|unanimous|Tionghoa,remove_emoji,110,2700,1431,1.0,0.99721059972106
+label__agreement_band__topic,1|unanimous|Tionghoa,full_normalize,110,2739,1406,1.0144444444444445,0.9532775453277545
+label__agreement_band__topic,1|unanimous|Tionghoa,existing_cleaner,110,2640,1386,0.9777777777777777,0.9665271966527197
+label__agreement_band__topic,"1|unanimous|Tionghoa, Disabilitas",raw,4,178,120,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Disabilitas",lowercase,4,178,120,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Disabilitas",leet_decode,4,178,120,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Disabilitas",collapse_repetition,4,178,120,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Disabilitas",expand_emoji,4,178,120,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Disabilitas",expand_slang,4,178,116,1.0,0.9
+label__agreement_band__topic,"1|unanimous|Tionghoa, Disabilitas",keep_hashtag_content,4,178,120,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Disabilitas",remove_hashtag,4,178,120,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Disabilitas",remove_url,4,178,120,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Disabilitas",remove_mention,4,178,120,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Disabilitas",remove_punctuation,4,178,120,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Disabilitas",remove_emoji,4,178,120,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Disabilitas",full_normalize,4,178,115,1.0,0.8916666666666667
+label__agreement_band__topic,"1|unanimous|Tionghoa, Disabilitas",existing_cleaner,4,178,120,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Jewish",raw,3,59,44,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Jewish",lowercase,3,59,44,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Jewish",leet_decode,3,59,44,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Jewish",collapse_repetition,3,59,44,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Jewish",expand_emoji,3,59,44,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Jewish",expand_slang,3,59,43,1.0,0.9545454545454546
+label__agreement_band__topic,"1|unanimous|Tionghoa, Jewish",keep_hashtag_content,3,59,44,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Jewish",remove_hashtag,3,59,44,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Jewish",remove_url,3,59,44,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Jewish",remove_mention,3,59,44,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Jewish",remove_punctuation,3,59,44,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Jewish",remove_emoji,3,59,44,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Jewish",full_normalize,3,59,43,1.0,0.9318181818181818
+label__agreement_band__topic,"1|unanimous|Tionghoa, Jewish",existing_cleaner,3,59,44,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Jewish, Rohingya",raw,1,243,140,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Jewish, Rohingya",lowercase,1,243,140,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Jewish, Rohingya",leet_decode,1,243,140,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Jewish, Rohingya",collapse_repetition,1,243,140,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Jewish, Rohingya",expand_emoji,1,275,148,1.131687242798354,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Jewish, Rohingya",expand_slang,1,243,140,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Jewish, Rohingya",keep_hashtag_content,1,243,140,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Jewish, Rohingya",remove_hashtag,1,243,140,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Jewish, Rohingya",remove_url,1,243,140,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Jewish, Rohingya",remove_mention,1,243,140,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Jewish, Rohingya",remove_punctuation,1,243,140,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Jewish, Rohingya",remove_emoji,1,243,140,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Jewish, Rohingya",full_normalize,1,273,152,1.123456790123457,0.9642857142857143
+label__agreement_band__topic,"1|unanimous|Tionghoa, Jewish, Rohingya",existing_cleaner,1,243,140,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Rohingya",raw,3,126,66,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Rohingya",lowercase,3,126,66,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Rohingya",leet_decode,3,126,66,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Rohingya",collapse_repetition,3,126,66,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Rohingya",expand_emoji,3,127,67,1.007936507936508,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Rohingya",expand_slang,3,126,65,1.0,0.9848484848484849
+label__agreement_band__topic,"1|unanimous|Tionghoa, Rohingya",keep_hashtag_content,3,126,66,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Rohingya",remove_hashtag,3,126,66,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Rohingya",remove_url,3,126,66,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Rohingya",remove_mention,3,125,65,0.9920634920634921,0.9848484848484849
+label__agreement_band__topic,"1|unanimous|Tionghoa, Rohingya",remove_punctuation,3,126,66,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Rohingya",remove_emoji,3,126,66,1.0,1.0
+label__agreement_band__topic,"1|unanimous|Tionghoa, Rohingya",full_normalize,3,127,65,1.007936507936508,0.9696969696969697
+label__agreement_band__topic,"1|unanimous|Tionghoa, Rohingya",existing_cleaner,3,125,65,0.9920634920634921,0.9848484848484849
+label__agreement_band__topic,1|unanimous|UNKNOWN,raw,59,2370,1133,1.0,1.0
+label__agreement_band__topic,1|unanimous|UNKNOWN,lowercase,59,2370,1133,1.0,1.0
+label__agreement_band__topic,1|unanimous|UNKNOWN,leet_decode,59,2370,1132,1.0,0.9955869373345102
+label__agreement_band__topic,1|unanimous|UNKNOWN,collapse_repetition,59,2370,1132,1.0,0.9964695498676082
+label__agreement_band__topic,1|unanimous|UNKNOWN,expand_emoji,59,2390,1137,1.0084388185654007,1.0
+label__agreement_band__topic,1|unanimous|UNKNOWN,expand_slang,59,2372,1130,1.0008438818565402,0.9920564872021183
+label__agreement_band__topic,1|unanimous|UNKNOWN,keep_hashtag_content,59,2370,1133,1.0,1.0
+label__agreement_band__topic,1|unanimous|UNKNOWN,remove_hashtag,59,2334,1109,0.9848101265822785,0.9788172992056487
+label__agreement_band__topic,1|unanimous|UNKNOWN,remove_url,59,2370,1133,1.0,1.0
+label__agreement_band__topic,1|unanimous|UNKNOWN,remove_mention,59,2368,1132,0.99915611814346,0.999117387466902
+label__agreement_band__topic,1|unanimous|UNKNOWN,remove_punctuation,59,2370,1133,1.0,1.0
+label__agreement_band__topic,1|unanimous|UNKNOWN,remove_emoji,59,2309,1102,0.9742616033755275,0.9691085613415711
+label__agreement_band__topic,1|unanimous|UNKNOWN,full_normalize,59,2398,1125,1.0118143459915612,0.9761694616063548
+label__agreement_band__topic,1|unanimous|UNKNOWN,existing_cleaner,59,2332,1108,0.9839662447257383,0.9779346866725508
