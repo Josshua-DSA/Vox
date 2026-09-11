@@ -1,0 +1,11 @@
+sublabel,group_column,group,count,positive_count,positive_rate
+profanity_obscenity,agreement_band,borderline,3858,370,0.09590461378952825
+profanity_obscenity,agreement_band,unanimous,24590,299,0.012159414396095974
+threat_incitement_to_violence,agreement_band,borderline,3858,415,0.10756868843960601
+threat_incitement_to_violence,agreement_band,unanimous,24590,371,0.015087433916226108
+insults,agreement_band,borderline,3858,1097,0.2843442198030067
+insults,agreement_band,unanimous,24590,850,0.03456689711264742
+identity_attack,agreement_band,borderline,3858,752,0.19491964748574392
+identity_attack,agreement_band,unanimous,24590,1004,0.040829605530703535
+sexually_explicit,agreement_band,borderline,3858,94,0.02436495593571799
+sexually_explicit,agreement_band,unanimous,24590,28,0.0011386742578283855
