@@ -10,6 +10,7 @@ outputs/models/*.pkl
 
 # Research PDF Binaries (Track metadata via research/PAPERS.md)
 research/*.pdf
+research/**/*.pdf
 
 # Python environment & cache
 __pycache__/
