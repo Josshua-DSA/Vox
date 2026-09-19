@@ -1,0 +1,241 @@
+@startuml
+title Bagan Penelitian\nContext-Aware Dual-Input Multi-Kernel CNN\nDeteksi Hate Speech & Toxicity Bahasa Indonesia\nKelompok 4
+
+skinparam backgroundColor #FAFAFA
+skinparam defaultFontName "Segoe UI"
+skinparam defaultFontSize 11
+skinparam TitleFontSize 16
+skinparam ActivityBackgroundColor #FFFFFF
+skinparam ActivityBorderColor #34495E
+
+start
+
+partition "**FASE 1: DATASET**" #E8F6F3 {
+  :IndoToxic2024 / IndoDiscourse
+  --
+  Sumber: HuggingFace Exqrch/IndoDiscourse
+  Format: CSV / JSON Lines
+  Total: 28.448 baris x 14 kolom
+  Anotator: 29 orang
+  --
+  Kolom utama:
+  * text (teks medsos asli)
+  * topic (7 kategori)
+  * toxicity_label (list vote anotator)
+  * insults, identity_attack, threat,
+    profanity, sexually_explicit
+  --
+  Non-toxic: 24.453 (85,96%)
+  Toxic: 3.995 (14,04%)
+  Rasio imbalance: 1 : 6,1
+  Duplikat teks: 2.274
+  Missing text: 1 baris NaN
+  --
+  Ref: Susanto et al. (2024, 2025)
+  research/01_dataset_indonesia/;
+}
+
+partition "**FASE 2: AGGREGASI LABEL**" #FDF2E9 {
+  :AnnotatorAgreementAggregator
+  --
+  Input: List vote per anotator
+  --
+  1. Majority Voting (threshold 0.5)
+     label = 1 jika sum/len >= 0.5
+     label = 0 sebaliknya
+  2. Agreement score per teks
+  3. Fleiss Kappa
+  --
+  Output:
+  * label biner (0 / 1)
+  * agreement_score (0.5 - 1.0)
+  * fleiss_kappa (dataset-level)
+  --
+  Ref: Susanto et al. (2024, 2025);
+}
+
+partition "**FASE 3: PREPROCESSING TEKS**" #FDF2E9 {
+  :3a. SlangNormalizer
+  --
+  1. Leet-Speak Decoding
+     4=a, @=a, 3=e, 0=o, 1/!=i, $=s, 7=t
+     "4nj1ng" menjadi "anjing"
+  2. Repeat Character Collapse
+     "begooolll" menjadi "begool"
+  3. Emoji Expansion (opsional)
+  4. Slang Dictionary (500+ entri)
+     "gw"="saya" "lu"="kamu" "gak"="tidak"
+  --
+  Target: Reduksi OOV >= 40% (H2)
+  Ref: research/06_preprocessing_representation/;
+
+  :3b. TextCleaner
+  --
+  1. Hapus URL
+  2. Hapus @Mention
+  3. Hapus Tag HTML
+  4. Strip Simbol Hashtag (pertahankan kata)
+  5. Case Folding (lowercase)
+  6. Hapus Tanda Baca
+  7. Normalisasi Whitespace
+  --
+  TIDAK menghapus:
+  * Stopwords (CNN butuh negasi)
+  * TIDAK stemming (merusak CNN)
+  --
+  Ref: Chhabra (2024) arXiv:2409.05134;
+}
+
+partition "**FASE 4: TOKENISASI & ENCODING**" #EBF5FB {
+  :4a. TextTokenizer
+  --
+  Whitespace tokenizer
+  Vocabulary dari TRAINING SET SAJA
+  (mencegah data leakage)
+  --
+  VOCAB_SIZE = 20.000
+  OOV_TOKEN index 1, PAD_TOKEN index 0
+  --
+  Output: Sequence integer per teks;
+
+  :4b. SequencePadder
+  --
+  MAX_LEN = 128 token
+  (mencakup 94,6% data)
+  Padding: post, Truncation: post
+  --
+  Output: Tensor integer (N, 128);
+
+  :4c. TopicEncoder
+  --
+  7 Kategori Kanonikal:
+  Politik=0 Agama=1 SARA=2
+  Gender=3 Pemilu2024=4 Umum=5 UNKNOWN=6
+  --
+  Output: Tensor integer (N, 1)
+  Ref: Susanto et al. (2024);
+}
+
+partition "**FASE 5: STRATIFIED SPLIT**" #EBF5FB {
+  :DataSplitter (SEED=42)
+  --
+  Training: 70% (~19.914 sampel)
+  Validation: 15% (~4.267 sampel)
+  Test: 15% (~4.267 sampel)
+  --
+  Stratified by label
+  Vocab dari training set saja;
+}
+
+partition "**FASE 6: WORD EMBEDDING**" #F4ECF7 {
+  :EmbeddingLoader
+  --
+  A: Random Trainable (Baseline)
+  B: FastText cc.id.300 (Rekomendasi)
+  C: Word2Vec Indo4B (Alternatif)
+  --
+  Output: embedding_matrix 20000 x 300
+  Ref: IndoNLU (2020) arXiv:2009.05387;
+}
+
+partition "**FASE 7: ARSITEKTUR CNN**" #F4ECF7 {
+  fork
+    :Text Input Branch
+    --
+    Input: (batch, 128) token IDs
+    Embedding: (batch, 128, 300)
+    --
+    Conv1D k=3 F=128
+    Conv1D k=4 F=128
+    Conv1D k=5 F=128
+    --
+    GlobalMaxPooling1D x3
+    Concatenate: Text_Vec (batch, 384);
+  fork again
+    :Topic Input Branch
+    --
+    Input: (batch, 1) topic ID
+    Embedding(7, 32)
+    Flatten: Topic_Vec (batch, 32);
+  end fork
+
+  :Multi-Modal Fusion
+  --
+  Concatenate: Fusion_Vec (batch, 416)
+  Dropout(p=0.5)
+  Dense(128, ReLU)
+  Dropout(p=0.3)
+  --
+  Primary: Dense(1, Sigmoid) Binary Focal Loss
+  Auxiliary: Dense(5, Sigmoid) Multi-Label Focal
+  --
+  Ref: Yoon Kim (2014) arXiv:1408.5882;
+}
+
+partition "**FASE 8: TRAINING**" #F4ECF7 {
+  :ImbalanceHandler + ModelTrainer
+  --
+  Binary Focal Loss gamma=2.0 alpha=0.25
+  --
+  Adam lr=0.001, Batch=32, Epochs=20
+  EarlyStopping patience=5
+  SEED = 42
+  --
+  Ref: Focal Loss arXiv:1708.02002;
+}
+
+partition "**FASE 9: EKSPERIMEN**" #FDEDEC {
+  :9 Varian Model Benchmark
+  --
+  M1-M3: TF-IDF + ML Baseline
+  M4-M6: Vanilla CNN (text-only)
+  M7-M9: Dual-Input CNN (proposed)
+  --
+  Target M8: Macro-F1 >= 0.78;
+}
+
+partition "**FASE 10: EVALUASI**" #FDEDEC {
+  :MetricCalculator
+  --
+  Macro-F1, Precision, Recall
+  Recall Toxic >= 0.75
+  Confusion Matrix
+  Output: JSON outputs/metrics/;
+
+  :Validasi Hipotesis
+  --
+  H1: CNN > TF-IDF (F1 naik >= 25%)
+  H2: SlangNorm (OOV turun >= 40%)
+  H3: Dual-Input (F1 naik >= 8%)
+  H4: Focal Loss (Recall >= 75%);
+
+  :ErrorAnalysis
+  --
+  FP/FN patterns
+  Sarkasme, code-mixing
+  Confusion heatmap;
+}
+
+partition "**FASE 11: XAI**" #FEF9E7 {
+  :SaliencyMapper
+  Integrated Gradients
+  --
+  50 interpolation steps
+  L1-norm per token
+  Skor atribusi per kata
+  Top-5 kata pemicu toxic
+  --
+  Analisis kualitatif (bukan hipotesis)
+  Ref: Sundararajan (2017) arXiv:1703.01365;
+}
+
+partition "**FASE 12: UI**" #EAF2F8 {
+  :Streamlit 3-Tab
+  --
+  Tab 1: Predictor + Saliency Heatmap
+  Tab 2: Experiment Benchmark (M1-M9)
+  Tab 3: Error Analysis Browser;
+}
+
+stop
+@enduml
