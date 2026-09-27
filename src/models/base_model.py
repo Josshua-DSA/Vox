@@ -7,7 +7,7 @@ import numpy as np
 class BaseModel(ABC):
     """
     Abstract Base Class untuk arsitektur model klasifikasi teks.
-    Semua implementasi model eksperimen wajib mewarisi class ini.
+    Mendukung dual-input (teks + topic) sesuai Context-Aware architecture.
     """
 
     def __init__(self, config: Any) -> None:
@@ -21,82 +21,96 @@ class BaseModel(ABC):
         self.model: Any = None
 
     @abstractmethod
-    def build_model(self) -> Any:
+    def build_model(
+        self, embedding_matrix: np.ndarray | None = None
+    ) -> Any:
         """
         Membangun dan mengompilasi graf arsitektur neural network model.
 
+        Args:
+            embedding_matrix: Bobot pre-trained embedding (opsional).
+
         Returns:
-            Any: Instance objek model terkompilasi.
+            Instance objek model terkompilasi.
         """
-        pass
 
     @abstractmethod
     def train(
         self,
-        X_train: np.ndarray,
+        X_text_train: np.ndarray,
+        X_topic_train: np.ndarray,
         y_train: np.ndarray,
-        X_val: np.ndarray,
+        X_text_val: np.ndarray,
+        X_topic_val: np.ndarray,
         y_val: np.ndarray,
         class_weight: dict[int, float] | None = None,
+        loss_fn: Any | None = None,
     ) -> dict[str, Any]:
         """
-        Melatih model dan mengembalikan dictionary history performa epoch.
+        Melatih model dual-input dan mengembalikan history performa epoch.
 
         Args:
-            X_train (np.ndarray): Padded sequence token train.
-            y_train (np.ndarray): Label train.
-            X_val (np.ndarray): Padded sequence token val.
-            y_val (np.ndarray): Label val.
-            class_weight (Dict[int, float], optional): Bobot penalti kelas.
+            X_text_train: Padded sequence token train.
+            X_topic_train: Integer ID topik train.
+            y_train: Label train.
+            X_text_val: Padded sequence token val.
+            X_topic_val: Integer ID topik val.
+            y_val: Label val.
+            class_weight: Bobot penalti kelas.
+            loss_fn: Custom loss function (misal Focal Loss).
 
         Returns:
-            Dict[str, Any]: History loss dan metrik per epoch.
+            History loss dan metrik per epoch.
         """
-        pass
 
     @abstractmethod
-    def predict(self, X: np.ndarray, threshold: float = 0.5) -> np.ndarray:
+    def predict(
+        self,
+        X_text: np.ndarray,
+        X_topic: np.ndarray,
+        threshold: float = 0.5,
+    ) -> np.ndarray:
         """
-        Menghasilkan diskrit prediksi kelas (0 atau 1).
+        Menghasilkan prediksi kelas biner (0 atau 1).
 
         Args:
-            X (np.ndarray): Matrix input sequence token.
-            threshold (float): Batas ambang klasifikasi biner.
+            X_text: Matrix input sequence token.
+            X_topic: Array integer ID topik.
+            threshold: Batas ambang klasifikasi biner.
 
         Returns:
-            np.ndarray: Array prediksi label kelas biner.
+            Array prediksi label kelas biner.
         """
-        pass
 
     @abstractmethod
-    def predict_proba(self, X: np.ndarray) -> np.ndarray:
+    def predict_proba(
+        self, X_text: np.ndarray, X_topic: np.ndarray
+    ) -> np.ndarray:
         """
-        Menghitung nilai estimasi probabilitas positif kelas hate speech/toksik.
+        Menghitung nilai estimasi probabilitas positif.
 
         Args:
-            X (np.ndarray): Matrix input sequence token.
+            X_text: Matrix input sequence token.
+            X_topic: Array integer ID topik.
 
         Returns:
-            np.ndarray: Array nilai probabilitas [0.0, 1.0].
+            Array nilai probabilitas [0.0, 1.0].
         """
-        pass
 
     @abstractmethod
     def save(self, path: str) -> None:
         """
-        Menyimpan arsitektur dan bobot bobot model ke file disk.
+        Menyimpan arsitektur dan bobot model ke file disk.
 
         Args:
-            path (str): Lokasi penyimpanan file model.
+            path: Lokasi penyimpanan file model.
         """
-        pass
 
     @abstractmethod
     def load(self, path: str) -> None:
         """
-        Memuat bobot bobot model dari file disk.
+        Memuat bobot model dari file disk.
 
         Args:
-            path (str): Lokasi file model tersimpan.
+            path: Lokasi file model tersimpan.
         """
-        pass
