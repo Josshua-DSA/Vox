@@ -1,3 +1,8 @@
+"""
+Context-Aware Dual-Input Multi-Kernel 1D CNN (ARCHITECTURE.md §3-4).
+Dua input stream: teks token sequence + topic integer ID.
+"""
+
 import os
 from typing import Any
 
@@ -8,12 +13,13 @@ from src.models.base_model import BaseModel
 
 class CNNTextClassifier(BaseModel):
     """
-    Model Klasifikasi Teks CNN Multi-kernel berbasis arsitektur Yoon Kim (2014).
-    Menggunakan beberapa ukuran filter Conv1D paralel, GlobalMaxPooling, Dropout, dan Dense.
+    Context-Aware Dual-Input Multi-Kernel 1D CNN yang menggabungkan
+    ekstraksi n-gram teks (Conv1D k=3,4,5 paralel) dengan embedding
+    metadata topik untuk klasifikasi toksisitas biner.
 
     Attributes:
         config: Instance konfigurasi hyperparameter.
-        model: Objek graf model neural network (TensorFlow/Keras/PyTorch).
+        model: Objek graf model Keras Functional API.
     """
 
     def __init__(self, config: Any) -> None:
@@ -24,37 +30,49 @@ class CNNTextClassifier(BaseModel):
         self, embedding_matrix: np.ndarray | None = None
     ) -> Any:
         """
-        Membangun topologi arsitektur CNN Multi-kernel Conv1D.
+        Membangun topologi Keras Functional API dual-input CNN.
+
+        Layer flow (ARCHITECTURE.md §3):
+          Text Input (batch, 128) -> Embedding (batch, 128, 300)
+            -> Conv1D k=3 -> GMP -> g3 (128d)
+            -> Conv1D k=4 -> GMP -> g4 (128d)
+            -> Conv1D k=5 -> GMP -> g5 (128d)
+            -> Concat -> Text_Vec (384d)
+          Topic Input (batch, 1) -> Embedding (batch, 32) -> Topic_Vec
+          Fusion: [Text_Vec; Topic_Vec] (416d)
+            -> Dropout(0.5) -> Dense(128, ReLU) -> Dropout(0.3)
+            -> Dense(1, Sigmoid)
 
         Args:
-            embedding_matrix (Optional[np.ndarray]): Bobot pre-trained embedding (opsional).
+            embedding_matrix: Bobot pre-trained embedding (opsional).
 
         Returns:
-            Any: Objek model neural network terkompilasi.
+            Objek model Keras terkompilasi.
         """
         try:
             from tensorflow.keras import layers, models, optimizers
 
-            inputs = layers.Input(
-                shape=(self.config.MAX_LEN,), dtype="int32", name="input_ids"
+            dropout_fusion, dropout_dense = self.config.DROPOUT_RATES
+
+            # --- Text Branch ---
+            text_input = layers.Input(
+                shape=(self.config.MAX_LEN,), dtype="int32", name="text_input"
             )
 
             if embedding_matrix is not None:
-                embedding_layer = layers.Embedding(
-                    input_dim=self.config.VOCAB_SIZE,
-                    output_dim=self.config.EMBEDDING_DIM,
+                text_emb = layers.Embedding(
+                    input_dim=embedding_matrix.shape[0],
+                    output_dim=embedding_matrix.shape[1],
                     weights=[embedding_matrix],
                     trainable=False,
                     name="pretrained_embedding",
-                )
+                )(text_input)
             else:
-                embedding_layer = layers.Embedding(
+                text_emb = layers.Embedding(
                     input_dim=self.config.VOCAB_SIZE,
                     output_dim=self.config.EMBEDDING_DIM,
                     name="trainable_embedding",
-                )
-
-            x = embedding_layer(inputs)
+                )(text_input)
 
             conv_blocks = []
             for k_size in self.config.FILTER_SIZES:
@@ -64,29 +82,40 @@ class CNNTextClassifier(BaseModel):
                     activation="relu",
                     padding="valid",
                     name=f"conv1d_k{k_size}",
-                )(x)
+                )(text_emb)
                 pool = layers.GlobalMaxPooling1D(name=f"gmp_k{k_size}")(conv)
                 conv_blocks.append(pool)
 
             if len(conv_blocks) > 1:
-                merged = layers.Concatenate(name="concat_features")(
-                    conv_blocks
-                )
+                text_vec = layers.Concatenate(name="text_vec")(conv_blocks)
             else:
-                merged = conv_blocks[0]
+                text_vec = conv_blocks[0]
 
-            dropout_1 = layers.Dropout(
-                self.config.DROPOUT_RATE, name="dropout_1"
-            )(merged)
-            dense = layers.Dense(
-                self.config.DENSE_UNITS, activation="relu", name="dense_features"
-            )(dropout_1)
-            dropout_2 = layers.Dropout(0.3, name="dropout_2")(dense)
-            outputs = layers.Dense(1, activation="sigmoid", name="output_prob")(
-                dropout_2
+            # --- Topic Branch ---
+            topic_input = layers.Input(
+                shape=(1,), dtype="int32", name="topic_input"
             )
+            topic_emb = layers.Embedding(
+                input_dim=self.config.NUM_TOPICS,
+                output_dim=self.config.TOPIC_EMBEDDING_DIM,
+                name="topic_embedding",
+            )(topic_input)
+            topic_vec = layers.Flatten(name="topic_vec")(topic_emb)
 
-            model = models.Model(inputs=inputs, outputs=outputs, name="CNN_Text_Classifier")
+            # --- Fusion ---
+            fusion = layers.Concatenate(name="fusion_vec")([text_vec, topic_vec])
+            x = layers.Dropout(dropout_fusion, name="dropout_fusion")(fusion)
+            x = layers.Dense(
+                self.config.DENSE_UNITS, activation="relu", name="dense_hidden"
+            )(x)
+            x = layers.Dropout(dropout_dense, name="dropout_dense")(x)
+            output = layers.Dense(1, activation="sigmoid", name="output_prob")(x)
+
+            model = models.Model(
+                inputs=[text_input, topic_input],
+                outputs=output,
+                name="Context_Aware_Dual_Input_CNN",
+            )
             model.compile(
                 optimizer=optimizers.Adam(learning_rate=self.config.LEARNING_RATE),
                 loss="binary_crossentropy",
@@ -94,85 +123,112 @@ class CNNTextClassifier(BaseModel):
             )
             self.model = model
             return self.model
+
         except ImportError:
-            # Fallback stub jika TensorFlow belum diinstall
             self.model = "TensorFlow_Skeleton_Model"
             return self.model
 
     def train(
         self,
-        X_train: np.ndarray,
+        X_text_train: np.ndarray,
+        X_topic_train: np.ndarray,
         y_train: np.ndarray,
-        X_val: np.ndarray,
+        X_text_val: np.ndarray,
+        X_topic_val: np.ndarray,
         y_val: np.ndarray,
         class_weight: dict[int, float] | None = None,
+        loss_fn: Any | None = None,
     ) -> dict[str, Any]:
         """
-        Menjalankan loop training dengan validasi dan class weighting.
+        Menjalankan loop training dual-input dengan validasi.
 
         Args:
-            X_train (np.ndarray): Padded sequence token train.
-            y_train (np.ndarray): Label train.
-            X_val (np.ndarray): Padded sequence token val.
-            y_val (np.ndarray): Label val.
-            class_weight (Optional[Dict[int, float]]): Bobot penalti kelas.
+            X_text_train: Padded sequence token train.
+            X_topic_train: Integer ID topik train.
+            y_train: Label train.
+            X_text_val: Padded sequence token val.
+            X_topic_val: Integer ID topik val.
+            y_val: Label val.
+            class_weight: Bobot penalti kelas.
+            loss_fn: Custom loss function (recompile jika diberikan).
 
         Returns:
-            Dict[str, Any]: History metrik training per epoch.
+            History metrik training per epoch.
         """
-        if hasattr(self.model, "fit"):
-            try:
-                import tensorflow as tf
+        if not hasattr(self.model, "fit"):
+            return {"loss": [0.5], "val_loss": [0.45]}
 
-                callbacks = [
-                    tf.keras.callbacks.EarlyStopping(
-                        monitor="val_loss",
-                        patience=self.config.EARLY_STOPPING_PATIENCE,
-                        restore_best_weights=True,
-                    )
-                ]
-                history = self.model.fit(
-                    X_train,
-                    y_train,
-                    validation_data=(X_val, y_val),
-                    batch_size=self.config.BATCH_SIZE,
-                    epochs=self.config.EPOCHS,
-                    class_weight=class_weight,
-                    callbacks=callbacks,
-                    verbose=1,
+        try:
+            import tensorflow as tf
+
+            if loss_fn is not None:
+                self.model.compile(
+                    optimizer=tf.keras.optimizers.Adam(
+                        learning_rate=self.config.LEARNING_RATE
+                    ),
+                    loss=loss_fn,
+                    metrics=["accuracy"],
                 )
-                return history.history
-            except Exception as e:
-                return {"error": str(e)}
-        return {"loss": [0.5], "val_loss": [0.45]}
 
-    def predict(self, X: np.ndarray, threshold: float = 0.5) -> np.ndarray:
+            callbacks = [
+                tf.keras.callbacks.EarlyStopping(
+                    monitor="val_loss",
+                    patience=self.config.EARLY_STOPPING_PATIENCE,
+                    restore_best_weights=True,
+                )
+            ]
+            history = self.model.fit(
+                [X_text_train, X_topic_train],
+                y_train,
+                validation_data=([X_text_val, X_topic_val], y_val),
+                batch_size=self.config.BATCH_SIZE,
+                epochs=self.config.EPOCHS,
+                class_weight=class_weight,
+                callbacks=callbacks,
+                verbose=1,
+            )
+            return history.history
+        except Exception as e:
+            return {"error": str(e)}
+
+    def predict(
+        self,
+        X_text: np.ndarray,
+        X_topic: np.ndarray,
+        threshold: float = 0.5,
+    ) -> np.ndarray:
         """
-        Menghasilkan diskrit prediksi kelas (0 atau 1) berdasarkan ambang batas.
+        Menghasilkan prediksi kelas biner (0 atau 1).
 
         Args:
-            X (np.ndarray): Matrix input sequence.
-            threshold (float): Batas ambang probabilitas.
+            X_text: Matrix input sequence token.
+            X_topic: Array integer ID topik.
+            threshold: Batas ambang probabilitas.
 
         Returns:
-            np.ndarray: Array prediksi biner.
+            Array prediksi biner.
         """
-        probs = self.predict_proba(X)
+        probs = self.predict_proba(X_text, X_topic)
         return (probs >= threshold).astype(int).flatten()
 
-    def predict_proba(self, X: np.ndarray) -> np.ndarray:
+    def predict_proba(
+        self, X_text: np.ndarray, X_topic: np.ndarray
+    ) -> np.ndarray:
         """
         Menghasilkan nilai probabilitas kontinu.
 
         Args:
-            X (np.ndarray): Matrix input sequence.
+            X_text: Matrix input sequence token.
+            X_topic: Array integer ID topik.
 
         Returns:
-            np.ndarray: Array probabilitas kelas positif.
+            Array probabilitas kelas positif.
         """
         if hasattr(self.model, "predict"):
-            return self.model.predict(X, batch_size=self.config.BATCH_SIZE)
-        return np.zeros((X.shape[0], 1))
+            return self.model.predict(
+                [X_text, X_topic], batch_size=self.config.BATCH_SIZE, verbose=0
+            )
+        return np.zeros((X_text.shape[0], 1))
 
     def save(self, path: str) -> None:
         """Menyimpan model ke disk."""

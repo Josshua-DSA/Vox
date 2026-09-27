@@ -39,15 +39,30 @@ class Config:
     DATABASE_URL: str = "postgresql://postgres:postgres@localhost:5434/indotoxic"
 
     # Embedding
-    EMBEDDING_DIM: int = 128
+    EMBEDDING_DIM: int = 300
     USE_PRETRAINED: bool = False
     PRETRAINED_PATH: str = ""
 
-    # CNN Architecture (Yoon Kim Multi-kernel)
+    # CNN Architecture (Context-Aware Dual-Input Multi-Kernel)
     FILTER_SIZES: list[int] = field(default_factory=lambda: [3, 4, 5])
     NUM_FILTERS: int = 128
-    DROPOUT_RATE: float = 0.5
+    DROPOUT_RATES: tuple[float, float] = (0.5, 0.3)
     DENSE_UNITS: int = 128
+
+    # Topic Metadata Embedding
+    NUM_TOPICS: int = 7
+    TOPIC_EMBEDDING_DIM: int = 32
+    CANONICAL_TOPICS: list[str] = field(
+        default_factory=lambda: [
+            "Politik",
+            "Agama",
+            "SARA",
+            "Gender",
+            "Pemilu2024",
+            "Umum",
+            "UNKNOWN",
+        ]
+    )
 
     # Training Hyperparameters
     BATCH_SIZE: int = 32
@@ -56,12 +71,13 @@ class Config:
     EARLY_STOPPING_PATIENCE: int = 5
 
     # Imbalance Strategy: "none" | "class_weight" | "focal_loss" | "oversample"
-    IMBALANCE_STRATEGY: str = "class_weight"
+    IMBALANCE_STRATEGY: str = "focal_loss"
     FOCAL_GAMMA: float = 2.0
     FOCAL_ALPHA: float = 0.25
 
     # Output Artifacts
-    MODEL_OUTPUT: str = "outputs/models/cnn_model.h5"
+    MODEL_OUTPUT: str = "outputs/models/cnn_model.keras"
     TOKENIZER_OUTPUT: str = "outputs/tokenizer/tokenizer.pkl"
+    TOPIC_ENCODER_OUTPUT: str = "outputs/tokenizer/topic_encoder.json"
     METRICS_OUTPUT_DIR: str = "outputs/metrics/"
     PLOTS_OUTPUT_DIR: str = "outputs/plots/"

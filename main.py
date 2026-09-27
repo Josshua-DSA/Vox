@@ -1,5 +1,6 @@
 """
 Master CLI Entry Point: Pelatihan, Evaluasi, dan Ekspor Pipeline CNN Hate Speech.
+Context-Aware Dual-Input Multi-Kernel CNN.
 """
 
 import argparse
@@ -7,10 +8,12 @@ import argparse
 from src.evaluation.confusion import ConfusionMatrixPlotter
 from src.evaluation.metrics import MetricCalculator
 from src.models.cnn_model import CNNTextClassifier
+from src.preprocessing.agreement import AnnotatorAgreementAggregator
 from src.preprocessing.cleaner import TextCleaner
 from src.preprocessing.normalizer import SlangNormalizer
 from src.preprocessing.splitter import DataSplitter
 from src.preprocessing.stopword_filter import StopwordFilter
+from src.preprocessing.topic_encoder import TopicEncoder
 from src.training.imbalance import ImbalanceHandler
 from src.training.trainer import ModelTrainer
 from src.utils.config import Config
@@ -23,7 +26,7 @@ def run_pipeline(stage: str) -> None:
     Eksekusi tahapan pipeline berdasarkan argumen CLI.
 
     Args:
-        stage (str): Tahapan ("all", "preprocess", "train", "eval").
+        stage: Tahapan ("all", "preprocess", "train", "eval").
     """
     cfg = Config()
     logger = Logger.get_logger("Main")
@@ -33,22 +36,31 @@ def run_pipeline(stage: str) -> None:
 
     if stage in ["preprocess", "all"]:
         logger.info("Step 1: Menjalankan Preprocessing & Stratified Splitting...")
+        aggregator = AnnotatorAgreementAggregator(threshold=0.5)
         normalizer = SlangNormalizer(config=cfg)
         cleaner = TextCleaner()
         stopword = StopwordFilter(config=cfg)
+        topic_encoder = TopicEncoder(canonical_topics=cfg.CANONICAL_TOPICS)
         splitter = DataSplitter(
             train_ratio=cfg.TRAIN_RATIO,
             val_ratio=cfg.VAL_RATIO,
             test_ratio=cfg.TEST_RATIO,
             seed=cfg.SEED,
         )
-        logger.info("Preprocessing step siap (normalizer -> cleaner -> stopword).")
+        logger.info(
+            f"Preprocessing siap: aggregator -> normalizer -> cleaner -> stopword -> "
+            f"topic_encoder ({len(cfg.CANONICAL_TOPICS)} topik)."
+        )
 
     if stage in ["train", "all"]:
-        logger.info("Step 2: Membangun Arsitektur Yoon Kim Multi-Kernel CNN...")
+        logger.info("Step 2: Membangun Context-Aware Dual-Input Multi-Kernel CNN...")
         model_cls = CNNTextClassifier(cfg)
         model_cls.build_model()
-        imbalance = ImbalanceHandler(strategy=cfg.IMBALANCE_STRATEGY)
+        imbalance = ImbalanceHandler(
+            strategy=cfg.IMBALANCE_STRATEGY,
+            gamma=cfg.FOCAL_GAMMA,
+            alpha=cfg.FOCAL_ALPHA,
+        )
         trainer = ModelTrainer(model=model_cls, imbalance_handler=imbalance)
         logger.info(f"Model trainer siap dengan strategi imbalance: {cfg.IMBALANCE_STRATEGY}")
 
@@ -62,7 +74,7 @@ def run_pipeline(stage: str) -> None:
 def main() -> None:
     """Entry point argparser CLI."""
     parser = argparse.ArgumentParser(
-        description="Kelompok 4: Indonesian Hate Speech Detection (CNN for Text)"
+        description="Kelompok 4: Indonesian Hate Speech Detection (Context-Aware Dual-Input CNN)"
     )
     parser.add_argument(
         "--stage",
