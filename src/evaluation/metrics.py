@@ -76,3 +76,53 @@ class MetricCalculator:
         os.makedirs(os.path.dirname(path), exist_ok=True)
         with open(path, "w", encoding="utf-8") as f:
             json.dump(metrics, f, indent=2)
+
+    def compute_by_group(
+        self,
+        y_true: np.ndarray,
+        y_pred: np.ndarray,
+        groups: Any,
+        min_samples: int = 1,
+    ) -> dict[str, dict[str, Any]]:
+        """Compute the binary metrics separately for each evaluation subgroup."""
+        if min_samples < 1:
+            raise ValueError("min_samples must be at least 1")
+        group_values = np.asarray(groups)
+        if len(y_true) != len(y_pred) or len(y_true) != len(group_values):
+            raise ValueError("y_true, y_pred, and groups must have equal lengths")
+        result: dict[str, dict[str, Any]] = {}
+        for group in dict.fromkeys(group_values.tolist()):
+            mask = group_values == group
+            if int(mask.sum()) < min_samples:
+                continue
+            result[str(group)] = self.compute_all(y_true[mask], y_pred[mask])
+        return result
+
+    def compute_multilabel(
+        self, y_true: np.ndarray, y_pred: np.ndarray
+    ) -> dict[str, Any]:
+        """Compute per-label and macro/micro metrics for binary multilabel data."""
+        true = np.asarray(y_true)
+        pred = np.asarray(y_pred)
+        if true.ndim != 2 or pred.shape != true.shape:
+            raise ValueError("multilabel arrays must be 2D with equal shapes")
+        labels = []
+        for index in range(true.shape[1]):
+            labels.append(
+                {
+                    "precision": float(
+                        precision_score(true[:, index], pred[:, index], zero_division=0)
+                    ),
+                    "recall": float(
+                        recall_score(true[:, index], pred[:, index], zero_division=0)
+                    ),
+                    "f1": float(
+                        f1_score(true[:, index], pred[:, index], zero_division=0)
+                    ),
+                }
+            )
+        return {
+            "macro_f1": float(f1_score(true, pred, average="macro", zero_division=0)),
+            "micro_f1": float(f1_score(true, pred, average="micro", zero_division=0)),
+            "per_label": labels,
+        }

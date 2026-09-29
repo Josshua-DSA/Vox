@@ -17,11 +17,11 @@ Group Contribution:
 Proyek ini bertujuan untuk mendeteksi ujaran kebencian (*hate speech*) dan teks toksik berbahasa Indonesia pada media sosial menggunakan pendekatan **Convolutional Neural Network (CNN) for Text** berbasis arsitektur multi-kernel Yoon Kim (2014). Sistem dirancang secara modular, berorientasi objek (OOP), reprodusibel, terintegrasi dengan database PostgreSQL untuk data pipeline & auto-scraping, serta dilengkapi dengan modul *explainability* (feature saliency) dan antarmuka visual berbasis Streamlit.
 
 ### Fitur Utama
-1. **End-to-End NLP Pipeline**: Preprocessing teks (regex cleaning, tokenisasi, sequence padding) terstandarisasi.
+1. **End-to-End NLP Pipeline**: Preprocessing teks konservatif (normalisasi slang/leet/emoji, marker-aware cleaning, tokenisasi, sequence padding) terstandarisasi.
 2. **Hybrid Database Layer (PostgreSQL)**: Penyimpanan dataset terstruktur (28.445 baris) + tabel raw dump JSONB fleksibel untuk kebutuhan auto-scraping multi-platform.
 3. **Multi-Kernel Conv1D Architecture**: Ekstraksi representasi n-gram lokal paralel (kernel sizes: 3, 4, 5) dengan GlobalMaxPooling.
 4. **Imbalance Mitigation**: Penanganan ketidakseimbangan kelas menggunakan *Class Weighting*, *Focal Loss*, dan *Oversampling*.
-5. **Comprehensive Evaluation**: Pengukuran performa menyeluruh (Macro-F1, Precision, Recall, Confusion Matrix) dan Error Analysis mendalam (False Positive & False Negative).
+5. **Context-Aware Evaluation**: Pengukuran global dan per-topic/per-agreement (Macro-F1, Precision, Recall, Confusion Matrix), termasuk evaluasi multilabel sub-kategori.
 6. **Model Explainability**: Visualisasi atribusi kata (*word saliency / integrated gradients proxy*) untuk transparansi prediksi.
 7. **Interactive Prototype**: Web UI interaktif berbasis Streamlit.
 
@@ -47,7 +47,7 @@ Proyek ini bertujuan untuk mendeteksi ujaran kebencian (*hate speech*) dan teks 
 ├── data/
 │   ├── raw/                       # Dataset mentah — Git LFS tracked (CSV & JSONL)
 │   ├── processed/                 # Dataset hasil cleaning
-│   └── splits/                    # train.csv, val.csv, test.csv (Stratified 70/15/15)
+│   └── splits/                    # train.csv, val.csv, test.csv (group-aware 70/15/15)
 │
 ├── src/
 │   ├── database/                  # Modul PostgreSQL (models, connection, repository)

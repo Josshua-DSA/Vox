@@ -50,16 +50,18 @@ class Config:
     DENSE_UNITS: int = 128
 
     # Topic Metadata Embedding
-    NUM_TOPICS: int = 7
+    NUM_TOPICS: int = 9
     TOPIC_EMBEDDING_DIM: int = 32
     CANONICAL_TOPICS: list[str] = field(
         default_factory=lambda: [
-            "Politik",
-            "Agama",
-            "SARA",
-            "Gender",
-            "Pemilu2024",
-            "Umum",
+            "Ahmadiyah",
+            "Disabilitas",
+            "Jewish",
+            "Kristen",
+            "LGBTQ+",
+            "Rohingya",
+            "Syiah",
+            "Tionghoa",
             "UNKNOWN",
         ]
     )
