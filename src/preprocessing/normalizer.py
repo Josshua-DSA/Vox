@@ -7,6 +7,7 @@ bentuk kata baku sebelum proses pembersihan dan tokenisasi.
 
 import json
 import re
+from pathlib import Path
 
 from src.utils.config import Config
 from src.utils.logger import Logger
@@ -56,15 +57,37 @@ class SlangNormalizer:
         """
         self.config = config or Config()
         self.logger = Logger.get_logger("SlangNormalizer")
-        self.slang_dict: dict[str, str] = slang_dict if slang_dict is not None \
-            else self._load_json(self.config.SLANG_DICT_PATH)
-        self.emoji_map: dict[str, str] = emoji_map if emoji_map is not None \
-            else self._load_json(self.config.EMOJI_MAP_PATH)
+        self.slang_dict: dict[str, str] = (
+            slang_dict
+            if slang_dict is not None
+            else self._load_json(self._resolve_path(self.config.SLANG_DICT_PATH))
+        )
+        self.emoji_map: dict[str, str] = (
+            emoji_map
+            if emoji_map is not None
+            else self._load_json(self._resolve_path(self.config.EMOJI_MAP_PATH))
+        )
         self.leet_map = dict(self.LEET_MAP)
         self.logger.info(
             f"Leksikon termuat: {len(self.slang_dict)} slang, "
             f"{len(self.emoji_map)} emoji."
         )
+
+    @staticmethod
+    def _resolve_path(path_str: str) -> str:
+        """
+        Menyelesaikan jalur file agar tahan terhadap perbedaan Current Working Directory
+        (misal dieksekusi dari direktori 'notebooks/' atau root project).
+        """
+        p = Path(path_str)
+        if p.exists():
+            return str(p)
+        # Cari root relatif dari letak file normalizer.py
+        root = Path(__file__).resolve().parent.parent.parent
+        candidate = root / path_str
+        if candidate.exists():
+            return str(candidate)
+        return path_str
 
     @staticmethod
     def _load_json(path: str) -> dict[str, str]:

@@ -68,9 +68,12 @@ class Config:
 
     # Training Hyperparameters
     BATCH_SIZE: int = 32
-    EPOCHS: int = 20
+    EPOCHS: int = 30
+    WARMUP_EPOCHS: int = 5
+    MAIN_EPOCHS: int = 20
+    COOLDOWN_EPOCHS: int = 5
     LEARNING_RATE: float = 1e-3
-    EARLY_STOPPING_PATIENCE: int = 5
+    EARLY_STOPPING_PATIENCE: int = 0
 
     # Imbalance Strategy: "none" | "class_weight" | "focal_loss" | "oversample"
     IMBALANCE_STRATEGY: str = "focal_loss"
