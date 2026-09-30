@@ -7,6 +7,8 @@ Pipeline standar: normalisasi (leet/slang/emoji) -> hapus URL/mention/hashtag
 
 import re
 
+from src.preprocessing.normalizer import SlangNormalizer
+
 
 class TextCleaner:
     """
@@ -27,6 +29,8 @@ class TextCleaner:
         remove_hashtags: bool = True,
         remove_punctuation: bool = True,
         lowercase: bool = True,
+        preserve_hashtag_content: bool = False,
+        normalizer: SlangNormalizer | None = None,
     ) -> None:
         """Inisialisasi konfigurasi aturan cleaning teks."""
         self.remove_urls = remove_urls
@@ -34,6 +38,8 @@ class TextCleaner:
         self.remove_hashtags = remove_hashtags
         self.remove_punctuation = remove_punctuation
         self.lowercase = lowercase
+        self.preserve_hashtag_content = preserve_hashtag_content
+        self.normalizer = normalizer
 
     def clean(self, text: str) -> str:
         """
@@ -48,12 +54,15 @@ class TextCleaner:
         if not isinstance(text, str):
             return ""
 
+        if self.normalizer is not None:
+            text = self.normalizer.normalize(text)
+
         if self.remove_urls:
             text = self._remove_url(text)
         if self.remove_mentions:
             text = self._remove_mention(text)
         if self.remove_hashtags:
-            text = self._remove_hashtag(text)
+            text = self._remove_hashtag(text, preserve_content=self.preserve_hashtag_content)
         if self.lowercase:
             text = text.lower()
         if self.remove_punctuation:
@@ -80,9 +89,10 @@ class TextCleaner:
     def _remove_mention(self, text: str) -> str:
         return re.sub(r"@\w+", " ", text)
 
-    def _remove_hashtag(self, text: str) -> str:
-        """Hapus total tagar (#tag) berikut kontennya sesuai keputusan tim."""
-        return re.sub(r"#\w+", " ", text)
+    def _remove_hashtag(self, text: str, preserve_content: bool = False) -> str:
+        """Remove hashtag markers, optionally preserving the hashtag text."""
+        replacement = r"\1" if preserve_content else " "
+        return re.sub(r"#(\w+)", replacement, text)
 
     def _remove_punct(self, text: str) -> str:
         return re.sub(r"[^\w\s]", " ", text)

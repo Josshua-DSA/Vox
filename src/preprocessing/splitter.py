@@ -3,6 +3,8 @@ import os
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
+from src.eda.split_audit import make_group_split
+
 
 class DataSplitter:
     """
@@ -63,6 +65,29 @@ class DataSplitter:
             train_df.reset_index(drop=True),
             val_df.reset_index(drop=True),
             test_df.reset_index(drop=True),
+        )
+
+    def split_grouped(
+        self, df: pd.DataFrame, group_col: str = "text"
+    ) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+        """Split exact duplicate groups without distributing them across sets."""
+        if group_col != "text":
+            if group_col not in df:
+                raise KeyError(f"Missing group column: {group_col}")
+            working = df.rename(columns={group_col: "text"})
+        else:
+            working = df
+        assigned = make_group_split(
+            working,
+            seed=self.seed,
+            train_ratio=self.train_ratio,
+            val_ratio=self.val_ratio,
+        )
+        return tuple(
+            assigned.loc[assigned["split"] == name]
+            .drop(columns=["split"])
+            .reset_index(drop=True)
+            for name in ("train", "val", "test")
         )
 
     def save_splits(

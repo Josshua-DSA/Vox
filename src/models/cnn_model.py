@@ -27,7 +27,9 @@ class CNNTextClassifier(BaseModel):
         super().__init__(config)
 
     def build_model(
-        self, embedding_matrix: np.ndarray | None = None
+        self,
+        embedding_matrix: np.ndarray | None = None,
+        include_sublabel_head: bool = False,
     ) -> Any:
         """
         Membangun topologi Keras Functional API dual-input CNN.
@@ -109,16 +111,30 @@ class CNNTextClassifier(BaseModel):
                 self.config.DENSE_UNITS, activation="relu", name="dense_hidden"
             )(x)
             x = layers.Dropout(dropout_dense, name="dropout_dense")(x)
-            output = layers.Dense(1, activation="sigmoid", name="output_prob")(x)
+            binary_output = layers.Dense(1, activation="sigmoid", name="output_prob")(x)
+            outputs: Any = binary_output
+            losses: Any = "binary_crossentropy"
+            if include_sublabel_head:
+                sublabel_output = layers.Dense(
+                    5, activation="sigmoid", name="sublabel_prob"
+                )(x)
+                outputs = {
+                    "output_prob": binary_output,
+                    "sublabel_prob": sublabel_output,
+                }
+                losses = {
+                    "output_prob": "binary_crossentropy",
+                    "sublabel_prob": "binary_crossentropy",
+                }
 
             model = models.Model(
                 inputs=[text_input, topic_input],
-                outputs=output,
+                outputs=outputs,
                 name="Context_Aware_Dual_Input_CNN",
             )
             model.compile(
                 optimizer=optimizers.Adam(learning_rate=self.config.LEARNING_RATE),
-                loss="binary_crossentropy",
+                loss=losses,
                 metrics=["accuracy"],
             )
             self.model = model
