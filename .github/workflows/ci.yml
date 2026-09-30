@@ -47,7 +47,7 @@ jobs:
           --health-retries=5
 
     env:
-      DATABASE_URL: postgresql://postgres:postgres@localhost:5434/indotoxic
+      DATABASE_URL: postgresql+psycopg2://postgres:***@localhost:5434/indotoxic
 
     steps:
       - uses: actions/checkout@v4

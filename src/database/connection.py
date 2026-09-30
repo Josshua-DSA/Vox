@@ -15,8 +15,10 @@ from src.database.models import Base
 # Load environment variables
 load_dotenv()
 
-DEFAULT_DB_URL = "postgresql://postgres:postgres@localhost:5434/indotoxic"
+DEFAULT_DB_URL = "postgresql+psycopg2://postgres:***@localhost:5434/indotoxic"
 DATABASE_URL = os.getenv("DATABASE_URL", DEFAULT_DB_URL)
+if DATABASE_URL.startswith("postgresql://"):
+    DATABASE_URL = DATABASE_URL.replace("postgresql://", "postgresql+psycopg2://", 1)
 
 # Engine initialization
 engine = create_engine(
