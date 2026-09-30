@@ -6,6 +6,8 @@ dibuang, tetapi konteks pembuka kalimat dan kata negasi tidak rusak.
 """
 
 
+from pathlib import Path
+
 from src.utils.config import Config
 from src.utils.logger import Logger
 
@@ -52,12 +54,30 @@ class StopwordFilter:
         self.logger = Logger.get_logger("StopwordFilter")
         self.lead_protect = lead_protect
         self.min_keep_ratio = min_keep_ratio
-        self.stopwords: set[str] = stopwords if stopwords is not None \
-            else self._load_stopwords(self.config.STOPWORDS_PATH)
+        self.stopwords: set[str] = (
+            stopwords
+            if stopwords is not None
+            else self._load_stopwords(self._resolve_path(self.config.STOPWORDS_PATH))
+        )
         # Guard: negation tokens tidak boleh pernah jadi stopword
         self.stopwords -= self.NEGATION_TOKENS
         self.logger.info(f"Stopwords termuat: {len(self.stopwords)} kata "
                          f"(negation guard aktif).")
+
+    @staticmethod
+    def _resolve_path(path_str: str) -> str:
+        """
+        Menyelesaikan jalur file agar tahan terhadap perbedaan Current Working Directory
+        (misal dieksekusi dari direktori 'notebooks/' atau root project).
+        """
+        p = Path(path_str)
+        if p.exists():
+            return str(p)
+        root = Path(__file__).resolve().parent.parent.parent
+        candidate = root / path_str
+        if candidate.exists():
+            return str(candidate)
+        return path_str
 
     @staticmethod
     def _load_stopwords(path: str) -> set[str]:
