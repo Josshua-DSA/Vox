@@ -10,16 +10,20 @@ from sklearn.metrics import (
     f1_score,
     precision_score,
     recall_score,
+    roc_auc_score,
 )
 
 
 class MetricCalculator:
     """
-    Menghitung metrik performa klasifikasi teks standar: Macro-F1, Precision, Recall, Accuracy, dan per-class metrics.
+    Menghitung metrik performa klasifikasi teks standar: Macro-F1, Precision, Recall, Accuracy, AUC-ROC, dan per-class metrics.
     """
 
     def compute_all(
-        self, y_true: np.ndarray, y_pred: np.ndarray
+        self,
+        y_true: np.ndarray,
+        y_pred: np.ndarray,
+        y_prob: np.ndarray | None = None,
     ) -> dict[str, Any]:
         """
         Menghitung seluruh metrik evaluasi klasifikasi biner.
@@ -27,6 +31,7 @@ class MetricCalculator:
         Args:
             y_true (np.ndarray): Label ground truth (0/1).
             y_pred (np.ndarray): Prediksi model (0/1).
+            y_prob (np.ndarray | None): Probabilitas prediksi kelas positif (0..1).
 
         Returns:
             Dict[str, Any]: Ringkasan nilai metrik lengkap.
@@ -40,16 +45,24 @@ class MetricCalculator:
         )
         acc = float(accuracy_score(y_true, y_pred))
 
+        auc_roc = None
+        if y_prob is not None:
+            try:
+                auc_roc = float(roc_auc_score(y_true, y_prob))
+            except Exception:
+                auc_roc = 0.0
+
         report_dict = classification_report(
             y_true, y_pred, output_dict=True, zero_division=0
         )
         cm = confusion_matrix(y_true, y_pred).tolist()
 
-        return {
+        result = {
             "macro_f1": macro_f1,
             "precision_macro": precision_macro,
             "recall_macro": recall_macro,
             "accuracy": acc,
+            "auc_roc": auc_roc,
             "per_class": {
                 "non_toxic": {
                     "precision": float(report_dict.get("0", {}).get("precision", 0.0)),
@@ -64,6 +77,7 @@ class MetricCalculator:
             },
             "confusion_matrix": cm,
         }
+        return result
 
     def save_metrics(self, metrics: dict[str, Any], path: str) -> None:
         """
