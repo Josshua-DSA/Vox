@@ -127,6 +127,19 @@ class CNNTextClassifier(BaseModel):
                     "sublabel_prob": "binary_crossentropy",
                 }
 
+            # --- GPU Memory Growth Guard ---
+            try:
+                import tensorflow as tf
+                gpus = tf.config.list_physical_devices("GPU")
+                if gpus:
+                    for gpu in gpus:
+                        try:
+                            tf.config.experimental.set_memory_growth(gpu, True)
+                        except Exception:
+                            pass
+            except Exception:
+                pass
+
             model = models.Model(
                 inputs=[text_input, topic_input],
                 outputs=outputs,
@@ -136,6 +149,7 @@ class CNNTextClassifier(BaseModel):
                 optimizer=optimizers.Adam(learning_rate=self.config.LEARNING_RATE),
                 loss=losses,
                 metrics=["accuracy"],
+                jit_compile=False,
             )
             self.model = model
             return self.model
@@ -184,15 +198,30 @@ class CNNTextClassifier(BaseModel):
                     ),
                     loss=loss_fn,
                     metrics=["accuracy"],
+                    jit_compile=False,
                 )
 
-            callbacks = [
-                tf.keras.callbacks.EarlyStopping(
-                    monitor="val_loss",
-                    patience=self.config.EARLY_STOPPING_PATIENCE,
-                    restore_best_weights=True,
-                )
-            ]
+            callbacks = []
+
+            # 3-Phase Learning Rate Scheduler: Warmup (5 ep) -> Main (20 ep) -> Fine-tuning Cooldown (5 ep)
+            base_lr = float(self.config.LEARNING_RATE)
+            warmup_ep = int(getattr(self.config, "WARMUP_EPOCHS", 5))
+            main_ep = int(getattr(self.config, "MAIN_EPOCHS", 20))
+
+            def tri_stage_lr_schedule(epoch: int, current_lr: float) -> float:
+                if epoch < warmup_ep:
+                    # Fase 1: Pemanasan bertahap dari 20% ke 100% base_lr
+                    return base_lr * float(epoch + 1) / float(warmup_ep)
+                elif epoch < (warmup_ep + main_ep):
+                    # Fase 2: Eksploitasi utama pada base_lr penuh
+                    return base_lr
+                else:
+                    # Fase 3: Melandai (Cooldown / Fine-Tuning) peluruhan eksponensial halus
+                    decay_step = epoch - (warmup_ep + main_ep) + 1
+                    return base_lr * (0.5 ** decay_step)
+
+            callbacks.append(tf.keras.callbacks.LearningRateScheduler(tri_stage_lr_schedule, verbose=1))
+
             history = self.model.fit(
                 [X_text_train, X_topic_train],
                 y_train,
