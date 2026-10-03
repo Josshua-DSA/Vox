@@ -36,7 +36,7 @@ class Config:
     STOPWORDS_PATH: str = "data/resources/stopwords_id.txt"
 
     # Database
-    DATABASE_URL: str = "postgresql://postgres:postgres@localhost:5434/indotoxic"
+    DATABASE_URL: str = "postgresql+psycopg2://postgres:***@localhost:5434/indotoxic"
 
     # Embedding
     EMBEDDING_DIM: int = 300
